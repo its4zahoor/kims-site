@@ -119,68 +119,24 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                 </div>
                 {/* Mobile Menu  */}
                 <div className="tgmobile__menu">
-                  <nav className="tgmobile__menu-box">
+                  <nav className="tgmobile__menu-box bg-secondary">
                     <div className="close-btn" onClick={handleMobileMenu}>
                       <i className="tg-flaticon-close-1" />
                     </div>
-                    <div className="nav-logo">
+                    <div className="nav-logo d-flex align-items-center gap-1">
                       <Link href="/">
                         <img src="/assets/img/logo/logo.png" alt="Logo" />
                       </Link>
-                    </div>
-                    <div className="tgmobile__search">
-                      <form action="#">
-                        <input type="text" placeholder="Search here..." />
-                        <button>
-                          <i className="fas fa-search" />
-                        </button>
-                      </form>
+                      <div class="vr bg-white"></div>
+                      <Link href="/">
+                        <img
+                          src="/assets/img/logo/KIMS-logo.png"
+                          alt="KIMS Logo"
+                        />
+                      </Link>
                     </div>
                     <div className="tgmobile__menu-outer">
                       <MobileMenu />
-                    </div>
-                    <div className="tgmenu__action">
-                      <ul className="list-wrap">
-                        <li className="header-btn login-btn">
-                          <Link href="#" className="btn">
-                            Log in
-                          </Link>
-                        </li>
-                        <li className="header-btn">
-                          <Link href="#" className="btn">
-                            Try For Free
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="social-links">
-                      <ul className="list-wrap">
-                        <li>
-                          <Link href="#">
-                            <i className="fab fa-facebook-f" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
-                            <i className="fab fa-twitter" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
-                            <i className="fab fa-instagram" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
-                            <i className="fab fa-linkedin-in" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
-                            <i className="fab fa-youtube" />
-                          </Link>
-                        </li>
-                      </ul>
                     </div>
                   </nav>
                 </div>
