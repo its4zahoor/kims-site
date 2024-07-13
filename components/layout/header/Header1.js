@@ -9,7 +9,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
       <header>
         <div
           id="sticky-header"
-          className={`tg-header__area transparent-header bg-secondary ${
+          className={`tg-header__area transparent-header ${
             scroll ? "sticky-menu" : ""
           }`}
         >
