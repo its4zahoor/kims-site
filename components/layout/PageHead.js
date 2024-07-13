@@ -4,11 +4,7 @@ const PageHead = ({ headTitle }) => {
   return (
     <>
       <Head>
-        <title>
-          {headTitle
-            ? headTitle
-            : "Eduvalt - Online Courses & Education Nextjs Template"}
-        </title>
+        <title>{headTitle ? headTitle : "KIMS - Home"}</title>
       </Head>
     </>
   );
