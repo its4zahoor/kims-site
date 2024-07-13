@@ -612,6 +612,13 @@ export default function AboutUs() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
+        <section
+          data-background="/assets/img/bg/about-us-banner.png"
+          style={{
+            backgroundSize: "cover",
+            height: "820px",
+          }}
+        />
         <div>
           <section className="about-area-two">
             <div className="container">
