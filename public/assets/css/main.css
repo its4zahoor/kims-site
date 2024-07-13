@@ -66,8 +66,8 @@
   --tg-common-color-black: #000;
   --tg-body-color: #39557e;
   --tg-heading-color: #082a5e;
-  --tg-theme-primary: #1363df;
-  --tg-theme-secondary: #082a5e;
+  --tg-theme-primary: #04824b;
+  --tg-theme-secondary: #00785e;
   --tg-border-1: #ececec;
   --tg-border-2: #d0dae9;
   --tg-border-3: #e2e2e2;
@@ -1242,7 +1242,7 @@ textarea {
   font-size: 16px;
   font-weight: var(--tg-fw-regular);
   text-transform: capitalize;
-  color: var(--tg-heading-color);
+  color: var(--tg-common-color-white);
   font-family: var(--tg-heading-font-family);
   padding: 37px 12px;
   display: -webkit-box;
@@ -1331,7 +1331,7 @@ textarea {
 
 .tgmenu__navbar-wrap > ul > li.active a,
 .tgmenu__navbar-wrap > ul > li:hover a {
-  color: var(--tg-theme-primary);
+  color: var(--tg-common-color-white);
 }
 
 .tgmenu__main-menu li.menu-item-has-children .dropdown-btn {
@@ -1342,7 +1342,7 @@ textarea {
   content: "\f107";
   display: block;
   font-family: "flaticon_eduvalt";
-  color: #5a7093;
+  color: #ffffff;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1915,7 +1915,7 @@ textarea {
 }
 
 .tgmobile__menu .navigation li.active > a {
-  color: var(--tg-theme-primary);
+  color: var(--tg-common-color-white);
 }
 
 .tgmobile__menu .navigation li.menu-item-has-children .dropdown-btn {
