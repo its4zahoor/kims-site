@@ -41,6 +41,10 @@
 ==============================================*/
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700;800&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --tg-body-font-family: "Hind", sans-serif;
   --tg-heading-font-family: "Lexend Deca", sans-serif;
