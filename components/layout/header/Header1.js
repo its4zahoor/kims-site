@@ -1,7 +1,5 @@
 import Link from "next/link";
 import MobileMenu from "../MobileMenu";
-import Link from "next/link";
-import MobileMenu from "../MobileMenu";
 
 export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
   return (
