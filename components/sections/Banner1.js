@@ -26,6 +26,45 @@ export default function Banner1() {
           </div>
         </div>
       </section>
+      <section className="bg-blue-700 p-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="mb-4 p-4 text-center">
+                <h1 className="text-3xl uppercase text-white">
+                  Our philosophy
+                </h1>
+                <div className="text-xl text-white my-2">
+                  The Prophetic saying
+                </div>
+                <div className="text-3xl text-white">
+                  "If anyone carries out medical treatment, yet previously he
+                  was not known as a medical man, then he takes the
+                  responsibility"
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-blue-700 p-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="mb-4 p-4 text-center">
+                <h1 className="text-3xl uppercase text-white">
+                  Explore Our Academic Programs
+                </h1>
+                <div className="text-xl text-white my-2">
+                  At KIMS and KIN, our inclusive admissions prioritize merit,
+                  offering scholarships. We embrace diversity, welcoming
+                  individuals regardless of faith, gender, or nationality.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
