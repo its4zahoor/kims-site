@@ -1,9 +1,9 @@
 /*============================================
 
-   Theme Name: Eduvalt - Online Courses & Education Template
+   Theme Name: KIMS - Default Theme
    Author : johanspond
    Support: mssabujbd@gmail.com
-   Description: Eduvalt - Online Courses & Education Template
+   Description: KIMS - Default Theme
    Version: 1.0
 
 ==============================================*/
@@ -41,6 +41,10 @@
 ==============================================*/
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700;800&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --tg-body-font-family: "Hind", sans-serif;
   --tg-heading-font-family: "Lexend Deca", sans-serif;
@@ -65,9 +69,9 @@
   --tg-common-color-dark: #061e43;
   --tg-common-color-black: #000;
   --tg-body-color: #39557e;
-  --tg-heading-color: #082a5e;
-  --tg-theme-primary: #1363df;
-  --tg-theme-secondary: #082a5e;
+  --tg-heading-color: #c6cdd8;
+  --tg-theme-primary: #3aa536;
+  --tg-theme-secondary: #ce2a2a;
   --tg-border-1: #ececec;
   --tg-border-2: #d0dae9;
   --tg-border-3: #e2e2e2;
@@ -3944,21 +3948,15 @@ textarea {
       var(--tg-heading-color)
     ),
     linear-gradient(var(--tg-heading-color), var(--tg-heading-color));
-  background-size:
-    0% 1.5px,
-    0 1.5px;
-  background-position:
-    100% 100%,
-    0 100%;
+  background-size: 0% 1.5px, 0 1.5px;
+  background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.4s linear;
 }
 
 .courses__item-content .title a:hover {
   color: inherit;
-  background-size:
-    0 1.5px,
-    100% 1.5px;
+  background-size: 0 1.5px, 100% 1.5px;
 }
 
 .courses__item-meta {
@@ -4151,21 +4149,15 @@ textarea {
       var(--tg-heading-color)
     ),
     linear-gradient(var(--tg-heading-color), var(--tg-heading-color));
-  background-size:
-    0% 2px,
-    0 2px;
-  background-position:
-    100% 100%,
-    0 100%;
+  background-size: 0% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.4s linear;
 }
 
 .courses__item-two-content .title a:hover {
   color: inherit;
-  background-size:
-    0 2px,
-    100% 2px;
+  background-size: 0 2px, 100% 2px;
 }
 
 .courses__item-two-content .courses__item-meta {
@@ -9069,21 +9061,15 @@ textarea {
       var(--tg-heading-color)
     ),
     linear-gradient(var(--tg-heading-color), var(--tg-heading-color));
-  background-size:
-    0% 1.5px,
-    0 1.5px;
-  background-position:
-    100% 100%,
-    0 100%;
+  background-size: 0% 1.5px, 0 1.5px;
+  background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.4s linear;
 }
 
 .blog__post-content .title a:hover {
   color: inherit;
-  background-size:
-    0 1.5px,
-    100% 1.5px;
+  background-size: 0 1.5px, 100% 1.5px;
 }
 
 .blog__post-meta {

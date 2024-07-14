@@ -12,19 +12,18 @@ import Testimonial1 from "@/components/sections/Testimonial1";
 
 export default function Home1() {
   return (
-    <>
-      <Layout headerStyle={1} footerStyle={1}>
-        <Banner1 />
-        <Brand1 />
-        <About1 />
-        <Course1 />
-        <Categories1 />
-        <Testimonial1 />
-        <Instructor1 />
-        <Cta1 />
-        <Blog1 />
-        <Newsletter1 />
-      </Layout>
-    </>
+    <Layout headerStyle={1} footerStyle={1}>
+      <Banner1 />
+      {/* <Brand1 /> */}
+      {/* <About1 />
+      <Course1 />
+      <Categories1 />
+      <Testimonial1 />
+      <Instructor1 />
+      <Cta1 />
+      <Blog1 />
+      */}
+      <Newsletter1 />
+    </Layout>
   );
 }

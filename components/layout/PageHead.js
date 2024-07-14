@@ -4,11 +4,11 @@ const PageHead = ({ headTitle }) => {
   return (
     <>
       <Head>
-        <title>
-          {headTitle
-            ? headTitle
-            : "Eduvalt - Online Courses & Education Nextjs Template"}
-        </title>
+        <title>{headTitle ? headTitle : "KIMS - Home"}</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+        />
       </Head>
     </>
   );

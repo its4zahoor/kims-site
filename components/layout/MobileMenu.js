@@ -22,20 +22,24 @@ export default function MobileMenu() {
   return (
     <>
       <ul className="navigation">
-        <li className="active menu-item-has-children">
-          <Link href="#">Home</Link>
+        <li className="active">
+          <Link href="/about-us">ABOUT</Link>
+        </li>
+        <li className="menu-item-has-children">
+          <Link href="#">ACADEMIC</Link>
           <ul
             className="sub-menu"
             style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}
           >
-            <li className="active">
-              <Link href="/">Home One</Link>
+            <li>
+              <Link href="/institute-of-nursing">
+                KHBAIB INSTITUTE OF NURSING
+              </Link>
             </li>
             <li>
-              <Link href="/index-2">Home Two</Link>
-            </li>
-            <li>
-              <Link href="/index-3">Home Three</Link>
+              <Link href="/institute-of-medical-sciences">
+                KHUBAIB INSTITUTE OF MEDICAL SCIENCES
+              </Link>
             </li>
           </ul>
           <div
@@ -46,16 +50,25 @@ export default function MobileMenu() {
           </div>
         </li>
         <li className="menu-item-has-children">
-          <Link href="#">Courses</Link>
+          <Link href="#">ADMISSION</Link>
           <ul
             className="sub-menu"
             style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}
           >
             <li>
-              <Link href="/courses">All Courses</Link>
+              <Link href="/diploma-program">DIPLOMA PROGRAM</Link>
             </li>
             <li>
-              <Link href="/course-details">Course Details</Link>
+              <Link href="/degree-program">DEGREE PROGRAM</Link>
+            </li>
+            <li>
+              <Link href="/eligibility-criteria">ELIGIBILITY CRITERIA</Link>
+            </li>
+            <li>
+              <Link href="/admission-process">ADMISSION PROCESS</Link>
+            </li>
+            <li>
+              <Link href="/fee-structure">FEE STRUCTURE</Link>
             </li>
           </ul>
           <div
@@ -66,37 +79,19 @@ export default function MobileMenu() {
           </div>
         </li>
         <li className="menu-item-has-children">
-          <Link href="#">Pages</Link>
+          <Link href="#">FACILITIES</Link>
           <ul
             className="sub-menu"
             style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}
           >
             <li>
-              <Link href="/about-us">About Us</Link>
+              <Link href="/scholarship">SCHOLARSHIP</Link>
             </li>
             <li>
-              <Link href="/instructors">Our Instructors</Link>
+              <Link href="/training-facilities">TRAINING FACILITIES</Link>
             </li>
             <li>
-              <Link href="/instructor-details">Instructor Details</Link>
-            </li>
-            <li>
-              <Link href="/mentors">Our Mentors</Link>
-            </li>
-            <li>
-              <Link href="/events">Our Events</Link>
-            </li>
-            <li>
-              <Link href="/events-details">Event Details</Link>
-            </li>
-            <li>
-              <Link href="/faq">Asked Question</Link>
-            </li>
-            <li>
-              <Link href="/404">404 Page</Link>
-            </li>
-            <li>
-              <Link href="/contact">contact</Link>
+              <Link href="/sports-facilities">SPORTS FACILITIES</Link>
             </li>
           </ul>
           <div
@@ -106,48 +101,11 @@ export default function MobileMenu() {
             <span className="plus-line" />
           </div>
         </li>
-        <li className="menu-item-has-children">
-          <Link href="#">Shop</Link>
-          <ul
-            className="sub-menu"
-            style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}
-          >
-            <li>
-              <Link href="/shop">Shop Page</Link>
-            </li>
-            <li>
-              <Link href="/shop-details">Shop Details</Link>
-            </li>
-          </ul>
-          <div
-            className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"}
-            onClick={() => handleToggle(4)}
-          >
-            <span className="plus-line" />
-          </div>
+        <li>
+          <Link href="/news-and-events">NEWS & EVENTS</Link>
         </li>
-        <li className="menu-item-has-children">
-          <Link href="#">Blog</Link>
-          <ul
-            className="sub-menu"
-            style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}
-          >
-            <li>
-              <Link href="/blog-grid">Blog Grid</Link>
-            </li>
-            <li>
-              <Link href="/blog">Blog Standard</Link>
-            </li>
-            <li>
-              <Link href="/blog-details">Blog Details</Link>
-            </li>
-          </ul>
-          <div
-            className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"}
-            onClick={() => handleToggle(5)}
-          >
-            <span className="plus-line" />
-          </div>
+        <li>
+          <Link href="contact-us">CONTACT US</Link>
         </li>
       </ul>
     </>
