@@ -64,6 +64,7 @@ export default function Banner1() {
                     width: "100%",
                     height: "auto",
                   }}
+                  className="rounded-3xl"
                 />
                 <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
                   Khubaib Institute of Medical Sciences
@@ -81,6 +82,7 @@ export default function Banner1() {
                     width: "100%",
                     height: "auto",
                   }}
+                  className="rounded-3xl"
                 />
                 <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
                   Khubaib Institute of Nursing
@@ -247,6 +249,36 @@ export default function Banner1() {
               src="/assets/img/icons/red_arrow_down.svg"
               className="absolute bottom-5 right-10"
             />
+          </div>
+        </section>
+        <section className="-mt-[50px]">
+          <div className="container relative -bottom-40 bg-gradient-to-r from-blue-900 to-blue-500 rounded-3xl">
+            <Image
+              sizes="25vw"
+              src="/assets/img/home/brochure.jpeg"
+              width={50}
+              height={50}
+              style={{
+                width: "100%",
+                height: "50vh",
+                objectFit: "cover",
+              }}
+              className="rounded-3xl"
+            />
+            <div className="absolute top-20 left-10 uppercase text-black">
+              <div className="w-1/2 flex flex-col relative">
+                <span>Download our brochure</span>
+                <span className="text-3xl font-extrabold">
+                  Ready to explore our full suite of academic & Guide solutions?
+                </span>
+                <button className="py-2 px-4 border-slate-800 border-2 font-semibold rounded-full shadow-md hover:bg-red-800">
+                  <Link href="/courses">
+                    <span className="mr-3">Download Our Brochure</span>
+                    <i class="zmdi zmdi-download" />
+                  </Link>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </div>
