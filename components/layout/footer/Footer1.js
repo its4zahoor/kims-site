@@ -7,60 +7,45 @@ export default function Footer1() {
         <div className="footer__top-wrap">
           <div className="container">
             <div className="row">
-              <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="col-xl-4 col-lg-4 col-sm-6">
                 <div className="footer-widget">
                   <div className="footer__about">
+                    <p>
+                      The Mission of Khubaib  Institute of Medical Sciences and
+                      Nursing is to demonstrate excellence in Paramedics and
+                      Nursing education and training through leading-edge and
+                      multi-disciplinary teaching and practice with significant
+                      implications for improved patient care and
+                      health outcomes.
+                    </p>
                     <div className="footer__logo logo">
                       <Link href="/">
-                        <img
-                          src="/assets/img/logo/secondary_logo.png"
-                          alt="img"
-                        />
+                        <img src="/assets/img/logo/logo.png" alt="img" />
                       </Link>
                     </div>
-                    <p>
-                      when an unknown printer took galley of type and scrambled
-                      it to make pspecimen bookt has.
-                    </p>
-                    <ul className="list-wrap m-0 p-0">
-                      <li className="address">463 7th Ave, NY 10018, USA</li>
-                      <li className="number">+123 88 9900 456</li>
-                      <li className="socials">
-                        <Link href="#">
-                          <i className="fab fa-facebook-f" />
-                        </Link>
-                        <Link href="#">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                        <Link href="#">
-                          <i className="fab fa-whatsapp" />
-                        </Link>
-                        <Link href="#">
-                          <i className="fab fa-linkedin-in" />
-                        </Link>
-                        <Link href="#">
-                          <i className="fab fa-youtube" />
-                        </Link>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="col-xl-4 col-lg-4 col-sm-6">
                 <div className="footer-widget widget_nav_menu">
-                  <h4 className="fw-title">Resources</h4>
+                  <h4 className="fw-title uppercase">Get in Touch</h4>
                   <ul className="list-wrap">
                     <li>
-                      <Link href="/about-us">About</Link>
+                      <Link href="/about-us">
+                        Main Shahrah-e-Resham, Bakka Mor, Haripur KPK, Pakistan
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/contact">Contact</Link>
+                      <Link href="/contact">+92-995-670780</Link>
                     </li>
                     <li>
-                      <Link href="/contact">Help Center</Link>
+                      <Link href="tel:+92-334-9991220">+92-334-9991220</Link>
+                      <Link href="tel:+92-331-6070009">+92-331-6070009</Link>
                     </li>
                     <li>
-                      <Link href="#">Refund</Link>
+                      <Link href="mailto:admissions@kims-kin.edu.pk">
+                        admissions@kims-kin.edu.pk
+                      </Link>
                     </li>
                     <li>
                       <Link href="#">Conditions</Link>
@@ -69,50 +54,78 @@ export default function Footer1() {
                       <Link href="#">Privacy Policy</Link>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-sm-6">
-                <div className="footer-widget widget_nav_menu">
-                  <h4 className="fw-title">Courses</h4>
-                  <ul className="list-wrap">
-                    <li>
-                      <Link href="/courses">Life Coach</Link>
-                    </li>
-                    <li>
-                      <Link href="/courses">Business Coach</Link>
-                    </li>
-                    <li>
-                      <Link href="/courses">Health Coach</Link>
-                    </li>
-                    <li>
-                      <Link href="/courses">Development</Link>
-                    </li>
-                    <li>
-                      <Link href="/courses">Web Design</Link>
-                    </li>
-                    <li>
-                      <Link href="/courses">SEO Optimize</Link>
+                  <ul className="list-wrap m-0 p-0">
+                    <li className="mt-3 uppercase text-white">Follow Us On</li>
+                    <li className="flex justify-between">
+                      <Link href="#">
+                        <i className="fab fa-facebook-f" />
+                      </Link>
+                      <Link href="#">
+                        <i className="fab fa-twitter" />
+                      </Link>
+                      <Link href="#">
+                        <i className="fab fa-whatsapp" />
+                      </Link>
+                      <Link href="#">
+                        <i className="fab fa-linkedin-in" />
+                      </Link>
+                      <Link href="#">
+                        <i className="fab fa-youtube" />
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-4 col-sm-6">
-                <div className="footer-widget">
-                  <h4 className="fw-title">Working Hours</h4>
-                  <div className="footer__working-list">
-                    <div className="footer__working-item">
-                      <span className="day">Mon - Fri</span>
-                      <span className="time">8:00 AM - 5:00 PM</span>
-                    </div>
-                    <div className="footer__working-item">
-                      <span className="day">Mon - Fri</span>
-                      <span className="time">9:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className="footer__working-item">
-                      <span className="day">Mon - Fri</span>
-                      <span className="time">10:00 AM - 8:00 PM</span>
-                    </div>
-                  </div>
+              <div className="col-xl-4 col-lg-4 col-sm-6">
+                <div className="footer-widget widget_nav_menu">
+                  <h4 className="fw-title uppercase">Quick links</h4>
+                  <ul className="list-wrap uppercase">
+                    <li>
+                      <Link href="/courses">Home</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">About us</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Academics</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Chairman's Message</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Director’s Message</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Faculty</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">facilities</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Fee Structure</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Scholarships</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">News and Updates</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Hostel & Mess Facilities</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Sports Facilities</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Training Facilities</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Contact us</Link>
+                    </li>
+                    <li>
+                      <Link href="/courses">Downloads</Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -121,22 +134,25 @@ export default function Footer1() {
         <div className="copyright__wrapper">
           <div className="container">
             <div className="row">
-              <div className="col-lg-8">
+              <div className="col-lg-6">
                 <div className="copyright__text">
                   <p>
-                    Copyright © {new Date().getFullYear()} eduvalt. All rights
-                    reserved.
+                    {new Date().getFullYear()} © Copyright Khubaib University
+                    Pakistan. Website by Devify
                   </p>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-6">
                 <div className="copyright__menu">
                   <ul className="list-wrap d-flex flex-wrap justify-content-center justify-content-lg-end">
                     <li>
-                      <Link href="#">Privacy Policy</Link>
+                      <Link href="#">Terms & Conditions</Link>
                     </li>
                     <li>
-                      <Link href="#">Terms Conditions</Link>
+                      <Link href="#">Universiy Privacy Statement</Link>
+                    </li>
+                    <li>
+                      <Link href="#">FAQS</Link>
                     </li>
                   </ul>
                 </div>
