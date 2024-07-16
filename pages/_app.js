@@ -17,6 +17,7 @@ import "/public/assets/css/odometer.css";
 import "/public/assets/css/select2.min.css";
 import "/public/assets/css/spacing.css";
 import "/public/assets/css/tg-cursor.css";
+import "./kims-site.scss";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
