@@ -89,8 +89,76 @@ export default function Banner1() {
             </div>
           </div>
         </section>
-        <section className="p-5">
-          <div className="container mb-4 p-4 text-center">This 33</div>
+        <section className="flex mt-[200px]">
+          <div className="w-1/3 pl-[100px]">
+            <h1 className="text-black uppercase font-bold">Our Latest</h1>
+            <h5 className="text-black text-lg my-2">
+              Discover the latest in our blogs, news, and events for a dose of
+              inspiration and information.
+            </h5>
+            <button className="mt-3 py-2 px-4 border-green-600 text-inherit border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+              <Link href="/courses">
+                <span className="mr-3">Discover More</span>
+                <i class="zmdi zmdi-arrow-right-top" />
+              </Link>
+            </button>
+            <div>Blogs</div>
+            <div>News & Events</div>
+          </div>
+          <div>
+            <div className="relative">
+              <Image
+                sizes="25vw"
+                src="/assets/img/home/delegation_medical.png"
+                width={50}
+                height={500}
+                style={{
+                  width: "30vw",
+                  height: "70vh",
+                  objectFit: "cover",
+                }}
+              />
+              <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                Medical Delegation
+              </span>
+            </div>
+          </div>
+          <div>
+            <div className="relative">
+              <Image
+                sizes="25vw"
+                src="/assets/img/home/sports_football.png"
+                width={50}
+                height={50}
+                style={{
+                  width: "30vw",
+                  height: "70vh",
+                  objectFit: "cover",
+                }}
+              />
+              <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                Sports football
+              </span>
+            </div>
+          </div>
+          <div>
+            <div className="relative">
+              <Image
+                sizes="25vw"
+                src="/assets/img/home/sports_taekwondo.png"
+                width={50}
+                height={50}
+                style={{
+                  width: "30vw",
+                  height: "70vh",
+                  objectFit: "cover",
+                }}
+              />
+              <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                Sport Taekwondo
+              </span>
+            </div>
+          </div>
         </section>
         <section className="bg-red-kims p-5">
           <div className="container p-4 flex justify-between text-white">
