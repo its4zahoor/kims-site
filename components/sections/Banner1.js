@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Banner1() {
@@ -50,10 +51,45 @@ export default function Banner1() {
             </div>
           </div>
         </section>
-        <section className="bg-blue-kims p-5">
-          <div className="container mb-4 p-4 text-center">This</div>
+        <section className="bg-blue-kims">
+          <div className="container flex justify-between relative -bottom-20">
+            <div>
+              <div className="relative">
+                <Image
+                  sizes="25vw"
+                  src="/assets/img/home/kims_card.png"
+                  width={50}
+                  height={50}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+                <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                  Khubaib Institute of Medical Sciences
+                </span>
+              </div>
+            </div>
+            <div>
+              <div className="relative">
+                <Image
+                  src="/assets/img/home/kin_card.png"
+                  sizes="25vw"
+                  width={100}
+                  height={100}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+                <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                  Khubaib Institute of Nursing
+                </span>
+              </div>
+            </div>
+          </div>
         </section>
-        <section className="bg-blue-kims p-5">
+        <section className="p-5">
           <div className="container mb-4 p-4 text-center">This 33</div>
         </section>
         <section className="bg-red-kims p-5">
@@ -85,9 +121,64 @@ export default function Banner1() {
             </div>
           </div>
         </section>
-        <section className="bg-blue-kims p-5">
-          <div className="container mb-4 p-4 text-center">
-            <img src="/assets/img/" />
+        <section className="flex">
+          <div className="w-1/4 relative">
+            <Image
+              // fill
+              width={1}
+              height={1}
+              sizes="25vw"
+              src="/assets/img/home/library.png"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            />
+            <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+              library
+            </span>
+            <Image
+              width={36}
+              height={36}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-5 right-10"
+            />
+          </div>
+          <div className="w-1/4 relative">
+            <Image fill sizes="25vw" src="/assets/img/home/labs.png" />
+            <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+              labs
+            </span>
+            <Image
+              width={36}
+              height={36}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-5 right-10"
+            />
+          </div>
+          <div className="w-1/4 relative">
+            <Image fill sizes="25vw" src="/assets/img/home/sports.png" />
+            <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+              sports
+            </span>
+            <Image
+              width={36}
+              height={36}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-5 right-10"
+            />
+          </div>
+          <div className="w-1/4 relative">
+            <Image fill sizes="25vw" src="/assets/img/home/facilities.png" />
+            <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+              facilities
+            </span>
+            <Image
+              width={36}
+              height={36}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-5 right-10"
+            />
           </div>
         </section>
       </div>
