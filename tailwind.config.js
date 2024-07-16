@@ -6,7 +6,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        red: {
+          kims: "#BB3131",
+        },
+        blue: {
+          kims: "#274474",
+        },
+      },
+    },
   },
   plugins: [],
 };
