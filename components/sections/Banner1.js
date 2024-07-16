@@ -53,6 +53,9 @@ export default function Banner1() {
         <section className="bg-blue-kims p-5">
           <div className="container mb-4 p-4 text-center">This</div>
         </section>
+        <section className="bg-blue-kims p-5">
+          <div className="container mb-4 p-4 text-center">This 33</div>
+        </section>
         <section className="bg-red-kims p-5">
           <div className="container p-4 flex justify-between text-white">
             <div className="text-3xl uppercase text-white font-extrabold w-1/2">
@@ -83,10 +86,9 @@ export default function Banner1() {
           </div>
         </section>
         <section className="bg-blue-kims p-5">
-          <div className="container mb-4 p-4 text-center">This 33</div>
-        </section>
-        <section className="bg-blue-kims p-5">
-          <div className="container mb-4 p-4 text-center">This 44</div>
+          <div className="container mb-4 p-4 text-center">
+            <img src="/assets/img/" />
+          </div>
         </section>
       </div>
     </>
