@@ -1,4 +1,5 @@
 import CounterUp from "@/components/elements/CounterUp";
+import { Card, Typography, Grid, Stack, Box } from "@mui/material";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 export default function AboutUs() {
@@ -6,12 +7,166 @@ export default function AboutUs() {
     <>
       <Layout headerStyle={1} footerStyle={1}>
         <section
+          className="banner-area banner-bg"
           data-background="/assets/img/bg/about-us-banner.png"
-          style={{
-            backgroundSize: "cover",
-            height: "820px",
+        >
+          <Card
+            sx={{
+              width: "90vw",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 1.25,
+              backgroundColor: "#BB3131",
+              borderRadius: "24px",
+              padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
+              padding: 5,
+              marginX: "auto",
+            }}
+          >
+            {/* TODO: create theme file for mui and define theme */}
+            <Typography
+              sx={{
+                textAlign: "center",
+                fontFamily: "Dax",
+                fontSize: { xs: 32, sm: 40 },
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "normal",
+                textTransform: "uppercase",
+                color: "white",
+                maxWidth: "900px",
+              }}
+            >
+              Khubaib institute of medical sciences and nursing
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                textAlign: "center",
+                fontFamily: "Dax",
+                fontSize: { xs: 20, sm: 16 },
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: { xs: "32px", sm: "24px" },
+                color: "white",
+                maxWidth: "900px",
+              }}
+            >
+              Khubaib Institute of Medical Sciences & Nursing will be devoted to
+              excellence in teaching and front-line research, advancing
+              knowledge for a good future.
+            </Typography>
+          </Card>
+        </section>
+        <Grid
+          className="bg-blue-900"
+          data-background="/assets/img/bg/Vector.png"
+          sx={{
+            justifyContent: "center",
+            padding: { xs: "48px 32px", md: "120px 80px" },
+            gap: { xs: 2, md: 10 },
           }}
-        />
+          container
+        >
+          <Grid item xs={12} md={5}>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "normal",
+                letterSpacing: "0.32px",
+                textTransform: "uppercase",
+                color: "white",
+                paddingBottom: 2,
+              }}
+            >
+              About Us
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "36px",
+                color: "white",
+              }}
+            >
+              Khubaib Institute of Medical Sciences and Nursing is established
+              with a slogan “Seeking Knowledge and Cultivating Excellence in
+              healthcare education and research” and is considered a pioneer
+              institute in this region for healthcare education such as
+              paramedic, allied health sciences and Nursing.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={5}>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "24px",
+                color: "white",
+                paddingTop: 5,
+                paddingBottom: 3,
+              }}
+            >
+              The institute is conveniently located at a very strategic location
+              on main Shahrah-e-Resham, Haripur at a distance of 08 km from
+              Jhari Kas interchange, 8.5km from Hattar interchange and less than
+              08km from main Haripur city. The campus is easily reachable by
+              public and private transport through M-1 or the Silk Route from
+              the federal and provincial capital of Khyber Pakhtunkhwa.
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "24px",
+                color: "white",
+                paddingBottom: 3,
+              }}
+            >
+              Khubaib Institute of Medical Sciences and Nursing is a registered
+              institute offering diploma and degree programs with approval from
+              relevant bodies such as the Higher Education Regulatory Authority
+              (HERA) – Khyber Pakhtunkhwa, Pakistan Nursing & Midwifery Council
+              (PNMC), Pakistan Pharmacy Council, Faculty of Paramedics and
+              Allied Health Sciences (FPAHS) – Khyber Pakhtunkhwa. The institute
+              has signed an MoU with Health Foundation (KPHF) – Khyber
+              Pakhtunkhwa for District Headquarter Hospital (DHQ), Haripur as a
+              teaching/training hospital for practical experience in various
+              fields of paramedics and Nursing.
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "24px",
+                color: "white",
+                paddingBottom: 3,
+              }}
+            >
+              The establishment of Khubaib Institute of Medical Sciences and
+              Nursing is a response to a rapidly changing health care and
+              research environment, improve patient care and public health
+              outcomes through public-private partnership with public sector
+              hospitals. The institute, as an exemplary institute of
+              public-private partnership, plays a key role in enhancing
+              collaboration with government healthcare bodies on all fronts,
+              specifically teaching, research, policy and administration public
+              service etc.
+            </Typography>
+          </Grid>
+        </Grid>
         <div>
           <section className="about-area-two">
             <div className="container">
