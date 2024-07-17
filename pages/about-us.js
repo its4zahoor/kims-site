@@ -60,12 +60,12 @@ export default function AboutUs() {
           </Card>
         </section>
         <Grid
-          className="bg-blue-900"
           data-background="/assets/img/bg/Vector.png"
           sx={{
             justifyContent: "center",
             padding: { xs: "48px 32px", md: "120px 80px" },
             gap: { xs: 2, md: 10 },
+            backgroundColor: "#274474",
           }}
           container
         >
@@ -164,6 +164,336 @@ export default function AboutUs() {
               collaboration with government healthcare bodies on all fronts,
               specifically teaching, research, policy and administration public
               service etc.
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item xs={12} sm={6} md={3} sx={{ position: "relative" }}>
+            <img
+              fill
+              style={{ width: "100%", height: "100%" }}
+              src="/assets/img/about-us/library.png"
+            />
+            <Typography
+              component="span"
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "32px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "26px",
+                textTransform: "uppercase",
+                bottom: "32px",
+                left: "36px",
+                position: "absolute",
+                color: "white",
+              }}
+            >
+              Library
+            </Typography>
+            <img
+              width={24}
+              height={24}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-8 right-9"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3} sx={{ position: "relative" }}>
+            <img
+              fill
+              style={{ width: "100%", height: "100%" }}
+              src="/assets/img/about-us/labs.png"
+            />
+            <Typography
+              component="span"
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "32px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "26px",
+                textTransform: "uppercase",
+                bottom: "32px",
+                left: "36px",
+                position: "absolute",
+                color: "white",
+              }}
+            >
+              Labs
+            </Typography>
+            <img
+              width={24}
+              height={24}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-8 right-9"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3} sx={{ position: "relative" }}>
+            <img
+              fill
+              style={{ width: "100%", height: "100%" }}
+              src="/assets/img/about-us/sports.png"
+            />
+            <Typography
+              component="span"
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "32px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "26px",
+                textTransform: "uppercase",
+                bottom: "32px",
+                left: "36px",
+                position: "absolute",
+                color: "white",
+              }}
+            >
+              Sports
+            </Typography>
+            <img
+              width={24}
+              height={24}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-8 right-9"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3} sx={{ position: "relative" }}>
+            <img
+              fill
+              style={{ width: "100%", height: "100%" }}
+              src="/assets/img/about-us/facilities.png"
+            />
+            <Typography
+              component="span"
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "32px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "26px",
+                textTransform: "uppercase",
+                bottom: "32px",
+                left: "36px",
+                position: "absolute",
+                color: "white",
+              }}
+            >
+              Facilities
+            </Typography>
+            <img
+              width={24}
+              height={24}
+              src="/assets/img/icons/red_arrow_down.svg"
+              className="absolute bottom-8 right-9"
+            />
+          </Grid>
+        </Grid>
+        <Grid
+          data-background="/assets/img/bg/Vector.png"
+          sx={{
+            justifyContent: "center",
+            padding: { xs: "48px 32px", md: "120px 80px" },
+            gap: { xs: 2, md: 10 },
+            backgroundColor: "#274474",
+          }}
+          container
+        >
+          <Grid item xs={12} md={5}>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "normal",
+                letterSpacing: "0.32px",
+                textTransform: "uppercase",
+                color: "white",
+                paddingBottom: 2,
+              }}
+            >
+              Goal & Objectives
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "36px",
+                color: "white",
+              }}
+            >
+              This proposal advances the creation of a new nursing institution
+              to support KP-Health Foundation’s mandate of promoting the
+              development of innovative healthcare delivery model of
+              public-private partnership to impart clinical skills of the
+              students for improved healthcare delivery services in the
+              province.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={5}>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "24px",
+                color: "white",
+                paddingTop: 5,
+                paddingBottom: 3,
+              }}
+            >
+              Objectives of the establishment of the Khubaib Institute of
+              Medical Sciences and Nursing are:
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "24px",
+                color: "white",
+                paddingBottom: 3,
+              }}
+            >
+              <ul>
+                <li>
+                  To prepare a highly qualified, skilled and knowledgeable
+                  healthcare workforce.
+                </li>
+                <li>
+                  To create a competitive academic environment providing a
+                  platform for hands-on technical experience and learning.
+                </li>
+                <li>
+                  To reduce the burden of the public sector in providing
+                  improved healthcare delivery services in the province
+                </li>
+                <li>
+                  To ensure efficient use of human, physical, and financial
+                  resources.
+                </li>
+              </ul>
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "40px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "normal",
+                letterSpacing: "0.8px",
+                color: "white",
+                textAlign: "center",
+                paddingTop: 5,
+                paddingBottom: 3,
+              }}
+            >
+              Why KIMS & KIN?
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "32px",
+                color: "white",
+                textAlign: "center",
+                paddingBottom: 3,
+              }}
+            >
+              Degree and diploma programs offered at KIMS & KIN will prepare you
+              for a successful career in Nursing, paramedics and allied health
+              sciences. We offer a list of highly in-demand programs that will
+              open a world of opportunities to our students and scholars. We aim
+              to be globally respected in healthcare education and training at
+              KIMS and KIN. This opens doors for our graduates to lead in
+              healthcare organizations and schools, both locally and
+              internationally. We believe in providing quality education and
+              research through induction of high-quality faculty and providing
+              dynamic learning environment. We maintain partnerships and
+              collaborations with world-renowned institutions and organizations
+              to provide international exposure and research facilities to our
+              students to equip them with world-class educational degrees and
+              diploma programs.
+            </Typography>
+          </Grid>
+        </Grid>
+                <Grid
+          sx={{
+            justifyContent: "center",
+            padding: { xs: "48px 32px", md: "120px 80px" },
+            gap: { xs: 2, md: 10 },
+            backgroundColor: "rgba(187, 49, 49, 0.9)",
+            minHeight: "500px",
+            "&::before": {
+              backgroundImage:
+                'url(/assets/img/about-us/chairman-msg-bg.png)',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              // opacity: 0.2, // Set the opacity of the image
+            },
+          }}
+          container
+        >
+          <Grid item xs={12} md={5}>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "normal",
+                letterSpacing: "0.32px",
+                textTransform: "uppercase",
+                color: "white",
+                paddingBottom: 2,
+              }}
+            >
+              CHAIRMAN’S MESSAGE
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "24px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "36px",
+                color: "white",
+              }}
+            >
+              NADEEM AHMED KHAN
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={5}>
+            <Typography
+              sx={{
+                fontFamily: "Dax",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: 400,
+                lineHeight: "24px",
+                color: "white",
+                paddingTop: 5,
+                paddingBottom: 3,
+              }}
+            >
+               Welcome to Khubaib Institute of Medical Sciences and Nursing,
+              Haripur! Exciting news: Chairman announces new degree and diploma
+              programs in Paramedics, Allied Health Sciences, and Nursing. Our
+              institute prioritizes excellence, blending academic rigor with
+              practical experience. Join us to become knowledgeable,
+              compassionate, and ethically grounded healthcare professionals.
+              Visit our campus to experience our values and traditions. Khubaib
+              Institute is committed to your personal growth, knowledge-seeking,
+              and success in healthcare education and research.
             </Typography>
           </Grid>
         </Grid>
