@@ -11,12 +11,12 @@ export default function Footer1() {
                 <div className="footer-widget">
                   <div className="footer__about">
                     <p>
-                      The Mission of Khubaib  Institute of Medical Sciences and
+                      The Mission of Khubaib Institute of Medical Sciences and
                       Nursing is to demonstrate excellence in Paramedics and
                       Nursing education and training through leading-edge and
                       multi-disciplinary teaching and practice with significant
-                      implications for improved patient care and
-                      health outcomes.
+                      implications for improved patient care and health
+                      outcomes.
                     </p>
                     <div className="footer__logo logo">
                       <Link href="/">
@@ -81,49 +81,49 @@ export default function Footer1() {
                   <h4 className="fw-title uppercase">Quick links</h4>
                   <ul className="list-wrap uppercase">
                     <li>
-                      <Link href="/courses">Home</Link>
+                      <Link href="#">Home</Link>
                     </li>
                     <li>
-                      <Link href="/courses">About us</Link>
+                      <Link href="#">About us</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Academics</Link>
+                      <Link href="#">Academics</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Chairman's Message</Link>
+                      <Link href="#">Chairman's Message</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Director’s Message</Link>
+                      <Link href="#">Director's Message</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Faculty</Link>
+                      <Link href="#">Faculty</Link>
                     </li>
                     <li>
-                      <Link href="/courses">facilities</Link>
+                      <Link href="#">facilities</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Fee Structure</Link>
+                      <Link href="#">Fee Structure</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Scholarships</Link>
+                      <Link href="#">Scholarships</Link>
                     </li>
                     <li>
-                      <Link href="/courses">News and Updates</Link>
+                      <Link href="#">News and Updates</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Hostel & Mess Facilities</Link>
+                      <Link href="#">Hostel & Mess Facilities</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Sports Facilities</Link>
+                      <Link href="#">Sports Facilities</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Training Facilities</Link>
+                      <Link href="#">Training Facilities</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Contact us</Link>
+                      <Link href="#">Contact us</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Downloads</Link>
+                      <Link href="#">Downloads</Link>
                     </li>
                   </ul>
                 </div>

@@ -1,7 +1,8 @@
-import CounterUp from "@/components/elements/CounterUp";
-import { Card, Typography, Grid, Stack, Box } from "@mui/material";
+import { Card, Typography, Grid, Box } from "@mui/material";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+import Image from "next/image";
+
 export default function AboutUs() {
   return (
     <>
@@ -456,7 +457,7 @@ export default function AboutUs() {
               }}
             >
               This proposal advances the creation of a new nursing institution
-              to support KP-Health Foundation’s mandate of promoting the
+              to support KP-Health Foundation's mandate of promoting the
               development of innovative healthcare delivery model of
               public-private partnership to impart clinical skills of the
               students for improved healthcare delivery services in the
@@ -614,7 +615,7 @@ export default function AboutUs() {
                 paddingBottom: 3,
               }}
             >
-               Welcome to Khubaib Institute of Medical Sciences and Nursing,
+              Welcome to Khubaib Institute of Medical Sciences and Nursing,
               Haripur! Exciting news: Chairman announces new degree and diploma
               programs in Paramedics, Allied Health Sciences, and Nursing. Our
               institute prioritizes excellence, blending academic rigor with
@@ -675,7 +676,7 @@ export default function AboutUs() {
           >
             The Prophetic saying, “If anyone carries out medical treatment, yet
             previously he was not known as a medical man, then he takes the
-            responsibility”, as well as the theologians’ opinion that medical
+            responsibility”, as well as the theologians' opinion that medical
             knowledge was not only among the praiseworthy sciences but also a
             community obligation, as it is necessary for the life of the body,
             were factors which acted as an inspiration to learning medicine and
@@ -1287,10 +1288,10 @@ export default function AboutUs() {
           </section>
         </div> */}
         <section className="-mt-[50px]">
-          <div className="container relative -bottom-40 bg-gradient-to-r from-blue-900 to-blue-500 rounded-3xl">
-            <img
+          <div className="container relative -bottom-40 rounded-3xl">
+            <Image
               sizes="25vw"
-              src="/assets/img/about-us/brochure.png"
+              src="/assets/img/home/brochure.png"
               width={50}
               height={50}
               style={{
@@ -1300,18 +1301,20 @@ export default function AboutUs() {
               }}
               className="rounded-3xl"
             />
-            <div className="absolute top-20 left-10 uppercase text-black">
-              <div className="w-1/2 flex flex-col relative">
+            <div className="absolute top-20 left-40 uppercase text-white">
+              <div className="w-2/5 flex flex-col relative">
                 <span>Download our brochure</span>
-                <span className="text-3xl font-extrabold">
+                <span className="text-3xl font-extrabold mb-4">
                   Ready to explore our full suite of academic & Guide solutions?
                 </span>
-                <button className="py-2 px-4 border-slate-800 border-2 font-semibold rounded-full shadow-md hover:bg-red-800">
-                  <Link href="/courses">
-                    <span className="mr-3">Download Our Brochure</span>
-                    <i class="zmdi zmdi-download" />
-                  </Link>
-                </button>
+                <span>
+                  <button className="mt-4 py-2 px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                    <Link href="#" className="text-white">
+                      <span className="mr-3">Download Our Brochure</span>
+                      <i class="zmdi zmdi-download" />
+                    </Link>
+                  </button>
+                </span>
               </div>
             </div>
           </div>
