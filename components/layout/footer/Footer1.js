@@ -11,12 +11,12 @@ export default function Footer1() {
                 <div className="footer-widget">
                   <div className="footer__about">
                     <p>
-                      The Mission of Khubaib  Institute of Medical Sciences and
+                      The Mission of Khubaib Institute of Medical Sciences and
                       Nursing is to demonstrate excellence in Paramedics and
                       Nursing education and training through leading-edge and
                       multi-disciplinary teaching and practice with significant
-                      implications for improved patient care and
-                      health outcomes.
+                      implications for improved patient care and health
+                      outcomes.
                     </p>
                     <div className="footer__logo logo">
                       <Link href="/">
@@ -93,7 +93,7 @@ export default function Footer1() {
                       <Link href="/courses">Chairman's Message</Link>
                     </li>
                     <li>
-                      <Link href="/courses">Director’s Message</Link>
+                      <Link href="/courses">Director's Message</Link>
                     </li>
                     <li>
                       <Link href="/courses">Faculty</Link>
