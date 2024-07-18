@@ -289,6 +289,136 @@ export default function AboutUs() {
             />
           </Grid>
         </Grid>
+        <Box sx={{ padding: { xs: "40px 32px", md: "40px 120px" } }}>
+          <Typography
+            sx={{
+              fontFamily: "Dax",
+              fontSize: "40px",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "normal",
+              letterSpacing: "0.8px",
+              textTransform: "uppercase",
+              textAlign: "center",
+              color: "#1C3E68",
+              paddingBottom: "20px",
+            }}
+          >
+            Goal & Objectives
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Dax",
+              fontSize: "16px",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "24px",
+              textAlign: "center",
+            }}
+          >
+            This proposal aims to establish a nursing institution aligned with
+            KP-Health Foundation's vision for an innovative healthcare model.
+            Our goal is to prepare a highly qualified workforce, enhancing
+            clinical proficiency for superior healthcare services in the
+            province.
+          </Typography>
+        </Box>
+        <Grid container sx={{ justifyContent: "center", gap: "20px" }}>
+          <Grid item xs={12} md={5}>
+            <Card
+              data-background="/assets/img/about-us/vision.png"
+              sx={{
+                paddingX: "65px",
+                minWidth: { xs: "90vw", md: "630px" },
+                height: "auto",
+                minHeight: "400px",
+                borderRadius: "50px",
+                backgroundSize: "cover",
+                position: "relative",
+              }}
+            >
+              <Box sx={{ position: "absolute", bottom: "65px", left: "65px" }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Dax",
+                    fontSize: "40px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "normal",
+                    textTransform: "uppercase",
+                    color: "white",
+                    paddingBottom: 1,
+                  }}
+                >
+                  vision
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Dax",
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "24px" /* 150% */,
+                    color: "white",
+                  }}
+                >
+                  At Khubaib Institute of Medical Sciences and Nursing, our
+                  vision is to be a leading force in paramedical education and
+                  practice nationally and globally. Strive for excellence in
+                  healthcare training, commit to quality education and global
+                  recognition.
+                </Typography>
+              </Box>
+            </Card>
+          </Grid>
+          <Grid item xs={12} md={5}>
+            <Card
+              data-background="/assets/img/about-us/mission.png"
+              sx={{
+                paddingX: "65px",
+                minWidth: { xs: "90vw", md: "630px" },
+                height: "auto",
+                minHeight: "400px",
+                borderRadius: "50px",
+                backgroundSize: "cover",
+                position: "relative",
+              }}
+            >
+              <Box sx={{ position: "absolute", bottom: "65px", left: "65px" }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Dax",
+                    fontSize: "40px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "normal",
+                    textTransform: "uppercase",
+                    color: "white",
+                    paddingBottom: 1,
+                  }}
+                >
+                  mission
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Dax",
+                    fontSize: "16px",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    lineHeight: "24px" /* 150% */,
+                    color: "white",
+                  }}
+                >
+                  The mission of the institutions is to achieve excellence in
+                  Paramedics and Nursing education and training, conducting
+                  innovative, multi-disciplinary teaching and practice with
+                  significant impact on enhanced patient care and health
+                  outcomes.
+                </Typography>
+              </Box>
+            </Card>
+          </Grid>
+        </Grid>
         <Grid
           data-background="/assets/img/bg/Vector.png"
           sx={{
@@ -426,7 +556,7 @@ export default function AboutUs() {
             </Typography>
           </Grid>
         </Grid>
-                <Grid
+        <Grid
           sx={{
             justifyContent: "center",
             padding: { xs: "48px 32px", md: "120px 80px" },
@@ -434,8 +564,7 @@ export default function AboutUs() {
             backgroundColor: "rgba(187, 49, 49, 0.9)",
             minHeight: "500px",
             "&::before": {
-              backgroundImage:
-                'url(/assets/img/about-us/chairman-msg-bg.png)',
+              backgroundImage: "url(/assets/img/about-us/chairman-msg-bg.png)",
               backgroundSize: "cover",
               backgroundPosition: "center",
               // opacity: 0.2, // Set the opacity of the image
@@ -497,7 +626,69 @@ export default function AboutUs() {
             </Typography>
           </Grid>
         </Grid>
-        <div>
+        <section
+          className="banner-area banner-bg"
+          data-background="/assets/img/about-us/graduation.png"
+        />
+        <Box sx={{ padding: { xs: "40px 32px", md: "80px" } }}>
+          <Typography
+            sx={{
+              fontFamily: "Dax",
+              fontSize: "24px",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "normal",
+              letterSpacing: "0.48px",
+              textTransform: "uppercase",
+              textAlign: "center",
+              color: "#BB3131",
+              paddingBottom: "10px",
+            }}
+          >
+            Introduction
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Dax",
+              fontSize: "40px",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "normal",
+              letterSpacing: "0.8px",
+              textTransform: "uppercase",
+              textAlign: "center",
+              color: "#1C3E68",
+              paddingBottom: "20px",
+            }}
+          >
+            Our Philosophy
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Dax",
+              fontSize: "16px",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "24px",
+              textAlign: "center",
+            }}
+          >
+            The Prophetic saying, “If anyone carries out medical treatment, yet
+            previously he was not known as a medical man, then he takes the
+            responsibility”, as well as the theologians’ opinion that medical
+            knowledge was not only among the praiseworthy sciences but also a
+            community obligation, as it is necessary for the life of the body,
+            were factors which acted as an inspiration to learning medicine and
+            to endeavor to excel in its practice. So, both the abundance of
+            translated ancient medical books, which became available to people
+            and the saying of the eminent physician Abū Bakr Muḥammad ibn
+            Zakariyyā al-Rāzī (Rhazes, 865–925) that: “He who studies the work
+            of the Ancients gains the experience of their labor, it is as if he
+            himself had lived a thousand years spent on the investigation”, gave
+            a great boost for more people to study and practice medicine.
+          </Typography>
+        </Box>
+        {/* <div>
           <section className="about-area-two">
             <div className="container">
               <div className="row justify-content-center">
@@ -1094,7 +1285,37 @@ export default function AboutUs() {
               />
             </div>
           </section>
-        </div>
+        </div> */}
+        <section className="-mt-[50px]">
+          <div className="container relative -bottom-40 bg-gradient-to-r from-blue-900 to-blue-500 rounded-3xl">
+            <img
+              sizes="25vw"
+              src="/assets/img/about-us/brochure.png"
+              width={50}
+              height={50}
+              style={{
+                width: "100%",
+                height: "50vh",
+                objectFit: "cover",
+              }}
+              className="rounded-3xl"
+            />
+            <div className="absolute top-20 left-10 uppercase text-black">
+              <div className="w-1/2 flex flex-col relative">
+                <span>Download our brochure</span>
+                <span className="text-3xl font-extrabold">
+                  Ready to explore our full suite of academic & Guide solutions?
+                </span>
+                <button className="py-2 px-4 border-slate-800 border-2 font-semibold rounded-full shadow-md hover:bg-red-800">
+                  <Link href="/courses">
+                    <span className="mr-3">Download Our Brochure</span>
+                    <i class="zmdi zmdi-download" />
+                  </Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </Layout>
     </>
   );
