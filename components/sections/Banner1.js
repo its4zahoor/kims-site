@@ -21,7 +21,7 @@ export default function Banner1() {
             Education and Research"
           </div>
           <button className="py-2 px-4 border-2 font-semibold rounded-full shadow-md hover:bg-red-800 hover:ring-opacity-50 focus:outline-none">
-            <Link href="/courses" className="text-white">
+            <Link href="#" className="text-white">
               <span className="mr-3">Discover More</span>
               <i class="zmdi zmdi-arrow-right-top" />
             </Link>
@@ -91,74 +91,82 @@ export default function Banner1() {
             </div>
           </div>
         </section>
-        <section className="flex mt-[200px]">
-          <div className="w-1/3 pl-[100px]">
-            <h1 className="text-black uppercase font-bold">Our Latest</h1>
-            <h5 className="text-black text-lg my-2">
-              Discover the latest in our blogs, news, and events for a dose of
-              inspiration and information.
-            </h5>
-            <button className="mt-3 py-2 px-4 border-green-600 text-inherit border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
-              <Link href="/courses">
-                <span className="mr-3">Discover More</span>
-                <i class="zmdi zmdi-arrow-right-top" />
-              </Link>
-            </button>
-            <div>Blogs</div>
-            <div>News & Events</div>
-          </div>
-          <div>
-            <div className="relative">
-              <Image
-                sizes="25vw"
-                src="/assets/img/home/delegation_medical.png"
-                width={50}
-                height={500}
-                style={{
-                  width: "30vw",
-                  height: "70vh",
-                  objectFit: "cover",
-                }}
-              />
-              <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
-                Medical Delegation
-              </span>
+        <section className="bg-offwhite-kims">
+          <div className="flex mt-[200px]">
+            <div className="w-1/3">
+              <div className="ml-[100px]">
+                <h1 className="text-black uppercase font-bold">Our Latest</h1>
+                <h5 className="text-black text-lg my-2">
+                  Discover the latest in our blogs, news, and events for a dose
+                  of inspiration and information.
+                </h5>
+                <button className="my-3 py-2 px-4 border-green-600 text-inherit border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                  <Link href="#">
+                    <span className="mr-3">Discover More</span>
+                    <i class="zmdi zmdi-arrow-right-top" />
+                  </Link>
+                </button>
+              </div>
+              <div className="border-1 py-4 bg-white font-bold">
+                <div className="ml-[100px]">Blogs</div>
+              </div>
+              <div className="border-1 py-4 bg-white font-bold">
+                <div className="ml-[100px]">News & Events</div>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className="relative">
-              <Image
-                sizes="25vw"
-                src="/assets/img/home/sports_football.png"
-                width={50}
-                height={50}
-                style={{
-                  width: "30vw",
-                  height: "70vh",
-                  objectFit: "cover",
-                }}
-              />
-              <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
-                Sports football
-              </span>
+            <div>
+              <div className="relative">
+                <Image
+                  sizes="25vw"
+                  src="/assets/img/home/delegation_medical.png"
+                  width={50}
+                  height={500}
+                  style={{
+                    width: "30vw",
+                    height: "70vh",
+                    objectFit: "cover",
+                  }}
+                />
+                <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                  Medical Delegation
+                </span>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className="relative">
-              <Image
-                sizes="25vw"
-                src="/assets/img/home/sports_taekwondo.png"
-                width={50}
-                height={50}
-                style={{
-                  width: "30vw",
-                  height: "70vh",
-                  objectFit: "cover",
-                }}
-              />
-              <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
-                Sport Taekwondo
-              </span>
+            <div>
+              <div className="relative">
+                <Image
+                  sizes="25vw"
+                  src="/assets/img/home/sports_football.png"
+                  width={50}
+                  height={50}
+                  style={{
+                    width: "30vw",
+                    height: "70vh",
+                    objectFit: "cover",
+                  }}
+                />
+                <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                  Sports football
+                </span>
+              </div>
+            </div>
+            <div>
+              <div className="relative">
+                <Image
+                  sizes="25vw"
+                  src="/assets/img/home/sports_taekwondo.png"
+                  width={50}
+                  height={50}
+                  style={{
+                    width: "30vw",
+                    height: "70vh",
+                    objectFit: "cover",
+                  }}
+                />
+                <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
+                  Sport Taekwondo
+                </span>
+              </div>
             </div>
           </div>
         </section>
@@ -183,7 +191,7 @@ export default function Banner1() {
                 practical knowledge.
               </div>
               <button className="mt-4 py-2 px-4 border-2 font-semibold rounded-full shadow-md hover:bg-red-800 hover:ring-opacity-50 focus:outline-none">
-                <Link href="/courses" className="text-white">
+                <Link href="#" className="text-white">
                   <span className="mr-3">Discover More</span>
                   <i class="zmdi zmdi-arrow-right-top" />
                 </Link>
@@ -269,18 +277,20 @@ export default function Banner1() {
               }}
               className="rounded-3xl"
             />
-            <div className="absolute top-20 left-10 uppercase text-black">
-              <div className="w-1/2 flex flex-col relative">
+            <div className="absolute top-20 left-40 uppercase text-white">
+              <div className="w-2/5 flex flex-col relative">
                 <span>Download our brochure</span>
-                <span className="text-3xl font-extrabold">
+                <span className="text-3xl font-extrabold mb-4">
                   Ready to explore our full suite of academic & Guide solutions?
                 </span>
-                <button className="py-2 px-4 border-slate-800 border-2 font-semibold rounded-full shadow-md hover:bg-red-800">
-                  <Link href="/courses">
-                    <span className="mr-3">Download Our Brochure</span>
-                    <i class="zmdi zmdi-download" />
-                  </Link>
-                </button>
+                <span>
+                  <button className="mt-4 py-2 px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                    <Link href="#" className="text-white">
+                      <span className="mr-3">Download Our Brochure</span>
+                      <i class="zmdi zmdi-download" />
+                    </Link>
+                  </button>
+                </span>
               </div>
             </div>
           </div>

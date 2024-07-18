@@ -14,6 +14,9 @@ module.exports = {
         blue: {
           kims: "#274474",
         },
+        offwhite: {
+          kims: "#F3F3F3",
+        },
       },
     },
   },
