@@ -198,7 +198,7 @@ export default function Banner1() {
               width={1}
               height={1}
               sizes="25vw"
-              src="/assets/img/home/library.png"
+              src="/assets/img/about-us/library.png"
               style={{
                 width: "100%",
                 height: "auto",
@@ -215,7 +215,7 @@ export default function Banner1() {
             />
           </div>
           <div className="w-1/4 relative">
-            <Image fill sizes="25vw" src="/assets/img/home/labs.png" />
+            <Image fill sizes="25vw" src="/assets/img/about-us/labs.png" />
             <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
               labs
             </span>
@@ -227,7 +227,7 @@ export default function Banner1() {
             />
           </div>
           <div className="w-1/4 relative">
-            <Image fill sizes="25vw" src="/assets/img/home/sports.png" />
+            <Image fill sizes="25vw" src="/assets/img/about-us/sports.png" />
             <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
               sports
             </span>
@@ -239,7 +239,11 @@ export default function Banner1() {
             />
           </div>
           <div className="w-1/4 relative">
-            <Image fill sizes="25vw" src="/assets/img/home/facilities.png" />
+            <Image
+              fill
+              sizes="25vw"
+              src="/assets/img/about-us/facilities.png"
+            />
             <span className="absolute bottom-5 left-10 uppercase text-white text-3xl font-extrabold">
               facilities
             </span>
@@ -252,10 +256,10 @@ export default function Banner1() {
           </div>
         </section>
         <section className="-mt-[50px]">
-          <div className="container relative -bottom-40 bg-gradient-to-r from-blue-900 to-blue-500 rounded-3xl">
+          <div className="container relative -bottom-40 rounded-3xl">
             <Image
               sizes="25vw"
-              src="/assets/img/home/brochure.jpeg"
+              src="/assets/img/home/brochure.png"
               width={50}
               height={50}
               style={{
