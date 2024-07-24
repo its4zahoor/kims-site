@@ -64,7 +64,7 @@ export default function Scholarship() {
           </Card>
         </section>
         <Grid
-          data-background="/assets/img/scholarship-scholarship-program-bg.png"
+          data-background="/assets/img/scholarship/scholarship-program-bg.png"
           sx={{
             justifyContent: "center",
             padding: { xs: "48px 32px", md: "120px 80px" },
