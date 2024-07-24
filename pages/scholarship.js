@@ -11,7 +11,6 @@ export default function Scholarship() {
         <section
           className="banner-area banner-bg"
           data-background="/assets/img/bg/scholarship-banner.png"
-          style={{ height: "820px" }}
         >
           <Card
             sx={{
@@ -24,7 +23,7 @@ export default function Scholarship() {
               borderRadius: "24px",
               padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
               padding: 5,
-              marginX: "auto",
+              marginX: { xs: "32px", md: "auto" },
             }}
           >
             {/* TODO: create theme file for mui and define theme */}
