@@ -12,6 +12,7 @@ export default function AboutUs() {
           data-background="/assets/img/bg/about-us-banner.png"
         >
           <Card
+            className="banner-child"
             sx={{
               width: "90vw",
               display: "flex",
@@ -21,8 +22,7 @@ export default function AboutUs() {
               backgroundColor: "#BB3131",
               borderRadius: "24px",
               padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
-              padding: 5,
-              marginX: "auto",
+              marginX: { xs: "32px", md: "auto" },
             }}
           >
             {/* TODO: create theme file for mui and define theme */}

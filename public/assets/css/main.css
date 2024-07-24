@@ -2248,13 +2248,22 @@ textarea {
   align-items: flex-end;
   padding: 163px 0 0;
   position: relative;
-  object-fit: cover; 
+  object-fit: cover;
   @media (max-width: 1440px) {
     height: 820px;
   }
   @media (min-width: 1440px) {
     background-size: cover;
     aspect-ratio: 1.76;
+  }
+}
+
+.banner-child {
+  @media (min-width: 1800px) {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
