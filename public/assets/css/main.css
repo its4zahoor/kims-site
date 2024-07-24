@@ -2248,7 +2248,14 @@ textarea {
   align-items: flex-end;
   padding: 163px 0 0;
   position: relative;
-  background-size: cover;
+  object-fit: cover; 
+  @media (max-width: 1440px) {
+    height: 820px;
+  }
+  @media (min-width: 1440px) {
+    background-size: cover;
+    aspect-ratio: 1.76;
+  }
 }
 
 @media (max-width: 1500px) {
