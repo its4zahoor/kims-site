@@ -26,6 +26,7 @@ export default function DataGrid({ columns, rows, sx }) {
           fontWeight: 400,
           lineHeight: "32px",
           padding: "20px",
+          minHeight: "72px",
         },
         "& .MuiDataGrid-cell": {
           backgroundColor: "#FFFFFF",
