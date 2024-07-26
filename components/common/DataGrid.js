@@ -1,6 +1,6 @@
 import { DataGrid as MuiDataGrid } from "@mui/x-data-grid";
 
-export default function DataGrid({ columns, rows, sx }) {
+export default function DataGrid({ columns, rows, sx, headerCellStyle = {} }) {
   return (
     <MuiDataGrid
       hideFooter
@@ -27,6 +27,7 @@ export default function DataGrid({ columns, rows, sx }) {
           lineHeight: "32px",
           padding: "20px",
           minHeight: "72px",
+          ...headerCellStyle,
         },
         "& .MuiDataGrid-cell": {
           backgroundColor: "#FFFFFF",
