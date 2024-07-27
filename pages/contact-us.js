@@ -19,9 +19,18 @@ export default function Contact() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
-        <section
+        <Box
           className="banner-area banner-bg"
-          data-background="/assets/img/bg/contact-us-banner.png"
+          sx={{
+            backgroundImage: {
+              xs: "url('/assets/img/bg/contact-us-banner-mobile.png')",
+              sm: "url('/assets/img/bg/contact-us-banner.png')",
+            },
+            paddingTop: { xs: "400px", sm: "500px" },
+            backgroundSize: { xs: "contain", sm: "cover" },
+            backgroundRepeat: "no-repeat",
+            backgroundColor: "#274474",
+          }}
         >
           <Card
             className="banner-child"
@@ -325,7 +334,7 @@ export default function Contact() {
               </Grid>
             </Grid>
           </Card>
-        </section>
+        </Box>
         <Box
           data-background="/assets/img/bg/Vector.png"
           sx={{
