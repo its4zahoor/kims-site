@@ -168,7 +168,6 @@ export const SelectField = ({
         value={value}
         onChange={(e) => {
           const value = e.target.value;
-          console.log("TestL", value);
           setValue(value);
           !touched && setTouched(true);
           props.onChange?.(value);
@@ -289,7 +288,6 @@ export const FileField = ({ name, fileType, helperText, label }) => {
           name={`${name}-img___`}
           onChange={(e) => {
             const image = e.currentTarget?.files?.[0] || null;
-            console.log("IMage:", image);
             setValue(image);
             setTimeout(validateForm, 0);
           }}

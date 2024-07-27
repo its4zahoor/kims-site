@@ -17,7 +17,8 @@ const AddIcon = (props) => (
     <path
       fill="#101010"
       d="M21.472 12.62H12.12v10.304H9.824V12.62H.528v-2.296h9.296V.076h2.296v10.248h9.352v2.296Z"
-      opacity={0.25}a
+      opacity={0.25}
+      a
     />
   </svg>
 );
@@ -63,22 +64,19 @@ const DegreeFields = ({ name, required, isCertification }) => {
     </div>
   );
 };
-const ACADEMIC_FIELDS = ["degrees","certifications"];
+const ACADEMIC_FIELDS = ["degrees", "certifications"];
 const AcademicInfoForm = ({ onNext }) => {
   const { errors, values, setFieldValue } = useFormikContext();
-  const formValid = useMemo(()=>ACADEMIC_FIELDS.every(key=>!errors[key]),[errors]);
-console.log("Errs:",{errors})
+  const formValid = useMemo(
+    () => ACADEMIC_FIELDS.every((key) => !errors[key]),
+    [errors]
+  );
   return (
     <div>
       <h1 className="uppercase text-[#1C3E68] my-2">Academic Records</h1>
       <div className="grid grid-cols-1 gap-[16px]">
         {values?.degrees?.map((degree, idx) => {
-          return (
-            <DegreeFields
-              name={`degrees[${idx}]`}
-              required={idx === 0}
-            />
-          );
+          return <DegreeFields name={`degrees[${idx}]`} required={idx === 0} />;
         })}
         <AddButton
           onClick={() => {
@@ -96,10 +94,7 @@ console.log("Errs:",{errors})
         />
         {values?.certifications?.map((d, idx) => {
           return (
-            <DegreeFields
-              name={`certifications[${idx}]`}
-              isCertification
-            />
+            <DegreeFields name={`certifications[${idx}]`} isCertification />
           );
         })}
         <AddButton

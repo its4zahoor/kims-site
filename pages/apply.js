@@ -15,7 +15,6 @@ import Link from "next/link";
 import { useState } from "react";
 const getErrorMessages = (errors) => Object.values(errors).join("\n");
 export default function FeeStructure({ data }) {
-  console.log("Data:", data);
   const [state, setState] = useState({ submitted: false, errorMessage: "" });
   const formikProps = useFormik({
     initialValues: {
@@ -37,7 +36,6 @@ export default function FeeStructure({ data }) {
       })
         .then((res) => res.json())
         .then((res) => {
-          console.log("Success:", res);
           if (res.success) {
             setState((st) => ({ ...st, submitted: true, errorMessage: "" }));
           } else if (res.errors) {
@@ -55,7 +53,6 @@ export default function FeeStructure({ data }) {
           }
         })
         .catch((err) => {
-          console.log("Err:", err);
           setState((st) => ({
             ...st,
             submitted: false,
@@ -134,7 +131,6 @@ export default function FeeStructure({ data }) {
                 <div className=" md:w-[60vw] mx-auto">
                   <Stepper
                     onClick={(a) => {
-                      console.log("Clicked:", a, a.target.dataset.step);
                       const step = a.target.dataset.step - 1;
                       if (step < formikProps.values.activeStep) {
                         formikProps.setFieldValue("activeStep", step);

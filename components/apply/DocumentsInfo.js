@@ -9,28 +9,28 @@ import { useFormikContext } from "formik";
 import { Typography } from "@mui/material";
 
 const DocumentsInfoForm = ({ onNext }) => {
-  const {isValid,dirty,errors } = useFormikContext();
-  const formValid = isValid&&dirty;
-  console.log("Errs:",{errors})
+  const { isValid, dirty, errors } = useFormikContext();
+  const formValid = isValid && dirty;
   return (
     <div>
       <h1 className="uppercase text-[#1C3E68] my-2">Upload Documents</h1>
       <div className="grid grid-cols-1 gap-[16px]">
-          <FileField
-            name="documentFile"
-            label={"File Upload*"}
-            helperText={
-              "Upload All Your Academic Record In single archive file (less then 10kbs)."
-            }
-          />
-          <div>
-            <Typography fontWeight={"bold"} variant="body1">
-              Note for Medical Program:
-            </Typography>
-            <Typography variant="body1">
-            For Medical Sciences Programs pay fee at Bank of Khyber Account no. PK33KHYB0309002009017577
-            </Typography>
-          </div>
+        <FileField
+          name="documentFile"
+          label={"File Upload*"}
+          helperText={
+            "Upload All Your Academic Record In single archive file (less then 10kbs)."
+          }
+        />
+        <div>
+          <Typography fontWeight={"bold"} variant="body1">
+            Note for Medical Program:
+          </Typography>
+          <Typography variant="body1">
+            For Medical Sciences Programs pay fee at Bank of Khyber Account no.
+            PK33KHYB0309002009017577
+          </Typography>
+        </div>
       </div>
       <div className="flex items-center justify-center w-full mt-6">
         <button

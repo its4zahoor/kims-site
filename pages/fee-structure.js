@@ -38,7 +38,6 @@ export default function FeeStructure({ data }) {
       })),
     };
   }, [data]);
-  console.log("Fata:", data, degreePrograms, diplomaPrograms);
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
