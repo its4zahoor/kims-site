@@ -368,27 +368,27 @@ export default function Contact() {
               }}
             >
               <TextField
-                placeholder="Full Name"
+                placeholder="Full Name*"
                 {...register("name", { required: "Name is required" })}
                 error={!!errors.name}
                 helperText={errors.name ? errors.name.message : ""}
               />
               <TextField
-                placeholder="Email Address"
+                placeholder="Email Address*"
                 type="email"
                 {...register("email", { required: "Email is required" })}
                 error={!!errors.email}
                 helperText={errors.email ? errors.email.message : ""}
               />
               <TextField
-                placeholder="Phone Number"
+                placeholder="Phone Number*"
                 type="tel"
                 {...register("phone", { required: "Phone number is required" })}
                 error={!!errors.phone}
                 helperText={errors.phone ? errors.phone.message : ""}
               />
               <TextField
-                placeholder="Comment or Message"
+                placeholder="Comment or Message*"
                 multiline
                 rows={5}
                 {...register("message", { required: "Message is required" })}
@@ -410,7 +410,10 @@ export default function Contact() {
                   textTransform: "uppercase",
                   padding: "12px 20px",
                   borderRadius: "50px",
-                  "&:hover": {},
+                  "&:hover": {
+                    backgroundColor: "#03683C",
+                    color: "#FFF",
+                  },
                 }}
               >
                 Submit
