@@ -52,6 +52,7 @@ export default function Admission() {
                 fontWeight: 400,
                 lineHeight: { xs: "32px", sm: "24px" },
                 color: "white",
+                maxWidth: "90%",
               }}
             >
               Khubaib Institute of Medical Sciences and Nursing is a registered
@@ -116,13 +117,13 @@ export default function Admission() {
             <Typography
               sx={{
                 fontFamily: "Dax",
-                fontSize: "16px",
+                fontSize: "20px",
                 fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "24px",
+                lineHeight: "32px",
                 color: "white",
                 paddingTop: 5,
-                paddingBottom: 3,
+                paddingBottom: 4,
               }}
             >
               If you have any questions about the application or encounter any

@@ -1,4 +1,4 @@
-import { Card, Typography, Stack, Grid, Button, Box } from "@mui/material";
+import { Typography, Stack, Grid } from "@mui/material";
 import DiscoverMoreButton from "./DiscoverMoreButton";
 import ProgramCard from "./ProgramCard";
 
@@ -16,7 +16,6 @@ export default function ProgramOffered() {
         }}
       >
         <Typography
-          variant="h4"
           sx={{
             textAlign: "center",
             fontFamily: "Dax",
@@ -25,7 +24,7 @@ export default function ProgramOffered() {
             fontWeight: 400,
             lineHeight: "normal",
             textTransform: "uppercase",
-            letterSpacing: "0.64px",
+            letterSpacing: { xs: "0.64", sm: "0.8px" },
             color: "white",
             paddingBottom: "10px",
           }}
@@ -55,102 +54,76 @@ export default function ProgramOffered() {
         sx={{
           justifyContent: "center",
           alignItems: "center",
-          paddingY: "50px",
+          paddingTop: "50px",
+          paddingBottom: "80px",
+          gap: "20px",
         }}
       >
         <Grid
           sx={{
             width: { xs: "300px", sm: "350px" },
-            height: "450px",
+            height: "400px",
             padding: "20px",
+            textAlign: "center",
           }}
           item
         >
-          <Box
-            sx={{
-              position: "relative",
-              textAlign: "center",
-              marginTop: "20px",
-            }}
-          >
-            <DiscoverMoreButton href="/medical-programs" />
-            <ProgramCard
-              title="Medical Diploma Programs"
-              description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
-              src="/assets/img/admission/medical-diploma-program.png"
-            />
-          </Box>
+          <DiscoverMoreButton href="/medical-programs" />
+          <ProgramCard
+            title="Medical Diploma Programs"
+            description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
+            src="/assets/img/admission/medical-diploma-program.png"
+          />
         </Grid>
         <Grid
           sx={{
             width: { xs: "300px", sm: "350px" },
-            height: "450px",
+            height: "400px",
             padding: "20px",
+            textAlign: "center",
           }}
           item
         >
-          <Box
-            sx={{
-              position: "relative",
-              textAlign: "center",
-              marginBottom: "20px",
-            }}
-          >
-            <ProgramCard
-              title="Medical Degree Programs"
-              description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
-              src="/assets/img/admission/medical-degree-program.png"
-              order="dec"
-            />
-            <DiscoverMoreButton href="/medical-programs" position="bottom" />
-          </Box>
+          <ProgramCard
+            title="Medical Degree Programs"
+            description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
+            src="/assets/img/admission/medical-degree-program.png"
+            order="dec"
+          />
+          <DiscoverMoreButton href="/medical-programs" position="bottom" />
         </Grid>
         <Grid
           sx={{
             width: { xs: "300px", sm: "350px" },
-            height: "450px",
+            height: "400px",
             padding: "20px",
+            textAlign: "center",
           }}
           item
         >
-          <Box
-            sx={{
-              position: "relative",
-              textAlign: "center",
-              marginTop: "20px",
-            }}
-          >
-            <DiscoverMoreButton href="/nursing-programs" />
-            <ProgramCard
-              title="Nursing Diploma Programs"
-              description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
-              src="/assets/img/admission/nursing-diploma-program.png"
-            />
-          </Box>
+          <DiscoverMoreButton href="/nursing-programs" />
+          <ProgramCard
+            title="Nursing Diploma Programs"
+            description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
+            src="/assets/img/admission/nursing-diploma-program.png"
+          />
         </Grid>
         <Grid
           sx={{
             width: { xs: "300px", sm: "350px" },
-            height: "450px",
+            height: "400px",
             padding: "20px",
+            textAlign: "center",
           }}
           item
         >
-          <Box
-            sx={{
-              position: "relative",
-              textAlign: "center",
-              marginBottom: "20px",
-            }}
-          >
-            <ProgramCard
-              title="Nursing Degree Programs"
-              description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
-              src="/assets/img/admission/nursing-degree-program.png"
-              order="dec"
-            />
-            <DiscoverMoreButton href="/nursing-programs" position="bottom" />
-          </Box>
+          <ProgramCard
+            title="Nursing Degree Programs"
+            description="Cras elementum diam lacus, non sollicitudin lorem euismod nec."
+            src="/assets/img/admission/nursing-degree-program.png"
+            order="dec"
+          />
+          <DiscoverMoreButton href="/nursing-programs" position="bottom" />
         </Grid>
       </Grid>
     </>

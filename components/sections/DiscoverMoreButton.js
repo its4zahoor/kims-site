@@ -7,7 +7,7 @@ export default function DiscoverMoreButton({
   ...restProps
 }) {
   const positionStyles =
-    position === "top" ? { top: "-25px" } : { bottom: "-25px" };
+    position === "top" ? { marginBottom: "-25px" } : { marginTop: "-25px" };
 
   return (
     <Link href={href} passHref style={{}}>
@@ -27,11 +27,8 @@ export default function DiscoverMoreButton({
           fontStyle: "normal",
           fontWeight: "400",
           lineHeight: "26px",
+          lineSpacing: "0.3",
           // position styles
-          letterSpacing: "0.3px",
-          position: "absolute",
-          left: "50%",
-          transform: "translateX(-50%)",
           ...positionStyles,
           // hover styles
           "&:hover": {
