@@ -1,6 +1,9 @@
 import { Grid, Box, Card, Typography } from "@mui/material";
-import { AtIcon, LocationIcon, PhoneIcon } from "../common/Icon";
 import { styled } from "@mui/material/styles";
+import MapPinIcon from "/public/assets/img/icons/map-pin.svg";
+import MobileIcon from "/public/assets/img/icons/device-mobile.svg";
+import AtEmailIcon from "/public/assets/img/icons/round-alternate-email.svg";
+import Image from "next/image";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   borderRadius: "50%",
@@ -12,7 +15,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  marginBottom: "-25px",
+  marginBottom: "-32px",
 }));
 
 const StyledGridItem = styled(Grid)(({ theme }) => ({
@@ -32,7 +35,6 @@ const StyledCard = styled(Card)(({ theme }) => ({
 }));
 
 export default function ContactUsInfo({ sx, ...restProps }) {
-  console.log(sx);
   return (
     <Grid
       container
@@ -45,7 +47,7 @@ export default function ContactUsInfo({ sx, ...restProps }) {
     >
       <StyledGridItem item xs={10} sm={5} md={3.2} lg={3}>
         <StyledBox>
-          <LocationIcon />
+          <Image priority src={MapPinIcon} alt="map pin" />
         </StyledBox>
         <StyledCard>
           <Typography
@@ -80,7 +82,7 @@ export default function ContactUsInfo({ sx, ...restProps }) {
       </StyledGridItem>
       <StyledGridItem item xs={10} sm={5} md={3.2} lg={3}>
         <StyledBox>
-          <PhoneIcon />
+          <Image priority src={MobileIcon} alt="mobile" />
         </StyledBox>
         <StyledCard
           sx={{
@@ -122,7 +124,7 @@ export default function ContactUsInfo({ sx, ...restProps }) {
       </StyledGridItem>
       <StyledGridItem item xs={10} sm={5} md={3.2} lg={3}>
         <StyledBox>
-          <AtIcon />
+          <Image priority src={AtEmailIcon} alt="at email" />
         </StyledBox>
         <StyledCard
           sx={{

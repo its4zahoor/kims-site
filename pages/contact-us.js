@@ -23,7 +23,7 @@ export default function Contact() {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     // Handle form submission, e.g., send data to server
   };
 
