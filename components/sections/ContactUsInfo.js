@@ -1,0 +1,167 @@
+import { Grid, Box, Card, Typography } from "@mui/material";
+import { AtIcon, LocationIcon, PhoneIcon } from "../common/Icon";
+import { styled } from "@mui/material/styles";
+
+const StyledBox = styled(Box)(({ theme }) => ({
+  borderRadius: "50%",
+  backgroundColor: "#04824B",
+  padding: "10px",
+  minWidth: "75px",
+  minHeight: "75px",
+  filter: "drop-shadow(-5px 5px 25px rgba(0, 0, 0, 0.30))",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  marginBottom: "-25px",
+}));
+
+const StyledGridItem = styled(Grid)(({ theme }) => ({
+  padding: "20px",
+  textAlign: "center",
+  maxWidth: { xs: "300px", sm: "350px" },
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+}));
+
+const StyledCard = styled(Card)(({ theme }) => ({
+  padding: "52px 38px 32px",
+  borderRadius: "25px",
+  width: "100%",
+  height: "100%",
+}));
+
+export default function ContactUsInfo({ sx, ...restProps }) {
+  console.log(sx);
+  return (
+    <Grid
+      container
+      sx={{
+        justifyContent: "center",
+        gap: "27px",
+        ...sx,
+      }}
+      {...restProps}
+    >
+      <StyledGridItem item xs={10} sm={5} md={3.2} lg={3}>
+        <StyledBox>
+          <LocationIcon />
+        </StyledBox>
+        <StyledCard>
+          <Typography
+            sx={{
+              color: "#1C3E68",
+              textAlign: "center",
+              fontFamily: "Dax",
+              fontSize: "20px",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "normal",
+              textTransform: "uppercase",
+              paddingBottom: "5px",
+            }}
+          >
+            Address
+          </Typography>
+          <Typography
+            sx={{
+              color: "#101010",
+              textAlign: "center",
+              fontFamily: "Dax",
+              fontSize: "16px",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "24px",
+            }}
+          >
+            Main Shahrah-e-Resham, Bakka Mor,Haripur KPK, Pakistan
+          </Typography>
+        </StyledCard>
+      </StyledGridItem>
+      <StyledGridItem item xs={10} sm={5} md={3.2} lg={3}>
+        <StyledBox>
+          <PhoneIcon />
+        </StyledBox>
+        <StyledCard
+          sx={{
+            padding: "64px 38px 32px",
+            borderRadius: "25px",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <Typography
+            sx={{
+              color: "#1C3E68",
+              textAlign: "center",
+              fontFamily: "Dax",
+              fontSize: "20px",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "normal",
+              textTransform: "uppercase",
+              paddingBottom: "5px",
+            }}
+          >
+            contact no.
+          </Typography>
+          <Typography
+            sx={{
+              color: "#101010",
+              textAlign: "center",
+              fontFamily: "Dax",
+              fontSize: "16px",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "24px",
+            }}
+          >
+            {"+92-995-670780  |  +92-995-670780"}
+          </Typography>
+        </StyledCard>
+      </StyledGridItem>
+      <StyledGridItem item xs={10} sm={5} md={3.2} lg={3}>
+        <StyledBox>
+          <AtIcon />
+        </StyledBox>
+        <StyledCard
+          sx={{
+            padding: "64px 38px 32px",
+            borderRadius: "25px",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <Typography
+            sx={{
+              color: "#1C3E68",
+              textAlign: "center",
+              fontFamily: "Dax",
+              fontSize: "20px",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "normal",
+              textTransform: "uppercase",
+              paddingBottom: "5px",
+            }}
+          >
+            Email Us
+          </Typography>
+          <Typography
+            sx={{
+              color: "#101010",
+              textAlign: "center",
+              fontFamily: "Dax",
+              fontSize: "16px",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "24px",
+            }}
+          >
+            info@kims.edu.pk
+          </Typography>
+        </StyledCard>
+      </StyledGridItem>
+    </Grid>
+  );
+}
