@@ -115,6 +115,7 @@ export default function Contact() {
               textAlign: "center",
               marginBottom: "32px",
               maxWidth: { xs: "80vw", sm: "600px" },
+              color: "#FFF",
             }}
           >
             Leave us a Message

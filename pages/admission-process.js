@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Card, Typography, Box, Grid } from "@mui/material";
 import ProgramOffered from "@/components/sections/ProgramsOffered";
 
-export default function Admission() {
+export default function AdmissionProcess() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
