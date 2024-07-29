@@ -1227,12 +1227,12 @@ textarea {
   padding: 0;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 auto 0 73px;
+  margin: 0 auto 0 60px;
 }
 
 @media (max-width: 1500px) {
   .tgmenu__navbar-wrap ul {
-    margin: 0 auto 0 40px;
+    margin: 0px auto 0 20px;
   }
 }
 
@@ -1248,7 +1248,7 @@ textarea {
   text-transform: capitalize;
   color: var(--tg-heading-color);
   font-family: var(--tg-heading-font-family);
-  padding: 37px 12px;
+  padding: 37px 6px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1258,6 +1258,12 @@ textarea {
   line-height: 1;
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 1280px) {
+  .tgmenu__navbar-wrap ul li a {
+    padding: 37px 12px;
+  }
 }
 
 .tgmenu__navbar-wrap ul li .sub-menu {
@@ -1346,7 +1352,7 @@ textarea {
   content: "\f107";
   display: block;
   font-family: "flaticon_eduvalt";
-  color: #5a7093;
+  color: #fff;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -2248,7 +2254,7 @@ textarea {
   align-items: flex-end;
   padding: 163px 0 0;
   position: relative;
-  object-fit: cover; 
+  object-fit: cover;
   @media (max-width: 1440px) {
     height: 820px;
   }
