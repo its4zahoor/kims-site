@@ -72,67 +72,67 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
               }}
             >
               <ul className="navigation">
-                <li className="active">
-                  <Link href="/about-us">ABOUT</Link>
+                <li>
+                  <Link href="/about">About</Link>
                 </li>
                 <li className="menu-item-has-children">
-                  <Link href="#">ACADEMICS</Link>
+                  <Link href="#">Academics</Link>
                   <ul className="sub-menu">
                     <li>
                       <Link href="/institute-of-nursing">
-                        KHBAIB INSTITUTE OF NURSING
+                        Khubaib Institute of Nursing
                       </Link>
                     </li>
                     <li>
                       <Link href="/institute-of-medical-sciences">
-                        KHUBAIB INSTITUTE OF MEDICAL SCIENCES
+                        Khubaib Institute of Medical Sciences
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item-has-children">
-                  <Link href="#">ADMISSION</Link>
+                  <Link href="#">Admission</Link>
                   <ul className="sub-menu">
                     <li>
-                      <Link href="/diploma-program">DIPLOMA PROGRAM</Link>
+                      <Link href="/diploma-program">Diploma Program</Link>
                     </li>
                     <li>
-                      <Link href="/degree-program">DEGREE PROGRAM</Link>
+                      <Link href="/degree-program">Degree Program</Link>
                     </li>
                     <li>
                       <Link href="/eligibility-criteria">
-                        ELIGIBILITY CRITERIA
+                        Eligibility Criteria
                       </Link>
                     </li>
                     <li>
-                      <Link href="/admission-process">ADMISSION PROCESS</Link>
+                      <Link href="/admission-process">Admission Process</Link>
                     </li>
                     <li>
-                      <Link href="/fee-structure">FEE STRUCTURE</Link>
+                      <Link href="/fee-structure">Fee Structure</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item-has-children">
-                  <Link href="#">FACILITIES</Link>
+                  <Link href="#">Facilities</Link>
                   <ul className="sub-menu">
                     <li>
-                      <Link href="/scholarship">SCHOLARSHIP</Link>
+                      <Link href="/scholarship">Scholarship</Link>
                     </li>
                     <li>
                       <Link href="/training-facilities">
-                        TRAINING FACILITIES
+                        Training Facilities
                       </Link>
                     </li>
                     <li>
-                      <Link href="/sports-facilities">SPORTS FACILITIES</Link>
+                      <Link href="/sports-facilities">Sports Facilities</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link href="/news-and-events">NEWS & EVENTS</Link>
+                  <Link href="/news-and-events">News & Events</Link>
                 </li>
                 <li>
-                  <Link href="contact-us">CONTACT US</Link>
+                  <Link href="contact-us">Contact Us</Link>
                 </li>
               </ul>
             </Box>
