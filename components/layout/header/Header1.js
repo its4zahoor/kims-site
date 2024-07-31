@@ -4,7 +4,7 @@ import {
   Box,
   Button,
   IconButton,
-  Divider,
+  Stack,
   useTheme,
   useMediaQuery,
 } from "@mui/material";
@@ -192,19 +192,51 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
           </Box>
           {/* Mobile Menu  */}
           <div className="tgmobile__menu">
-            <nav className="tgmobile__menu-box bg-secondary">
-              <div className="close-btn" onClick={handleMobileMenu}>
-                <i className="tg-flaticon-close-1" />
-              </div>
-              <div className="nav-logo d-flex align-items-center gap-1">
-                <Link href="/">
-                  <img src="/assets/img/logo/logo.png" alt="Logo" />
-                </Link>
-                <div class="vr bg-white"></div>
-                <Link href="/">
-                  <img src="/assets/img/logo/KIMS-logo.png" alt="KIMS Logo" />
-                </Link>
-              </div>
+            <nav className="tgmobile__menu-box">
+              <Stack
+                sx={{
+                  flexDirection: "row",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  gap: "65px",
+                  paddingBottom: "65px",
+                }}
+              >
+                <i
+                  class="zmdi zmdi-close-circle-o"
+                  style={{
+                    color: "white",
+                    fontSize: "24px",
+                  }}
+                  onClick={handleMobileMenu}
+                />
+                <Stack sx={{ flexDirection: "row", gap: "25px" }}>
+                  <Box
+                    className="logo"
+                    sx={{
+                      borderRight: "2px solid #FFF",
+                      paddingRight: "30px",
+                    }}
+                  >
+                    <Link href="/">
+                      <Image
+                        src="/assets/img/logo/logo.png"
+                        alt="Khubaib University Logo"
+                        width={40}
+                        height={40}
+                      />
+                    </Link>
+                  </Box>
+                  <Link href="/">
+                    <Image
+                      src="/assets/img/logo/KIMS-logo.png"
+                      width={96}
+                      height={40}
+                      alt="KIMS Logo"
+                    />
+                  </Link>
+                </Stack>
+              </Stack>
               <div className="tgmobile__menu-outer">
                 <MobileMenu />
               </div>
