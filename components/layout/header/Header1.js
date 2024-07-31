@@ -43,6 +43,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                   borderRadius: "100px",
                   background: "#04824B",
                   marginRight: { xs: "60px", lg: "" },
+                  "&:hover": {
+                    color: "#FFF",
+                    backgroundColor: "#03683C",
+                  },
                 }}
               >
                 <Image priority src={AlignJustifyIcon} alt="menu" />
