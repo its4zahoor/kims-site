@@ -1,4 +1,5 @@
 import Layout from "@/components/layout/Layout";
+import { useState } from "react";
 import {
   Card,
   Typography,
@@ -7,24 +8,47 @@ import {
   Box,
   useTheme,
   useMediaQuery,
+  TextField,
 } from "@mui/material";
 import { useForm } from "react-hook-form";
-import TextField from "@/components/common/TextField";
+// TODO: common component textfield is not working with react hook form
+// import TextField from "@/components/common/TextField";
+import { API_URL } from "@/util/constants";
 import ContactUsInfo from "@/components/sections/ContactUsInfo";
 
 export default function Contact() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
-
+  const [error, setError] = useState(null);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    // console.log(data);
-    // Handle form submission, e.g., send data to server
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch(`${API_URL}/v1/message`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        // Clear the form
+        reset();
+        setError(null);
+      } else {
+        // Set a state to indicate the error
+        setError("Failed to send message");
+      }
+    } catch (error) {
+      // Set a state to indicate the network error
+      setError("Network error occurred");
+    }
   };
 
   return (
@@ -131,33 +155,124 @@ export default function Contact() {
               }}
             >
               <TextField
+                variant="outlined"
+                sx={{
+                  width: "100%",
+                  "& .MuiOutlinedInput-root": {
+                    backgroundColor: "#FFF",
+                    color: "#000",
+                    borderRadius: "25px",
+                    border: "1px solid rgba(18, 118, 77, 0.10)",
+                    "&:hover": {
+                      border: "1.25px solid rgba(18, 118, 77, 0.50)",
+                    },
+                    "&.Mui-focused": {
+                      border: "1.5px solid rgba(18, 118, 77)",
+                    },
+                    "&.Mui-error": {
+                      border: "1.5px solid #FF0000",
+                    },
+                  },
+                }}
                 placeholder="Full Name*"
                 {...register("name", { required: "Name is required" })}
                 error={!!errors.name}
-                helperText={errors.name ? errors.name.message : ""}
+                helperText={errors.name?.message?.toString()}
               />
               <TextField
+                variant="outlined"
+                sx={{
+                  width: "100%",
+                  "& .MuiOutlinedInput-root": {
+                    backgroundColor: "#FFF",
+                    color: "#000",
+                    borderRadius: "25px",
+                    border: "1px solid rgba(18, 118, 77, 0.10)",
+                    "&:hover": {
+                      border: "1.25px solid rgba(18, 118, 77, 0.50)",
+                    },
+                    "&.Mui-focused": {
+                      border: "1.5px solid rgba(18, 118, 77)",
+                    },
+                    "&.Mui-error": {
+                      border: "1.5px solid #FF0000",
+                    },
+                  },
+                }}
                 placeholder="Email Address*"
                 type="email"
                 {...register("email", { required: "Email is required" })}
                 error={!!errors.email}
-                helperText={errors.email ? errors.email.message : ""}
+                helperText={errors.email?.message?.toString()}
               />
               <TextField
+                variant="outlined"
+                sx={{
+                  width: "100%",
+                  "& .MuiOutlinedInput-root": {
+                    backgroundColor: "#FFF",
+                    color: "#000",
+                    borderRadius: "25px",
+                    border: "1px solid rgba(18, 118, 77, 0.10)",
+                    "&:hover": {
+                      border: "1.25px solid rgba(18, 118, 77, 0.50)",
+                    },
+                    "&.Mui-focused": {
+                      border: "1.5px solid rgba(18, 118, 77)",
+                    },
+                    "&.Mui-error": {
+                      border: "1.5px solid #FF0000",
+                    },
+                  },
+                }}
                 placeholder="Phone Number*"
                 type="tel"
                 {...register("phone", { required: "Phone number is required" })}
                 error={!!errors.phone}
-                helperText={errors.phone ? errors.phone.message : ""}
+                helperText={errors.phone?.message?.toString()}
               />
               <TextField
+                variant="outlined"
+                sx={{
+                  width: "100%",
+                  "& .MuiOutlinedInput-root": {
+                    backgroundColor: "#FFF",
+                    color: "#000",
+                    borderRadius: "25px",
+                    border: "1px solid rgba(18, 118, 77, 0.10)",
+                    "&:hover": {
+                      border: "1.25px solid rgba(18, 118, 77, 0.50)",
+                    },
+                    "&.Mui-focused": {
+                      border: "1.5px solid rgba(18, 118, 77)",
+                    },
+                    "&.Mui-error": {
+                      border: "1.5px solid #FF0000",
+                    },
+                  },
+                }}
                 placeholder="Comment or Message*"
                 multiline
                 rows={5}
                 {...register("message", { required: "Message is required" })}
                 error={!!errors.message}
-                helperText={errors.message ? errors.message.message : ""}
+                helperText={errors.message?.message?.toString()}
               />
+              {error && (
+                <Typography
+                  sx={{
+                    fontFamily: "Dax",
+                    fontSize: "20px",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    lineHeight: "normal",
+                    textAlign: "center",
+                    color: "#BB3131",
+                  }}
+                >
+                  {error}
+                </Typography>
+              )}
               <Button
                 type="submit"
                 variant="contained"
