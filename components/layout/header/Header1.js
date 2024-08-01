@@ -94,13 +94,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                   <Link href="#">Admission</Link>
                   <ul className="sub-menu">
                     <li>
-                      <Link href="/diploma-program">Diploma Program</Link>
+                      <Link href="/admission-process">Diploma Program</Link>
                     </li>
                     <li>
-                      <Link href="/degree-program">Degree Program</Link>
+                      <Link href="/admission-process">Degree Program</Link>
                     </li>
                     <li>
-                      <Link href="/eligibility-criteria">
+                      <Link href="/admission-process">
                         Eligibility Criteria
                       </Link>
                     </li>
