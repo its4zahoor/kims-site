@@ -15,54 +15,50 @@ function NursingPage() {
             width: "100%",
             height: "auto",
           }}
-          className="rounded-3xl"
         />
-        <div className="bg-red-kims rounded-3xl px-10 py-5 text-center bottom-10 z-10 absolute left-1/2 transform -translate-x-1/2 w-max">
+        <div className="bg-red-kims rounded-3xl px-10 py-5 text-center bottom-10 z-10 absolute left-1/2 transform -translate-x-1/2 container">
           <h1 className="text-3xl uppercase text-white">
             Welcome to Khubaib Institute of Nursing (KIN)
           </h1>
-          <div className="container flex justify-between relative -bottom-20">
-            <div>
-              <div className="relative bg-white w-[400px] h-[200px] rounded-3xl">
-                <div className="w-[100px] h-[100px] bg-green-700 rounded-lg px-3 absolute left-1/2 -top-10">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/icons/icon-park-outline_degree-hat.svg"
-                    width={50}
-                    height={50}
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                    }}
-                  />
-                </div>
-                <span className="mt-4 text-3xl font-extrabold">
-                  Diploma Programs
-                </span>
-              </div>
+          <div className="container flex justify-between relative -bottom-36">
+            <div className="bg-white w-[600px] h-[200px] rounded-3xl m-3">
+              <Image
+                sizes="25vw"
+                src="/assets/img/icons/icon-park-outline_degree-hat.svg"
+                width={50}
+                height={50}
+                className="w-[100px] h-[100px] bg-green-700 rounded-full px-3 relative left-1/2 transform -translate-x-1/2 -top-10"
+                style={{
+                  width: "100px",
+                  height: "100px",
+                }}
+              />
+              <span className="mt-4 text-3xl font-extrabold">
+                Diploma Programs
+              </span>
             </div>
-            <div>
-              <div className="bg-white w-[400px] h-[100px] rounded-3xl p-5">
-                {/* <Image
-                  src="/assets/img/home/kin_card.png"
-                  sizes="25vw"
-                  width={100}
-                  height={100}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                  }}
-                  className="rounded-3xl"
-                /> */}
-                <span className="text-3xl font-extrabold">Degree Programs</span>
-              </div>
+            <div className="bg-white w-[600px] h-[200px] rounded-3xl m-3">
+              <Image
+                sizes="25vw"
+                src="/assets/img/icons/icon-park-outline_degree-hat.svg"
+                width={50}
+                height={50}
+                className="w-[100px] h-[100px] bg-green-700 rounded-full px-3 relative left-1/2 transform -translate-x-1/2 -top-10"
+                style={{
+                  width: "100px",
+                  height: "100px",
+                }}
+              />
+              <span className="mt-4 text-3xl font-extrabold">
+                Diploma Programs
+              </span>
             </div>
           </div>
         </div>
       </section>
       <div className="flex flex-col">
         <section className="bg-blue-kims p-5">
-          <div className="container mb-4 p-4 text-center">
+          <div className="container mb-4 text-center mt-5">
             <h1 className="text-3xl uppercase text-white">
               Khubaib Institute of Nursing (KIN)
             </h1>
@@ -88,8 +84,8 @@ function NursingPage() {
           </div>
         </section> */}
         <section>
-          <div className="flex flex-col p-4">
-            <h2 className="text-3xl uppercase text-white text-center">
+          <div className="flex flex-col container">
+            <h2 className="text-3xl uppercase text-inherit text-center m-5">
               Diploma Programs
             </h2>
             <div className="bg-green-kims p-5 h-1/4 w-full rounded-3xl">
@@ -150,7 +146,7 @@ function NursingPage() {
               <div className="text-offwhite-kims">
                 The Lady Health Visitor (LHV) program trains individuals to
                 serve as primary healthcare providers and community health
-                educators, particularly focusing on women’s and children’s
+                educators, particularly focusing on women's and children's
                 health. Students learn about preventive healthcare, family
                 planning, maternal and child health, and community health
                 promotion strategies. Through classroom instruction, fieldwork,
@@ -175,9 +171,9 @@ function NursingPage() {
           </div>
         </section>
         <section className="bg-blue-kims p-5">
-          <div className="container p-4 flex justify-between text-white">
-            <div className="text-3xl uppercase text-white font-extrabold w-1/2">
-              <div className="text-sm">Eligibility Criteria</div>
+          <div className="container flex justify-between text-white">
+            <div className="text-2xl text-white font-extrabold w-1/2 pr-5">
+              <div className="text-sm uppercase">Eligibility Criteria</div>
               To be eligible for admission to the Diploma programs
             </div>
             <div className="w-1/2 p-3">
@@ -198,15 +194,119 @@ function NursingPage() {
           </div>
         </section>
         <section className="bg-offwhite-kims p-5">
-          <div className="container p-4 flex justify-between">
-            <div className="text-xl uppercase font-extrabold w-1/2">
-              <div className="text-sm">Notes:</div>
-              An additional twenty (20) marks will be added to the marks
-              obtained in SSC for Hafiz Quran (The criteria for Hafiz Quran are
-              the Hifz Test and a certificate from registered Deeni Madrassa).
+          <div className="container relative -bottom-36">
+            <h2 className="text-3xl uppercase text-inherit text-center m-5">
+              Diploma Programs
+            </h2>
+            <div className="flex justify-between items-stretch">
+              <div className="bg-red-kims m-3 p-5 w-full rounded-3xl">
+                <h3 className="text-white">BS Nursing</h3>
+                <div className="text-offwhite-kims">
+                  The BS Nursing program provides thorough education and
+                  training for professional nursing practice. Students gain
+                  knowledge in anatomy, physiology, pharmacology, and patient
+                  care through theoretical coursework and clinical experiences.
+                  Emphasizing critical thinking and collaboration, graduates are
+                  prepared for licensure exams and careers as registered nurses
+                  in various healthcare settings. They promote health, prevent
+                  illness, and offer compassionate care throughout life.
+                </div>
+                <div>
+                  <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                    <Link href="#" className="text-white">
+                      <span className="mr-3">Apply Now</span>
+                      <i class="zmdi zmdi-arrow-right-top" />
+                    </Link>
+                  </button>
+                </div>
+              </div>
+              <div className="bg-red-kims m-3 p-5 w-full rounded-3xl">
+                <h3 className="text-white">Post-Registered Nurse (Post-RN)</h3>
+                <div className="text-offwhite-kims">
+                  The Post-Registered Nurse (Post-RN) program caters to
+                  registered nurses (RNs) seeking advanced education. It
+                  emphasizes specialized nursing roles like nurse practitioner
+                  or educator, offering courses in advanced topics such as
+                  pharmacology, pathophysiology, and evidence-based practice.
+                  Graduates are prepared for leadership, specialized care, and
+                  educational roles in healthcare settings, aligning with our
+                  commitment to innovative healthcare delivery.
+                </div>
+                <div>
+                  <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                    <Link href="#" className="text-white">
+                      <span className="mr-3">Apply Now</span>
+                      <i class="zmdi zmdi-arrow-right-top" />
+                    </Link>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg-blue-kims p-5"></section>
+        <section className="bg-blue-kims p-5">
+          <div className="container flex justify-between text-white">
+            <div className="text-2xl text-white font-extrabold w-1/2 pr-5">
+              <div className="text-sm uppercase">Eligibility Criteria</div>
+              To be eligible for admission to the Diploma programs
             </div>
             <div className="w-1/2 p-3">
               <ul className="list-disc">
+                <li>
+                  Basic qualification is Matric with science or equivalent
+                  qualification with at least fifty percent (50%) marks of total
+                  obtainable marks (specifically Biology as one compulsory
+                  subject) except Category B Pharmacy.
+                </li>
+                <li>
+                  10% weightage will be given to F.Sc premedical or equivalent
+                  qualification with at least 50% marks of total obtainable
+                  marks.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="bg-offwhite-kims p-5">
+          <div className="container flex justify-between">
+            <div className="text-2xl w-1/2 pr-5">
+              <div className="text-base uppercase text-red-700 font-bold">
+                Admission Application Process
+              </div>
+              <div className="p-3 font-medium">
+                <ul className="list-decimal">
+                  <li>
+                    Each candidate shall make an application for admission in
+                    response to an advertisement by the Institute on a
+                    prescribed form along with the documents specified in the
+                    form.
+                  </li>
+                  <li>
+                    Admission to the program shall be made based on cumulative
+                    merit determined from the previous academic record and
+                    interview.
+                  </li>
+                  <li>
+                    Selection/merit will be based on the percentage of matric
+                    marks at 90% and F.Sc's 10% weightage (if applicable).
+                  </li>
+                </ul>
+                <p className="mt-3 font-semibold">
+                  An additional twenty (20) marks will be added to the marks
+                  obtained in SSC for Hafiz Quran (The criteria for Hafiz Quran
+                  are the Hifz Test and a certificate from registered Deeni
+                  Madrassa).
+                </p>
+              </div>
+            </div>
+            <div className="w-1/2 p-3">
+              <p className="text-xl">
+                All the applicants shall ensure the following documents enclosed
+                with application form to be submitted to the concerned
+                institute.
+              </p>
+              <ul className="list-disc list-inside ml-5">
                 <li>
                   Attested copies of SSC/FSc (Pre-Medical) certificates and
                   detailed marks certificates of both examinations.
@@ -233,15 +333,20 @@ function NursingPage() {
           </div>
         </section>
         <section className="bg-red-kims p-5">
-          <div className="container p-4 flex justify-between text-white">
-            <div className="text-xl uppercase text-white font-extrabold w-1/2">
-              <div className="text-sm">Notes:</div>
+          <div className="container flex justify-between text-white">
+            <div className="text-2xl text-white font-extrabold w-1/2 pr-5">
+              <div className="text-sm uppercase">Notes:</div>
               An additional twenty (20) marks will be added to the marks
               obtained in SSC for Hafiz Quran (The criteria for Hafiz Quran are
               the Hifz Test and a certificate from registered Deeni Madrassa).
             </div>
             <div className="w-1/2 p-3">
-              <ul className="list-disc">
+              <p className="text-white text-xl">
+                All the applicants shall ensure the following documents enclosed
+                with application form to be submitted to the concerned
+                institute.
+              </p>
+              <ul className="list-disc list-inside ml-5">
                 <li>
                   Attested copies of SSC/FSc (Pre-Medical) certificates and
                   detailed marks certificates of both examinations.
