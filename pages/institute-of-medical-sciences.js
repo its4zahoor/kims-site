@@ -1,281 +1,414 @@
-import { Card, Typography, Grid } from "@mui/material";
-import DataGrid from "@/components/common/DataGrid";
-import Layout from "@/components/layout/Layout";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import Layout from "@/components/layout/Layout";
 
-export default function Scholarship() {
+function MedicalPage() {
   return (
     <>
-      <Layout headerStyle={1} footerStyle={1}>
-        <section
-          className="banner-area banner-bg"
-          data-background="/assets/img/bg/scholarship-banner.png"
-        >
-          <Card
-            sx={{
-              width: "90vw",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: 1.25,
-              backgroundColor: "#BB3131",
-              borderRadius: "24px",
-              padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
-              padding: 5,
-              marginX: { xs: "32px", md: "auto" },
-            }}
-          >
-            {/* TODO: create theme file for mui and define theme */}
-            <Typography
-              sx={{
-                textAlign: "center",
-                fontFamily: "Dax",
-                fontSize: { xs: 32, sm: 40 },
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "normal",
-                textTransform: "uppercase",
-                color: "white",
-                maxWidth: "1064px",
-              }}
-            >
-              Scholarships
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                textAlign: "center",
-                fontFamily: "Dax",
-                fontSize: { xs: 20, sm: 16 },
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: { xs: "32px", sm: "24px" },
-                color: "white",
-                maxWidth: "1064px",
-              }}
-            >
-              The Financial Assistance Program aims to assist students who have
-              limited financial need to support the cost of their education.
-              Currently, the types of Financial Assistance offered to students
-              in the listed programs are
-            </Typography>
-          </Card>
+      <section className="bg-blue-kims h-screen">
+        <Image
+          sizes="25vw"
+          src="/assets/img/bg/scholarship-banner.png"
+          width={50}
+          height={50}
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+        />
+        <div className="bg-red-kims rounded-3xl px-10 py-5 text-center bottom-10 z-10 absolute left-1/2 transform -translate-x-1/2 container">
+          <h1 className="text-3xl uppercase text-white">
+            Welcome to Khubaib Institute of Medical Sciences
+          </h1>
+          <div className="container flex justify-between relative -bottom-36">
+            <div className="bg-white w-[600px] h-[200px] rounded-3xl m-3">
+              <Image
+                sizes="25vw"
+                src="/assets/img/icons/icon-park-outline_degree-hat.svg"
+                width={50}
+                height={50}
+                className="w-[100px] h-[100px] bg-green-700 rounded-full px-3 relative left-1/2 transform -translate-x-1/2 -top-10"
+                style={{
+                  width: "100px",
+                  height: "100px",
+                }}
+              />
+              <span className="mt-4 text-3xl font-extrabold">
+                Diploma Programs
+              </span>
+            </div>
+            <div className="bg-white w-[600px] h-[200px] rounded-3xl m-3">
+              <Image
+                sizes="25vw"
+                src="/assets/img/icons/icon-park-outline_degree-hat.svg"
+                width={50}
+                height={50}
+                className="w-[100px] h-[100px] bg-green-700 rounded-full px-3 relative left-1/2 transform -translate-x-1/2 -top-10"
+                style={{
+                  width: "100px",
+                  height: "100px",
+                }}
+              />
+              <span className="mt-4 text-3xl font-extrabold">
+                Degree Programs
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="flex flex-col">
+        <section className="bg-blue-kims p-5">
+          <div className="container mb-4 text-center mt-5">
+            <h1 className="text-3xl uppercase text-white">
+              Khubaib Institute of Nursing (KIN)
+            </h1>
+            <div className="text-xl text-white my-4">
+              Khubaib Institute of Nursing (KIN) is the founding entity of
+              Khubaib Education Project. The institute is committed to achieve a
+              benchmark for nursing education in the country through a highest
+              level of commitment to excellence in the field of nursing and
+              healthcare education, research and practice
+            </div>
+          </div>
         </section>
-        <Grid
-          data-background="/assets/img/scholarship/scholarship-program-bg.png"
-          sx={{
-            justifyContent: "center",
-            padding: { xs: "48px 32px", md: "120px 80px" },
-            gap: 2.5,
-            backgroundColor: "#274474",
-          }}
-          container
-        >
-          <Grid item sx={{ minWidth: 200, maxWidth: 550 }}>
-            <DataGrid
-              columns={[
-                {
-                  field: "program",
-                  headerName: "Academic Programs",
-                  width: 550,
-                },
-              ]}
-              rows={[
-                { id: 1, program: "Diploma Programs in Paramedics" },
-                { id: 2, program: "Diploma Programs in Nursing" },
-                { id: 3, program: "Degree Programs in Paramedics" },
-                { id: 4, program: "Degree Programs in Nursing" },
-              ]}
-            />
-          </Grid>
-          <Grid item sx={{ minWidth: 200, maxWidth: 550 }}>
-            <DataGrid
-              columns={[
-                {
-                  field: "financialAssistance",
-                  headerName: "Financial Assistance",
-                  width: 550,
-                },
-              ]}
-              rows={[
-                {
-                  id: 1,
-                  financialAssistance:
-                    "Partial Fee waiver on need cum merit basis",
-                },
-                {
-                  id: 2,
-                  financialAssistance:
-                    "Partial Fee waiver on need cum merit basis",
-                },
-                {
-                  id: 3,
-                  financialAssistance: "Need cum Merit based scholarships",
-                },
-                {
-                  id: 4,
-                  financialAssistance: "Need cum Merit based scholarships",
-                },
-              ]}
-            />
-          </Grid>
-        </Grid>
-        <Grid
-          sx={{
-            justifyContent: "center",
-            padding: { xs: "48px 32px", md: "120px 80px" },
-            gap: { xs: 3, md: 10 },
-            background:
-              "linear-gradient(90deg, #BB3131 0%, rgba(187, 49, 49, 0.90) 100%), url('/assets/img/bg/library-bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            position: "relative",
-          }}
-          container
-        >
-          <Grid item xs={12} md={5}>
-            <Typography
-              sx={{
-                fontFamily: "Dax",
-                fontSize: "16px",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "normal",
-                letterSpacing: "0.32px",
-                textTransform: "uppercase",
-                color: "white",
-                paddingBottom: 2,
-              }}
-            >
-              Information
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: "Dax",
-                fontSize: "24px",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "36px",
-                color: "white",
-                paddingBottom: { xs: 3, md: 5 },
-              }}
-            >
-              The Institute reserves the right to change the type of financial
-              assistance offered to students. The procedure to apply for
-              financial assistance is summarized below.
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: "Dax",
-                fontSize: "24px",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "36px",
-                color: "white",
-              }}
-            >
-              The financial assistance application must be completed and
-              submitted with the required supporting documentation. Incomplete
-              and/or late applications for financial assistance will not be
-              considered.
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={5}>
-            <Typography
-              sx={{
-                fontFamily: "Dax",
-                fontSize: "16px",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "24px",
-                color: "white",
-                paddingTop: { xs: 0, md: 5 },
-                paddingBottom: 3,
-              }}
-            >
-              If you have any questions about the application or encounter any
-              problems, do not create a new application because it can delay the
-              application process. For assistance, you can call the Office of
-              Admissions at:
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: "Dax",
-                fontSize: "16px",
-                fontStyle: "normal",
-                fontWeight: 400,
-                lineHeight: "24px",
-                color: "white",
-                paddingBottom: 3,
-              }}
-            >
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
-                <li>
-                  Students desirous of financial assistance are required to
-                  submit a separate application form for financial assistance.
-                </li>
-                <li>
-                  The level of financial assistance awarded is determined
-                  through predefined, point-based evaluation criteria based on
-                  the applicant’s socio-economic profile. The socio-economic
-                  profile is prepared based on the information given by the
-                  applicant and his/her parents or guardian in the financial
-                  assistance application form and in interviews.
-                </li>
-                <li>
-                  The Institute’s Financial Assistance Committee is responsible
-                  for receiving applications for financial assistance and
-                  reviewing it based on a prescribed evaluation system and
-                  determining the level of financial assistance to be awarded to
-                  the applicant.
-                </li>
-                <li>
-                  Submission of an application for financial assistance does not
-                  guarantee an award of financial assistance.
-                </li>
-                <li>
-                  Students are informed individually of the financial assistance
-                  awarded to them.
-                </li>
-              </ul>
-            </Typography>
-          </Grid>
-        </Grid>
-
-        <section className="-mt-[50px]">
-          <div className="container relative -bottom-40 rounded-3xl">
-            <Image
-              sizes="25vw"
-              src="/assets/img/home/brochure.png"
-              width={50}
-              height={50}
-              style={{
-                width: "100%",
-                height: "50vh",
-                objectFit: "cover",
-              }}
-              className="rounded-3xl"
-            />
-            <div className="absolute top-20 left-40 uppercase text-white">
-              <div className="w-2/5 flex flex-col relative">
-                <span>Download our brochure</span>
-                <span className="text-3xl font-extrabold mb-4">
-                  Ready to explore our full suite of academic & Guide solutions?
-                </span>
-                <span>
-                  <button className="mt-4 py-2 px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
-                    <Link href="#" className="text-white">
-                      <span className="mr-3">Download Our Brochure</span>
-                      <i class="zmdi zmdi-download" />
-                    </Link>
-                  </button>
-                </span>
+        {/* <section className="bg-blue-kims p-5">
+          <div className="container mb-4 p-4 text-center">
+            <h1 className="text-3xl uppercase text-white">
+              Explore Our Academic Programs
+            </h1>
+            <div className="text-xl text-white my-2">
+              At KIMS and KIN, our inclusive admissions prioritize merit,
+              offering scholarships. We embrace diversity, welcoming individuals
+              regardless of faith, gender, or nationality.
+            </div>
+          </div>
+        </section> */}
+        <section>
+          <div className="flex flex-col container">
+            <h2 className="text-3xl uppercase text-inherit text-center m-5">
+              Diploma Programs
+            </h2>
+            <div className="bg-green-kims p-5 h-1/4 w-full rounded-3xl">
+              <h3 className="text-white">Certified Nursing Assistant (CNA)</h3>
+              <div className="text-offwhite-kims">
+                The Certified Nursing Assistant (CNA) program provides students
+                with the foundational knowledge and skills needed to assist
+                nurses and other healthcare professionals in delivering basic
+                patient care. Throughout the program, students learn about
+                patient hygiene, vital signs monitoring, mobility assistance,
+                and infection control procedures. They also receive training in
+                communication skills and patient interaction. Upon completion of
+                the program and passing a competency exam, graduates become
+                certified nursing assistants, eligible for employment in various
+                healthcare settings such as nursing homes, hospitals, and home
+                care agencies. CNAs play a vital role in providing essential
+                care and support to patients, contributing to their comfort,
+                well-being, and overall quality of life.
+              </div>
+              <div>
+                <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                  <Link href="#" className="text-white">
+                    <span className="mr-3">Apply</span>
+                    <i class="zmdi zmdi-arrow-right-top" />
+                  </Link>
+                </button>
+              </div>
+            </div>
+            <div className="bg-green-kims my-3 p-5 h-1/4 w-full rounded-3xl">
+              <h3 className="text-white">Community Midwifery (CMW)</h3>
+              <div className="text-offwhite-kims">
+                The Community Midwifery (CMW) program trains students to provide
+                essential maternal and newborn care within community settings.
+                Students learn about prenatal care, childbirth assistance,
+                postpartum support, and newborn care techniques. Through a
+                combination of classroom instruction and hands-on clinical
+                experience, students develop skills in conducting routine
+                prenatal assessments, assisting with labor and delivery, and
+                providing education and support to expectant mothers and their
+                families. Graduates of the CMW program play a crucial role in
+                promoting maternal and infant health, particularly in
+                underserved communities where access to healthcare services may
+                be limited. They serve as advocates for maternal and newborn
+                well-being, empowering families to make informed decisions and
+                ensuring safe and positive birth experiences.
+              </div>
+              <div>
+                <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                  <Link href="#" className="text-white">
+                    <span className="mr-3">Apply</span>
+                    <i class="zmdi zmdi-arrow-right-top" />
+                  </Link>
+                </button>
+              </div>
+            </div>
+            <div className="bg-green-kims my-3 p-5 h-1/4 w-full rounded-3xl">
+              <h3 className="text-white">Lady Health Visitor (LHV)</h3>
+              <div className="text-offwhite-kims">
+                The Lady Health Visitor (LHV) program trains individuals to
+                serve as primary healthcare providers and community health
+                educators, particularly focusing on women's and children's
+                health. Students learn about preventive healthcare, family
+                planning, maternal and child health, and community health
+                promotion strategies. Through classroom instruction, fieldwork,
+                and practical training, students develop skills in conducting
+                health assessments, providing basic medical care, and delivering
+                health education programs. Graduates of the LHV program play a
+                crucial role in improving healthcare access and outcomes,
+                particularly in rural and underserved areas. They work closely
+                with communities to address health disparities, promote healthy
+                behaviors, and empower individuals to take charge of their
+                health and well-being.
+              </div>
+              <div>
+                <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                  <Link href="#" className="text-white">
+                    <span className="mr-3">Apply</span>
+                    <i class="zmdi zmdi-arrow-right-top" />
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
         </section>
-      </Layout>
+        <section className="bg-blue-kims p-5">
+          <div className="container flex justify-between text-white">
+            <div className="text-2xl text-white font-extrabold w-1/2 pr-5">
+              <div className="text-sm uppercase">Eligibility Criteria</div>
+              To be eligible for admission to the Diploma programs
+            </div>
+            <div className="w-1/2 p-3">
+              <ul className="list-disc">
+                <li>
+                  Basic qualification is Matric with science or equivalent
+                  qualification with at least fifty percent (50%) marks of total
+                  obtainable marks (specifically Biology as one compulsory
+                  subject) except Category B Pharmacy.
+                </li>
+                <li>
+                  10% weightage will be given to F.Sc premedical or equivalent
+                  qualification with at least 50% marks of total obtainable
+                  marks.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="bg-offwhite-kims p-5">
+          <div className="container relative -bottom-36">
+            <h2 className="text-3xl uppercase text-inherit text-center m-5">
+              Degree Programs
+            </h2>
+            <div className="flex justify-between items-stretch">
+              <div className="bg-red-kims m-3 p-5 w-full rounded-3xl">
+                <h3 className="text-white">Radiology and Imaging Technology</h3>
+                <div className="text-offwhite-kims">
+                  Our Radiology and Imaging Technology courses empower students
+                  with skills to operate diagnostic imaging equipment
+                  effectively. The curriculum covers X-ray, CT, MRI, and
+                  ultrasound modalities. Hands-on training ensures proficiency
+                  in patient positioning, equipment adjustment, and image
+                  quality assurance. Graduates are well-equipped for roles in
+                  hospitals, clinics, and diagnostic imaging centers,
+                  contributing to precise medical diagnosis and treatment
+                  through high-quality diagnostic images.
+                </div>
+                <div>
+                  <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                    <Link href="#" className="text-white">
+                      <span className="mr-3">Apply Now</span>
+                      <i class="zmdi zmdi-arrow-right-top" />
+                    </Link>
+                  </button>
+                </div>
+              </div>
+              <div className="bg-red-kims m-3 p-5 w-full rounded-3xl">
+                <h3 className="text-white">
+                  Doctor of Physical Therapy /10 semesters
+                </h3>
+                <div className="text-offwhite-kims">
+                  The 10-semester Doctor of Physical Therapy (DPT) program
+                  readies students for advanced practice, covering anatomy,
+                  biomechanics, therapeutic exercise, and rehabilitation
+                  techniques. Hands-on clinical experience in diverse healthcare
+                  settings, internships, and practicums enhance real-world
+                  patient care application. Graduates emerge as skilled and
+                  compassionate physical therapists, addressing musculoskeletal,
+                  neurological, and cardiopulmonary conditions for optimal
+                  physical function and quality of life.
+                </div>
+                <div>
+                  <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                    <Link href="#" className="text-white">
+                      <span className="mr-3">Apply Now</span>
+                      <i class="zmdi zmdi-arrow-right-top" />
+                    </Link>
+                  </button>
+                </div>
+              </div>
+              <div className="bg-red-kims m-3 p-5 w-full rounded-3xl">
+                <h3 className="text-white">Health Technology</h3>
+                <div className="text-offwhite-kims">
+                  Health Technology courses at Khubaib Institute of Medical
+                  Sciences explore the synergy between healthcare and
+                  technology, emphasizing innovative solutions to elevate
+                  patient care and healthcare delivery. Students engage with
+                  electronic health records (EHR), telemedicine, medical
+                  imaging, and healthcare informatics. Practical training equips
+                  them with skills in implementing health information systems
+                  and analyzing healthcare data. Graduates are well-prepared for
+                  roles in healthcare organizations, IT firms, and government
+                  agencies, contributing to improved efficiency, accuracy, and
+                  accessibility in healthcare services through technology.
+                </div>
+                <div>
+                  <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                    <Link href="#" className="text-white">
+                      <span className="mr-3">Apply Now</span>
+                      <i class="zmdi zmdi-arrow-right-top" />
+                    </Link>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg-blue-kims p-5"></section>
+        <section className="bg-blue-kims p-5">
+          <div className="container flex justify-between text-white">
+            <div className="text-2xl text-white font-extrabold w-1/2 pr-5">
+              <div className="text-sm uppercase">Eligibility Criteria</div>
+              To be eligible for admission to the Diploma programs
+            </div>
+            <div className="w-1/2 p-3">
+              <ul className="list-disc">
+                <li>
+                  Basic qualification is Matric with science or equivalent
+                  qualification with at least fifty percent (50%) marks of total
+                  obtainable marks (specifically Biology as one compulsory
+                  subject) except Category B Pharmacy.
+                </li>
+                <li>
+                  10% weightage will be given to F.Sc premedical or equivalent
+                  qualification with at least 50% marks of total obtainable
+                  marks.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="bg-offwhite-kims p-5">
+          <div className="container flex justify-between">
+            <div className="text-2xl w-1/2 pr-5">
+              <div className="text-base uppercase text-red-700 font-bold">
+                Admission Application Process
+              </div>
+              <div className="p-3 font-medium">
+                <ul className="list-decimal">
+                  <li>
+                    Each candidate shall make an application for admission in
+                    response to an advertisement by the Institute on a
+                    prescribed form along with the documents specified in the
+                    form.
+                  </li>
+                  <li>
+                    Admission to the program shall be made based on cumulative
+                    merit determined from the previous academic record and
+                    interview.
+                  </li>
+                  <li>
+                    Selection/merit will be based on the percentage of matric
+                    marks at 90% and F.Sc's 10% weightage (if applicable).
+                  </li>
+                </ul>
+                <p className="mt-3 font-semibold">
+                  An additional twenty (20) marks will be added to the marks
+                  obtained in SSC for Hafiz Quran (The criteria for Hafiz Quran
+                  are the Hifz Test and a certificate from registered Deeni
+                  Madrassa).
+                </p>
+              </div>
+            </div>
+            <div className="w-1/2 p-3">
+              <p className="text-xl">
+                All the applicants shall ensure the following documents enclosed
+                with application form to be submitted to the concerned
+                institute.
+              </p>
+              <ul className="list-disc list-inside ml-5">
+                <li>
+                  Attested copies of SSC/FSc (Pre-Medical) certificates and
+                  detailed marks certificates of both examinations.
+                </li>
+                <li>
+                  Attested photocopy of Domicile Certificate Attested photocopy
+                  of CNIC or Form-B of the applicant Attested photocopy of
+                  Father/Guardian CNIC.
+                </li>
+                <li>
+                  Character certificate from the educational institution last
+                  attended by the applicant.
+                </li>
+                <li>
+                  Three recent passport-sized photographs with a blue background
+                  were duly attested.
+                </li>
+                <li>
+                  Valid disability certificate (where applicable) Service
+                  Certificate (for In-service applicants)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section className="bg-red-kims p-5">
+          <div className="container flex justify-between text-white">
+            <div className="text-2xl text-white font-extrabold w-1/2 pr-5">
+              <div className="text-sm uppercase">Notes:</div>
+              An additional twenty (20) marks will be added to the marks
+              obtained in SSC for Hafiz Quran (The criteria for Hafiz Quran are
+              the Hifz Test and a certificate from registered Deeni Madrassa).
+            </div>
+            <div className="w-1/2 p-3">
+              <p className="text-white text-xl">
+                All the applicants shall ensure the following documents enclosed
+                with application form to be submitted to the concerned
+                institute.
+              </p>
+              <ul className="list-disc list-inside ml-5">
+                <li>
+                  Attested copies of SSC/FSc (Pre-Medical) certificates and
+                  detailed marks certificates of both examinations.
+                </li>
+                <li>
+                  Attested photocopy of Domicile Certificate Attested photocopy
+                  of CNIC or Form-B of the applicant Attested photocopy of
+                  Father/Guardian CNIC.
+                </li>
+                <li>
+                  Character certificate from the educational institution last
+                  attended by the applicant.
+                </li>
+                <li>
+                  Three recent passport-sized photographs with a blue background
+                  were duly attested.
+                </li>
+                <li>
+                  Valid disability certificate (where applicable) Service
+                  Certificate (for In-service applicants)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
+  );
+}
+
+export default function NursingInstiute() {
+  return (
+    <Layout headerStyle={1} footerStyle={1}>
+      <MedicalPage />
+    </Layout>
   );
 }
