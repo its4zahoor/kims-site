@@ -243,7 +243,7 @@ export default function Scholarship() {
           </Grid>
         </Grid>
 
-        <section className="-mt-[50px]">
+        <section className="bg-offwhite-kims -mt-[50px]">
           <div className="container relative -bottom-40 rounded-3xl">
             <Image
               sizes="25vw"
