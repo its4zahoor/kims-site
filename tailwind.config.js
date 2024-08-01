@@ -1,3 +1,5 @@
+const { green } = require("@mui/material/colors");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -16,6 +18,9 @@ module.exports = {
         },
         offwhite: {
           kims: "#F3F3F3",
+        },
+        green: {
+          kims: "#04824B",
         },
       },
     },
