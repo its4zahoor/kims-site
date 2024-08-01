@@ -1,23 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Card, Typography, Box, useTheme, useMediaQuery } from "@mui/material";
-import ImageGalleryRow from "@/components/sections/ImageGalleryRow";
-import Health1 from "/public/assets/img/training-facilities/health-1.png";
-import Health2 from "/public/assets/img/training-facilities/health-2.png";
-import Health3 from "/public/assets/img/training-facilities/health-3.png";
-import Library1 from "/public/assets/img/training-facilities/library-1.png";
-import Library2 from "/public/assets/img/training-facilities/library-2.png";
-import Library3 from "/public/assets/img/training-facilities/library-3.png";
-import Library4 from "/public/assets/img/training-facilities/library-4.png";
-import Sports1 from "/public/assets/img/training-facilities/sports-1.png";
-import Sports2 from "/public/assets/img/training-facilities/sports-2.png";
-import Sports3 from "/public/assets/img/training-facilities/sports-3.png";
-import Sports4 from "/public/assets/img/training-facilities/sports-4.png";
-import LibraryDesktop from "/public/assets/img/training-facilities/library.png";
-import LibraryMobile from "/public/assets/img/training-facilities/library-mobile.png";
-import HealthDesktop from "/public/assets/img/training-facilities/health.png";
-import HealthMobile from "/public/assets/img/training-facilities/health-mobile.png";
-import SportsDesktop from "/public/assets/img/training-facilities/sports.png";
-import SportsMobile from "/public/assets/img/training-facilities/sports-mobile.png";
+import Taekwondo from "/public/assets/img/sports/taekwondo.png";
+import TaekwondoGreen from "/public/assets/img/sports/taekwondo_green.png";
 import FacilitiesSection from "@/components/sections/FacilitiesSection";
 
 export default function Contact() {
@@ -56,7 +40,7 @@ export default function Contact() {
                 color: "white",
               }}
             >
-              Welcome to <br></br> Khubaib Institute Training Facilities
+              Sports Facilities
             </Typography>
           </Card>
         </section>
@@ -82,7 +66,7 @@ export default function Contact() {
               paddingBottom: 1.25,
             }}
           >
-            Students Learning Resources & Services
+            "Winners never quit and quitters never win."
           </Typography>
           <Typography
             sx={{
@@ -97,45 +81,33 @@ export default function Contact() {
               marginX: "auto",
             }}
           >
-            Empower your educational journey with our comprehensive Student
-            Learning Resources & Services. From tutoring to academic workshops,
-            we provide the support you need to excel in your studies. Discover a
-            wealth of resources tailored to enrich your learning experience.{" "}
+            we have an extensive sporting facility. These facilities include a
+            fully equipped gym, sports hall, football & hockey grounds, Cricket
+            pitch, basketball court, and an excellent athletics facility. KIMS
+            provides a range of quality sports facilities for the staff and
+            students at university and national levels.
+            <br />
+            -At Khubaib institute of Medical Sciences and Nursing
           </Typography>
         </Box>
         <FacilitiesSection
-          mobileImage={LibraryMobile}
-          desktopImage={LibraryDesktop}
-          title="Library"
+          mobileImage={Taekwondo}
+          desktopImage={Taekwondo}
+          contentContainerSx={{ backgroundColor: "#BB3131" }}
           description={[
-            "The library at Khubaib Institute of Medical Sciences and Nursing contain course specific books and journals as per requirement of relevant councils and boards. The students at undergraduate level an also access world’s academic literature both intranet and wireless Internet access, and ample photocopying and printing facilities.",
-            "A team of subject-specialist librarian and staff is on hand to assist, train, and advise students on how to use the collections to their best advantage.",
-            "One of the library’s most popular and well-used sections is the Study Rooms, a dedicated undergraduate facility, where students can access and utilize the personal study cubicles, group discussion rooms, and receive assistance in researching and writing their reports, essays, and assignments – a convenient one-stop-centre for the undergraduate student who wants to excel.",
+            "Khubaib  Institute of Medical Sciences and Nursing boasts a vibrant sports  culture, offering students a well-rounded educational experience. With  expansive grounds dedicated to various sports and a state-of-the-art gym  facility, students have ample opportunities to tay active and pursue  their athletic passions. From cricket to football, basketball to  badminton, our campus provides the perfect environment for students to  hone their skills and engage in friendly competition. Whether  participating in intramural tournaments or simply enjoying recreational  sports, students benefit from the physical and mental well-being that  comes with regular exercise and teamwork. At Khubaib Institute, we  recognize the importance of sports in fostering camaraderie, leadership,  and a healthy lifestyle among our student body.",
           ]}
         />
-        <ImageGalleryRow images={[Library1, Library2, Library3, Library4]} />
         <FacilitiesSection
-          mobileImage={HealthMobile}
-          desktopImage={HealthDesktop}
-          title="Health"
+          mobileImage={TaekwondoGreen}
+          desktopImage={TaekwondoGreen}
+          title="Taekwondo"
           description={[
             "With our vision to become a university health center which provides  Medical and Nursing services in the field of Primary Care on par with  developed countries, the Khubaib Institute of Medical Sciences and  Nursing is planning to upgrade its basic health facilities on campus in  our efforts to cultivate and promote good health amongst our community.",
           ]}
           direction={isMobile ? "column-reverse" : "row-reverse"}
           contentContainerSx={{ backgroundColor: "#04824B" }}
         />
-        <ImageGalleryRow images={[Health1, Health2, Health3]} />
-        <FacilitiesSection
-          mobileImage={SportsMobile}
-          desktopImage={SportsDesktop}
-          title="Sports"
-          description={[
-            "At Khubaib Institute of Medical Sciences and Nursing we have an  extensive sporting facility. These facilities include a fully equipped  gym, sports hall, football & hockey grounds, Cricket pitch,  basketball court, and an excellent athletics facility.",
-            "KIMS provides a range of quality sports facilities for the staff and students at university and national levels.",
-          ]}
-          contentContainerSx={{ backgroundColor: "#BB3131" }}
-        />
-        <ImageGalleryRow images={[Sports1, Sports2, Sports3, Sports4]} />
       </Layout>
     </>
   );
