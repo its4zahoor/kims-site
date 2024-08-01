@@ -50,7 +50,7 @@ function NursingPage() {
                 }}
               />
               <span className="mt-4 text-3xl font-extrabold">
-                Diploma Programs
+                Degree Programs
               </span>
             </div>
           </div>
@@ -60,14 +60,17 @@ function NursingPage() {
         <section className="bg-blue-kims p-5">
           <div className="container mb-4 text-center mt-5">
             <h1 className="text-3xl uppercase text-white">
-              Khubaib Institute of Nursing (KIN)
+              Khubaib Institute of Medical Sciences
             </h1>
             <div className="text-xl text-white my-4">
-              Khubaib Institute of Nursing (KIN) is the founding entity of
-              Khubaib Education Project. The institute is committed to achieve a
-              benchmark for nursing education in the country through a highest
-              level of commitment to excellence in the field of nursing and
-              healthcare education, research and practice
+              Khubaib Institute of Medical Sciences is established as a
+              paramedical training institute in line with the Khyber Pakhtunkhwa
+              Health Foundation’s mandate of promotion and development of
+              innovative healthcare delivery models to achieve policy objectives
+              of the government of Khyber Pakhtunkhwa to improve healthcare
+              services in the province. KP-Health Foundation, in this context,
+              has introduced the concept of Public-Private Partnership for
+              healthcare delivery services.
             </div>
           </div>
         </section>
@@ -86,7 +89,7 @@ function NursingPage() {
         <section>
           <div className="flex flex-col container">
             <h2 className="text-3xl uppercase text-inherit text-center m-5">
-              Diploma Programs
+              Diploma programs
             </h2>
             <div className="bg-green-kims p-5 h-1/4 w-full rounded-3xl">
               <h3 className="text-white">Certified Nursing Assistant (CNA)</h3>
@@ -196,7 +199,7 @@ function NursingPage() {
         <section className="bg-offwhite-kims p-5">
           <div className="container relative -bottom-36">
             <h2 className="text-3xl uppercase text-inherit text-center m-5">
-              Diploma Programs
+              Degree Programs
             </h2>
             <div className="flex justify-between items-stretch">
               <div className="bg-red-kims m-3 p-5 w-full rounded-3xl">
