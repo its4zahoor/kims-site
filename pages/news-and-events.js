@@ -1,12 +1,10 @@
 import { Card, Typography } from "@mui/material";
 import Layout from "@/components/layout/Layout";
-import Link from "next/link";
 import Image from "next/image";
 import { API_URL } from "@/util/constants";
-import BrochureBanner from "@/components/common/BrochureBanner";
+import Link from "next/link";
 
-export default function Scholarship({ data }) {
-  console.log("Zahoor: ~ data:", data);
+export default function NewsEvents({ data }) {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
@@ -94,186 +92,230 @@ export default function Scholarship({ data }) {
               News & Events
             </h2>
             <div className="flex flex-col justify-between items-stretch">
-              <div className="text-black w-full flex py-5">
-                <Image
-                  sizes="25vw"
-                  src="/assets/img/events/event-main.png"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    height: "200px",
-                    width: "300px",
-                  }}
-                  className="rounded-3xl"
-                />
-                <div className="p-3">
-                  <p>
-                    <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                      News
-                    </span>
-                    <span className="ml-5 text-green-700 font-semibold">
-                      Sept 1, 2023
-                    </span>
-                  </p>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus scelerisque aliquam neque, in tristique mauris
-                    facilisis quis. Nullam sollicitudin lorem lorem, et
-                    fringilla quam commodo a.
+              <Link href="/events-insights">
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
+                        News
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        Sept 1, 2023
+                      </span>
+                    </p>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus scelerisque aliquam neque, in tristique mauris
+                      facilisis quis. Nullam sollicitudin lorem lorem, et
+                      fringilla quam commodo a.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="text-black w-full flex py-5">
-                <Image
-                  sizes="25vw"
-                  src="/assets/img/events/event-main.png"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    height: "200px",
-                    width: "300px",
-                  }}
-                  className="rounded-3xl"
-                />
-                <div className="p-3">
-                  <p>
-                    <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                      News
-                    </span>
-                    <span className="ml-5 text-green-700 font-semibold">
-                      Sept 1, 2023
-                    </span>
-                  </p>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus scelerisque aliquam neque, in tristique mauris
-                    facilisis quis. Nullam sollicitudin lorem lorem, et
-                    fringilla quam commodo a.
+              </Link>
+              <Link href="/events-insights">
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
+                        News
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        Sept 1, 2023
+                      </span>
+                    </p>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus scelerisque aliquam neque, in tristique mauris
+                      facilisis quis. Nullam sollicitudin lorem lorem, et
+                      fringilla quam commodo a.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="text-black w-full flex py-5">
-                <Image
-                  sizes="25vw"
-                  src="/assets/img/events/event-main.png"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    height: "200px",
-                    width: "300px",
-                  }}
-                  className="rounded-3xl"
-                />
-                <div className="p-3">
-                  <p>
-                    <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                      News
-                    </span>
-                    <span className="ml-5 text-green-700 font-semibold">
-                      Sept 1, 2023
-                    </span>
-                  </p>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus scelerisque aliquam neque, in tristique mauris
-                    facilisis quis. Nullam sollicitudin lorem lorem, et
-                    fringilla quam commodo a.
+              </Link>
+              <Link href="/events-insights">
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
+                        News
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        Sept 1, 2023
+                      </span>
+                    </p>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus scelerisque aliquam neque, in tristique mauris
+                      facilisis quis. Nullam sollicitudin lorem lorem, et
+                      fringilla quam commodo a.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="text-black w-full flex py-5">
-                <Image
-                  sizes="25vw"
-                  src="/assets/img/events/event-main.png"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    height: "200px",
-                    width: "300px",
-                  }}
-                  className="rounded-3xl"
-                />
-                <div className="p-3">
-                  <p>
-                    <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                      News
-                    </span>
-                    <span className="ml-5 text-green-700 font-semibold">
-                      Sept 1, 2023
-                    </span>
-                  </p>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus scelerisque aliquam neque, in tristique mauris
-                    facilisis quis. Nullam sollicitudin lorem lorem, et
-                    fringilla quam commodo a.
+              </Link>
+              <Link href="/events-insights">
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
+                        News
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        Sept 1, 2023
+                      </span>
+                    </p>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus scelerisque aliquam neque, in tristique mauris
+                      facilisis quis. Nullam sollicitudin lorem lorem, et
+                      fringilla quam commodo a.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="text-black w-full flex py-5">
-                <Image
-                  sizes="25vw"
-                  src="/assets/img/events/event-main.png"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    height: "200px",
-                    width: "300px",
-                  }}
-                  className="rounded-3xl"
-                />
-                <div className="p-3">
-                  <p>
-                    <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                      News
-                    </span>
-                    <span className="ml-5 text-green-700 font-semibold">
-                      Sept 1, 2023
-                    </span>
-                  </p>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus scelerisque aliquam neque, in tristique mauris
-                    facilisis quis. Nullam sollicitudin lorem lorem, et
-                    fringilla quam commodo a.
+              </Link>
+              <Link href="/events-insights">
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
+                        News
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        Sept 1, 2023
+                      </span>
+                    </p>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus scelerisque aliquam neque, in tristique mauris
+                      facilisis quis. Nullam sollicitudin lorem lorem, et
+                      fringilla quam commodo a.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="text-black w-full flex py-5">
-                <Image
-                  sizes="25vw"
-                  src="/assets/img/events/event-main.png"
-                  width={100}
-                  height={100}
-                  style={{
-                    objectFit: "cover",
-                    height: "200px",
-                    width: "300px",
-                  }}
-                  className="rounded-3xl"
-                />
-                <div className="p-3">
-                  <p>
-                    <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                      News
-                    </span>
-                    <span className="ml-5 text-green-700 font-semibold">
-                      Sept 1, 2023
-                    </span>
-                  </p>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus scelerisque aliquam neque, in tristique mauris
-                    facilisis quis. Nullam sollicitudin lorem lorem, et
-                    fringilla quam commodo a.
+              </Link>
+              <Link href="/events-insights">
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
+                        News
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        Sept 1, 2023
+                      </span>
+                    </p>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus scelerisque aliquam neque, in tristique mauris
+                      facilisis quis. Nullam sollicitudin lorem lorem, et
+                      fringilla quam commodo a.
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
+              <Link href="/events-insights">
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
+                        News
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        Sept 1, 2023
+                      </span>
+                    </p>
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus scelerisque aliquam neque, in tristique mauris
+                      facilisis quis. Nullam sollicitudin lorem lorem, et
+                      fringilla quam commodo a.
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
