@@ -218,13 +218,13 @@ export default function Scholarship() {
                 <li>
                   The level of financial assistance awarded is determined
                   through predefined, point-based evaluation criteria based on
-                  the applicant’s socio-economic profile. The socio-economic
+                  the applicant's socio-economic profile. The socio-economic
                   profile is prepared based on the information given by the
                   applicant and his/her parents or guardian in the financial
                   assistance application form and in interviews.
                 </li>
                 <li>
-                  The Institute’s Financial Assistance Committee is responsible
+                  The Institute's Financial Assistance Committee is responsible
                   for receiving applications for financial assistance and
                   reviewing it based on a prescribed evaluation system and
                   determining the level of financial assistance to be awarded to
@@ -242,39 +242,6 @@ export default function Scholarship() {
             </Typography>
           </Grid>
         </Grid>
-
-        <section className="bg-offwhite-kims -mt-[50px]">
-          <div className="container relative -bottom-40 rounded-3xl">
-            <Image
-              sizes="25vw"
-              src="/assets/img/home/brochure.png"
-              width={50}
-              height={50}
-              style={{
-                width: "100%",
-                height: "50vh",
-                objectFit: "cover",
-              }}
-              className="rounded-3xl"
-            />
-            <div className="absolute top-20 left-40 uppercase text-white">
-              <div className="w-2/5 flex flex-col relative">
-                <span>Download our brochure</span>
-                <span className="text-3xl font-extrabold mb-4">
-                  Ready to explore our full suite of academic & Guide solutions?
-                </span>
-                <span>
-                  <button className="mt-4 py-2 px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
-                    <Link href="#" className="text-white">
-                      <span className="mr-3">Download Our Brochure</span>
-                      <i class="zmdi zmdi-download" />
-                    </Link>
-                  </button>
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
       </Layout>
     </>
   );
