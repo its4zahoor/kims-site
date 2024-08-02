@@ -1,29 +1,28 @@
 import { Card, Typography, Grid } from "@mui/material";
 import DataGrid from "@/components/common/DataGrid";
 import Layout from "@/components/layout/Layout";
-import Link from "next/link";
-import Image from "next/image";
+import HeaderBanner from "@/components/layout/header/HeaderBanner";
 
 export default function Scholarship() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
-        <section
-          className="banner-area banner-bg"
-          data-background="/assets/img/bg/scholarship-banner.png"
+        <HeaderBanner
+          bannerImage="/assets/img/bg/scholarship-banner.png"
+          sx={{
+            paddingTop: { xs: "300px", md: "500px", lg: "550px", xl: "650px" },
+          }}
         >
           <Card
             sx={{
-              width: "90vw",
+              width: { xs: "92vw", md: "80vw" },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               gap: 1.25,
               backgroundColor: "#BB3131",
               borderRadius: "24px",
-              padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
-              padding: 5,
-              marginX: { xs: "32px", md: "auto" },
+              padding: { xs: "70px 50px", md: "50px 20px 55px" },
             }}
           >
             {/* TODO: create theme file for mui and define theme */}
@@ -61,12 +60,17 @@ export default function Scholarship() {
               in the listed programs are
             </Typography>
           </Card>
-        </section>
+        </HeaderBanner>
         <Grid
-          data-background="/assets/img/scholarship/scholarship-program-bg.png"
           sx={{
             justifyContent: "center",
-            padding: { xs: "48px 32px", md: "120px 80px" },
+            padding: {
+              xs: "80px 20px",
+              md: "80px",
+              lg: "60px 80px 120px",
+            },
+            background:
+              'url("/assets/img/scholarship/scholarship-program-bg.png")',
             gap: 2.5,
             backgroundColor: "#274474",
           }}
@@ -124,13 +128,13 @@ export default function Scholarship() {
         <Grid
           sx={{
             justifyContent: "center",
-            padding: { xs: "48px 32px", md: "120px 80px" },
+            padding: { xs: "80px 20px 100px", lg: "140px 80px 100px" },
             gap: { xs: 3, md: 10 },
             background:
               "linear-gradient(90deg, #BB3131 0%, rgba(187, 49, 49, 0.90) 100%), url('/assets/img/bg/library-bg.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            position: "relative",
+            backgroundRepeat: "no-repeat",
           }}
           container
         >
@@ -207,7 +211,6 @@ export default function Scholarship() {
                 fontWeight: 400,
                 lineHeight: "24px",
                 color: "white",
-                paddingBottom: 3,
               }}
             >
               <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>

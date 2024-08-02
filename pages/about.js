@@ -18,7 +18,6 @@ export default function AboutUs() {
               backgroundColor: "#BB3131",
               borderRadius: "24px",
               padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
-              padding: 5,
             }}
           >
             {/* TODO: create theme file for mui and define theme */}
