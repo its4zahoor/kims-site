@@ -2305,8 +2305,11 @@ textarea {
   padding: 163px 0 0;
   position: relative;
   object-fit: cover;
+  background-repeat: no-repeat;
+
   @media (max-width: 1440px) {
     height: 820px;
+    max-height: 100%;
   }
   @media (min-width: 1440px) {
     background-size: cover;
@@ -2323,6 +2326,21 @@ textarea {
 @media (max-width: 1199.98px) {
   .banner-bg {
     padding: 170px 0 0;
+  }
+}
+
+.bg-image {
+  height: 600px;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: 1440px) {
+    background-size: cover;
   }
 }
 
