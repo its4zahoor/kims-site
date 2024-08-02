@@ -1,4 +1,5 @@
-export const API_URL = "https://khubaib-backend.abdullahrazzaki.com/api/public";
+export const BASE_URL = "https://khubaib-backend.abdullahrazzaki.com";
+export const API_URL = `${BASE_URL}/api/public`;
 // process.env.NODE_ENV === "development"
 //   ? "http://localhost:3012/api/public"
 //   : "https://khubaib-backend.abdullahrazzaki.com/api/public";

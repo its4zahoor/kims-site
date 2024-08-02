@@ -40,13 +40,13 @@ export default function MobileMenu() {
             <Link href="#">Academic</Link>
             {isActive.key == 1 ? (
               <i
-                class="zmdi zmdi-caret-up zmdi-hc-2x"
+                className="zmdi zmdi-caret-up zmdi-hc-2x"
                 style={{ color: "#FFF", padding: "30px 0px" }}
                 onClick={() => handleToggle(1)}
               ></i>
             ) : (
               <i
-                class="zmdi zmdi-caret-down zmdi-hc-2x"
+                className="zmdi zmdi-caret-down zmdi-hc-2x"
                 style={{ color: "#FFF", padding: "30px 0px" }}
                 onClick={() => handleToggle(1)}
               ></i>
@@ -81,13 +81,13 @@ export default function MobileMenu() {
             <Link href="#">Admission</Link>
             {isActive.key == 2 ? (
               <i
-                class="zmdi zmdi-caret-up zmdi-hc-2x"
+                className="zmdi zmdi-caret-up zmdi-hc-2x"
                 style={{ color: "#FFF", padding: "30px 0px" }}
                 onClick={() => handleToggle(2)}
               ></i>
             ) : (
               <i
-                class="zmdi zmdi-caret-down zmdi-hc-2x"
+                className="zmdi zmdi-caret-down zmdi-hc-2x"
                 style={{ color: "#FFF", padding: "30px 0px" }}
                 onClick={() => handleToggle(2)}
               ></i>
@@ -127,13 +127,13 @@ export default function MobileMenu() {
             <Link href="#">Facilities</Link>
             {isActive.key == 3 ? (
               <i
-                class="zmdi zmdi-caret-up zmdi-hc-2x"
+                className="zmdi zmdi-caret-up zmdi-hc-2x"
                 style={{ color: "#FFF", padding: "30px 0px" }}
                 onClick={() => handleToggle(3)}
               ></i>
             ) : (
               <i
-                class="zmdi zmdi-caret-down zmdi-hc-2x"
+                className="zmdi zmdi-caret-down zmdi-hc-2x"
                 style={{ color: "#FFF", padding: "30px 0px" }}
                 onClick={() => handleToggle(3)}
               ></i>

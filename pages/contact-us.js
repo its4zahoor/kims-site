@@ -296,7 +296,7 @@ export default function Contact() {
               >
                 Submit
                 <i
-                  class="zmdi zmdi-arrow-right-top"
+                  className="zmdi zmdi-arrow-right-top"
                   style={{ paddingLeft: "15px" }}
                 />
               </Button>
