@@ -23,7 +23,7 @@ export default function Banner1() {
           <button className="py-2 px-4 border-2 font-semibold rounded-full shadow-md hover:bg-red-800 hover:ring-opacity-50 focus:outline-none">
             <Link href="#" className="text-white">
               <span className="mr-3">Discover More</span>
-              <i class="zmdi zmdi-arrow-right-top" />
+              <i className="zmdi zmdi-arrow-right-top" />
             </Link>
           </button>
         </div>
@@ -103,7 +103,7 @@ export default function Banner1() {
                 <button className="my-3 py-2 px-4 border-green-600 text-inherit border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
                   <Link href="#">
                     <span className="mr-3">Discover More</span>
-                    <i class="zmdi zmdi-arrow-right-top" />
+                    <i className="zmdi zmdi-arrow-right-top" />
                   </Link>
                 </button>
               </div>
@@ -193,7 +193,7 @@ export default function Banner1() {
               <button className="mt-4 py-2 px-4 border-2 font-semibold rounded-full shadow-md hover:bg-red-800 hover:ring-opacity-50 focus:outline-none">
                 <Link href="#" className="text-white">
                   <span className="mr-3">Discover More</span>
-                  <i class="zmdi zmdi-arrow-right-top" />
+                  <i className="zmdi zmdi-arrow-right-top" />
                 </Link>
               </button>
             </div>

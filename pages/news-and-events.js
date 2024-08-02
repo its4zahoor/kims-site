@@ -5,6 +5,7 @@ import { API_URL } from "@/util/constants";
 import Link from "next/link";
 
 export default function NewsEvents({ data }) {
+  console.log("Zahoor: ~ data:", data);
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>

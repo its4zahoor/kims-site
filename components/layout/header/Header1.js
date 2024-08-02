@@ -207,7 +207,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                 }}
               >
                 <i
-                  class="zmdi zmdi-close-circle-o"
+                  className="zmdi zmdi-close-circle-o"
                   style={{
                     color: "white",
                     fontSize: "24px",

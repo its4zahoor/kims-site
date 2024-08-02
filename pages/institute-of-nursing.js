@@ -112,7 +112,7 @@ function NursingPage() {
                 <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
                   <Link href="#" className="text-white">
                     <span className="mr-3">Apply</span>
-                    <i class="zmdi zmdi-arrow-right-top" />
+                    <i className="zmdi zmdi-arrow-right-top" />
                   </Link>
                 </button>
               </div>
@@ -139,7 +139,7 @@ function NursingPage() {
                 <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
                   <Link href="#" className="text-white">
                     <span className="mr-3">Apply</span>
-                    <i class="zmdi zmdi-arrow-right-top" />
+                    <i className="zmdi zmdi-arrow-right-top" />
                   </Link>
                 </button>
               </div>
@@ -166,7 +166,7 @@ function NursingPage() {
                 <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
                   <Link href="#" className="text-white">
                     <span className="mr-3">Apply</span>
-                    <i class="zmdi zmdi-arrow-right-top" />
+                    <i className="zmdi zmdi-arrow-right-top" />
                   </Link>
                 </button>
               </div>
@@ -218,7 +218,7 @@ function NursingPage() {
                   <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
                     <Link href="#" className="text-white">
                       <span className="mr-3">Apply Now</span>
-                      <i class="zmdi zmdi-arrow-right-top" />
+                      <i className="zmdi zmdi-arrow-right-top" />
                     </Link>
                   </button>
                 </div>
@@ -239,7 +239,7 @@ function NursingPage() {
                   <button className="mt-4 py-2 bg-blue-kims px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
                     <Link href="#" className="text-white">
                       <span className="mr-3">Apply Now</span>
-                      <i class="zmdi zmdi-arrow-right-top" />
+                      <i className="zmdi zmdi-arrow-right-top" />
                     </Link>
                   </button>
                 </div>
