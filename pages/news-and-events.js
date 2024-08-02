@@ -1,11 +1,17 @@
 import { Card, Typography } from "@mui/material";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
-import { API_URL } from "@/util/constants";
+import { API_URL, BASE_URL } from "@/util/constants";
 import Link from "next/link";
+import dayjs from "dayjs";
 
 export default function NewsEvents({ data }) {
   console.log("Zahoor: ~ data:", data);
+
+  console.log(data.rows.map((event) => event.description));
+
+  const formatDate = (date) => dayjs(date).format("MMM DD, YYYY");
+
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
@@ -92,6 +98,35 @@ export default function NewsEvents({ data }) {
             <h2 className="text-3xl uppercase text-inherit font-extrabold pt-8">
               News & Events
             </h2>
+            {data.rows.map((event) => (
+              <Link href={`/events-insights/${event.id}`}>
+                <div className="text-black w-full flex py-5">
+                  <Image
+                    sizes="25vw"
+                    src="/assets/img/events/event-main.png"
+                    width={100}
+                    height={100}
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "300px",
+                    }}
+                    className="rounded-3xl"
+                  />
+                  <div className="p-3">
+                    <p>
+                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold capitalize">
+                        {event.type}
+                      </span>
+                      <span className="ml-5 text-green-700 font-semibold">
+                        {formatDate(event.updatedAt)}
+                      </span>
+                    </p>
+                    <div>{event.title}</div>
+                  </div>
+                </div>
+              </Link>
+            ))}
             <div className="flex flex-col justify-between items-stretch">
               <Link href="/events-insights">
                 <div className="text-black w-full flex py-5">
