@@ -80,7 +80,7 @@ export default function NewsEvents({ data }) {
                 objectFit: "cover",
               }}
             />
-            <div className="p-3">
+            <div className="p-3 mt-24">
               <h4>
                 Phasellus imperdiet viverra ligula, sed volutpat enim congue
                 nec.
@@ -98,260 +98,36 @@ export default function NewsEvents({ data }) {
             <h2 className="text-3xl uppercase text-inherit font-extrabold pt-8">
               News & Events
             </h2>
-            {data.rows.map((event) => (
-              <Link href={`/events-insights/${event.id}`}>
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold capitalize">
-                        {event.type}
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        {formatDate(event.updatedAt)}
-                      </span>
-                    </p>
-                    <div>{event.title}</div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-            <div className="flex flex-col justify-between items-stretch">
-              <Link href="/events-insights">
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                        News
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        Sept 1, 2023
-                      </span>
-                    </p>
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus scelerisque aliquam neque, in tristique mauris
-                      facilisis quis. Nullam sollicitudin lorem lorem, et
-                      fringilla quam commodo a.
+            <div className="flex flex-col items-stretch">
+              {data.rows.map((event) => (
+                <Link href={`/events-insights/${event.id}`}>
+                  <div className="flex justify-between text-black w-full py-5">
+                    <Image
+                      sizes="25vw"
+                      src="/assets/img/events/event-main.png"
+                      width={100}
+                      height={100}
+                      style={{
+                        objectFit: "cover",
+                        height: "200px",
+                        width: "300px",
+                      }}
+                      className="rounded-3xl"
+                    />
+                    <div className="p-3">
+                      <p>
+                        <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold capitalize">
+                          {event.type}
+                        </span>
+                        <span className="ml-5 text-green-700 font-semibold">
+                          {formatDate(event.updatedAt)}
+                        </span>
+                      </p>
+                      <div>{event.title}</div>
                     </div>
                   </div>
-                </div>
-              </Link>
-              <Link href="/events-insights">
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                        News
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        Sept 1, 2023
-                      </span>
-                    </p>
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus scelerisque aliquam neque, in tristique mauris
-                      facilisis quis. Nullam sollicitudin lorem lorem, et
-                      fringilla quam commodo a.
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/events-insights">
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                        News
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        Sept 1, 2023
-                      </span>
-                    </p>
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus scelerisque aliquam neque, in tristique mauris
-                      facilisis quis. Nullam sollicitudin lorem lorem, et
-                      fringilla quam commodo a.
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/events-insights">
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                        News
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        Sept 1, 2023
-                      </span>
-                    </p>
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus scelerisque aliquam neque, in tristique mauris
-                      facilisis quis. Nullam sollicitudin lorem lorem, et
-                      fringilla quam commodo a.
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/events-insights">
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                        News
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        Sept 1, 2023
-                      </span>
-                    </p>
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus scelerisque aliquam neque, in tristique mauris
-                      facilisis quis. Nullam sollicitudin lorem lorem, et
-                      fringilla quam commodo a.
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/events-insights">
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                        News
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        Sept 1, 2023
-                      </span>
-                    </p>
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus scelerisque aliquam neque, in tristique mauris
-                      facilisis quis. Nullam sollicitudin lorem lorem, et
-                      fringilla quam commodo a.
-                    </div>
-                  </div>
-                </div>
-              </Link>
-              <Link href="/events-insights">
-                <div className="text-black w-full flex py-5">
-                  <Image
-                    sizes="25vw"
-                    src="/assets/img/events/event-main.png"
-                    width={100}
-                    height={100}
-                    style={{
-                      objectFit: "cover",
-                      height: "200px",
-                      width: "300px",
-                    }}
-                    className="rounded-3xl"
-                  />
-                  <div className="p-3">
-                    <p>
-                      <span className="bg-red-700 text-white rounded-3xl py-2 px-3 font-semibold">
-                        News
-                      </span>
-                      <span className="ml-5 text-green-700 font-semibold">
-                        Sept 1, 2023
-                      </span>
-                    </p>
-                    <div>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus scelerisque aliquam neque, in tristique mauris
-                      facilisis quis. Nullam sollicitudin lorem lorem, et
-                      fringilla quam commodo a.
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
