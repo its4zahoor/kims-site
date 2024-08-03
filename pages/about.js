@@ -137,10 +137,10 @@ export default function AboutUs() {
               Khubaib Institute of Medical Sciences and Nursing is a registered
               institute offering diploma and degree programs with approval from
               relevant bodies such as the Higher Education Regulatory Authority
-              (HERA) – Khyber Pakhtunkhwa, Pakistan Nursing & Midwifery Council
+              (HERA) - Khyber Pakhtunkhwa, Pakistan Nursing & Midwifery Council
               (PNMC), Pakistan Pharmacy Council, Faculty of Paramedics and
-              Allied Health Sciences (FPAHS) – Khyber Pakhtunkhwa. The institute
-              has signed an MoU with Health Foundation (KPHF) – Khyber
+              Allied Health Sciences (FPAHS) - Khyber Pakhtunkhwa. The institute
+              has signed an MoU with Health Foundation (KPHF) - Khyber
               Pakhtunkhwa for District Headquarter Hospital (DHQ), Haripur as a
               teaching/training hospital for practical experience in various
               fields of paramedics and Nursing.
@@ -587,7 +587,7 @@ export default function AboutUs() {
                 paddingBottom: 2,
               }}
             >
-              CHAIRMAN’S MESSAGE
+              CHAIRMAN'S MESSAGE
             </Typography>
             <Typography
               sx={{
@@ -683,7 +683,7 @@ export default function AboutUs() {
             to endeavor to excel in its practice. So, both the abundance of
             translated ancient medical books, which became available to people
             and the saying of the eminent physician Abū Bakr Muḥammad ibn
-            Zakariyyā al-Rāzī (Rhazes, 865–925) that: “He who studies the work
+            Zakariyyā al-Rāzī (Rhazes, 865-925) that: “He who studies the work
             of the Ancients gains the experience of their labor, it is as if he
             himself had lived a thousand years spent on the investigation”, gave
             a great boost for more people to study and practice medicine.
@@ -1287,38 +1287,6 @@ export default function AboutUs() {
             </div>
           </section>
         </div> */}
-        <section className="-mt-[50px]">
-          <div className="container relative -bottom-40 rounded-3xl">
-            <Image
-              sizes="25vw"
-              src="/assets/img/home/brochure.png"
-              width={50}
-              height={50}
-              style={{
-                width: "100%",
-                height: "50vh",
-                objectFit: "cover",
-              }}
-              className="rounded-3xl"
-            />
-            <div className="absolute top-20 left-40 uppercase text-white">
-              <div className="w-2/5 flex flex-col relative">
-                <span>Download our brochure</span>
-                <span className="text-3xl font-extrabold mb-4">
-                  Ready to explore our full suite of academic & Guide solutions?
-                </span>
-                <span>
-                  <button className="mt-4 py-2 px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
-                    <Link href="#" className="text-white">
-                      <span className="mr-3">Download Our Brochure</span>
-                      <i class="zmdi zmdi-download" />
-                    </Link>
-                  </button>
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
       </Layout>
     </>
   );

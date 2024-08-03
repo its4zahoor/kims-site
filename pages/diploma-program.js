@@ -218,13 +218,13 @@ export default function Scholarship() {
                 <li>
                   The level of financial assistance awarded is determined
                   through predefined, point-based evaluation criteria based on
-                  the applicant's socio-economic profile. The socio-economic
+                  the applicant’s socio-economic profile. The socio-economic
                   profile is prepared based on the information given by the
                   applicant and his/her parents or guardian in the financial
                   assistance application form and in interviews.
                 </li>
                 <li>
-                  The Institute's Financial Assistance Committee is responsible
+                  The Institute’s Financial Assistance Committee is responsible
                   for receiving applications for financial assistance and
                   reviewing it based on a prescribed evaluation system and
                   determining the level of financial assistance to be awarded to

@@ -66,7 +66,7 @@
   --tg-common-color-gray: #e7effc;
   --tg-common-color-gray-2: #f4f7fb;
   --tg-common-color-gray-3: #f5f7fb;
-  --tg-common-color-dark: #061e43;
+  --tg-common-color-dark: #101010;
   --tg-common-color-black: #000;
   --tg-body-color: #39557e;
   --tg-heading-color: #c6cdd8;
@@ -741,7 +741,7 @@ textarea {
   color: var(--tg-common-color-white);
   text-align: center;
   cursor: pointer;
-  background: var(--tg-theme-primary);
+  background-color: #04824b;
   transition: 1s ease;
   border: none;
 }
@@ -796,7 +796,7 @@ textarea {
 }
 
 .scroll__top:hover {
-  background: var(--tg-theme-secondary);
+  background-color: #03683C;
   color: var(--tg-common-color-white);
 }
 
@@ -1004,7 +1004,7 @@ textarea {
 
 @media (max-width: 1500px) {
   .tg-header__area {
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }
 
@@ -1227,12 +1227,12 @@ textarea {
   padding: 0;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 auto 0 73px;
+  margin: 0 auto 0 60px;
 }
 
 @media (max-width: 1500px) {
   .tgmenu__navbar-wrap ul {
-    margin: 0 auto 0 40px;
+    margin: 0px auto 0 20px;
   }
 }
 
@@ -1243,26 +1243,38 @@ textarea {
 }
 
 .tgmenu__navbar-wrap ul li a {
+  font-family: "Dax";
   font-size: 16px;
-  font-weight: var(--tg-fw-regular);
-  text-transform: capitalize;
-  color: var(--tg-heading-color);
-  font-family: var(--tg-heading-font-family);
-  padding: 37px 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 37px 6px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  line-height: 1;
   position: relative;
   z-index: 1;
 }
 
+.tgmenu__navbar-wrap ul li a:hover {
+  font-weight: bold;
+}
+
+@media (min-width: 1280px) {
+  .tgmenu__navbar-wrap ul li a {
+    padding: 20px 12px;
+  }
+}
+
 .tgmenu__navbar-wrap ul li .sub-menu {
   position: absolute;
-  left: 0;
+  left: 12px;
   top: 100%;
   min-width: 230px;
   border: 1px solid #f5f5f5;
@@ -1286,8 +1298,8 @@ textarea {
   -moz-border-radius: 6px;
   -o-border-radius: 6px;
   -ms-border-radius: 6px;
-  border-radius: 6px;
-  padding: 18px 0;
+  border-radius: 15px;
+  padding: 17px 25px 13px;
   display: block;
   visibility: hidden;
   opacity: 0;
@@ -1307,11 +1319,21 @@ textarea {
 }
 
 .tgmenu__navbar-wrap ul li .sub-menu li a {
-  padding: 8px 15px 8px 25px;
-  line-height: 1.4;
-  display: block;
-  color: var(--tg-heading-color);
-  text-transform: capitalize;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(16, 16, 16, 0.5);
+  font-family: "Dax";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  min-width: 100%;
+}
+
+.tgmenu__navbar-wrap ul li .sub-menu li:last-child a {
+  border-bottom: none;
 }
 
 .tgmenu__navbar-wrap ul li .sub-menu li:hover > a,
@@ -1335,7 +1357,7 @@ textarea {
 
 .tgmenu__navbar-wrap > ul > li.active a,
 .tgmenu__navbar-wrap > ul > li:hover a {
-  color: var(--tg-theme-primary);
+  color: #fff;
 }
 
 .tgmenu__main-menu li.menu-item-has-children .dropdown-btn {
@@ -1346,7 +1368,7 @@ textarea {
   content: "\f107";
   display: block;
   font-family: "flaticon_eduvalt";
-  color: #5a7093;
+  color: #fff;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1355,6 +1377,10 @@ textarea {
   font-size: 12px;
   font-weight: var(--tg-fw-bold);
   margin-left: 6px;
+}
+
+.tgmenu__navbar-wrap > ul > li:hover a::after {
+  transform: rotate(360deg);
 }
 
 .tgmenu__search {
@@ -1869,10 +1895,9 @@ textarea {
 
 .tgmobile__menu {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
-  width: 300px;
-  padding-right: 30px;
+  padding-left: 30px;
   max-width: 100%;
   height: 100%;
   z-index: 99;
@@ -1882,11 +1907,23 @@ textarea {
   -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -ms-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) e;
   -o-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -webkit-transform: translateX(101%);
-  -moz-transform: translateX(101%);
-  -ms-transform: translateX(101%);
-  -o-transform: translateX(101%);
-  transform: translateX(101%);
+  -webkit-transform: translateX(-101%);
+  -moz-transform: translateX(-101%);
+  -ms-transform: translateX(-101%);
+  -o-transform: translateX(-101%);
+  transform: translateX(-101%);
+}
+
+@media (max-width: 450px) {
+  .tgmobile__menu {
+    width: 100%;
+  }
+}
+
+@media (min-width: 451px) {
+  .tgmobile__menu {
+    width: 400px;
+  }
 }
 
 .tgmobile__menu .navbar-collapse {
@@ -1914,8 +1951,7 @@ textarea {
 
 .tgmobile__menu .navigation li {
   position: relative;
-  display: block;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .tgmobile__menu .navigation li.active > a {
@@ -2001,16 +2037,36 @@ textarea {
 .tgmobile__menu .navigation li > a {
   position: relative;
   display: block;
-  line-height: 1.5;
-  padding: 10px 60px 10px 25px;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--tg-heading-color);
-  text-transform: capitalize;
+  color: #fff;
+  padding: 30px 0px;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
   border: none;
+  font-family: "Dax";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.tgmobile__menu .navigation li .item > a {
+  position: relative;
+  color: #fff;
+  padding: 30px 0px;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  border: none;
+  font-family: "Dax";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
 }
 
 .tgmobile__menu .navigation li > a::before {
@@ -2076,8 +2132,8 @@ textarea {
 
 .tgmobile__menu .close-btn {
   position: absolute;
-  right: 15px;
-  top: 28px;
+  left: 20px;
+  top: 30px;
   line-height: 30px;
   width: 35px;
   text-align: center;
@@ -2190,10 +2246,10 @@ textarea {
   width: 100%;
   height: 100%;
   max-height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
-  background: var(--tg-common-color-white);
-  padding: 0px 0px;
+  background: #04824b;
+  padding: 20px 20px 0px;
   z-index: 5;
   box-shadow: -9px 0 14px 0px rgba(0, 0, 0, 0.06);
 }
@@ -2248,7 +2304,7 @@ textarea {
   align-items: flex-end;
   padding: 163px 0 0;
   position: relative;
-  object-fit: cover; 
+  object-fit: cover;
   @media (max-width: 1440px) {
     height: 820px;
   }

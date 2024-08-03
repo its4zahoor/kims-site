@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
+import { Stack } from "@mui/material";
+
 export default function MobileMenu() {
   const [isActive, setIsActive] = useState({
     status: false,
@@ -22,90 +24,141 @@ export default function MobileMenu() {
   return (
     <>
       <ul className="navigation">
-        <li className="active">
-          <Link href="/about-us">ABOUT</Link>
+        <li>
+          <Link href="/about">About</Link>
         </li>
         <li className="menu-item-has-children">
-          <Link href="#">ACADEMIC</Link>
+          <Stack
+            sx={{
+              flexDirection: "row",
+              alignItem: "center",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+            className="item"
+          >
+            <Link href="#">Academic</Link>
+            {isActive.key == 1 ? (
+              <i
+                className="zmdi zmdi-caret-up zmdi-hc-2x"
+                style={{ color: "#FFF", padding: "30px 0px" }}
+                onClick={() => handleToggle(1)}
+              ></i>
+            ) : (
+              <i
+                className="zmdi zmdi-caret-down zmdi-hc-2x"
+                style={{ color: "#FFF", padding: "30px 0px" }}
+                onClick={() => handleToggle(1)}
+              ></i>
+            )}
+          </Stack>
           <ul
             className="sub-menu"
             style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}
           >
             <li>
               <Link href="/institute-of-nursing">
-                KHBAIB INSTITUTE OF NURSING
+                Khubaib Institute of Nursing
               </Link>
             </li>
             <li>
               <Link href="/institute-of-medical-sciences">
-                KHUBAIB INSTITUTE OF MEDICAL SCIENCES
+                Khubaib Institute of Medical Sciences
               </Link>
             </li>
           </ul>
-          <div
-            className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"}
-            onClick={() => handleToggle(1)}
-          >
-            <span className="plus-line" />
-          </div>
         </li>
         <li className="menu-item-has-children">
-          <Link href="#">ADMISSION</Link>
+          <Stack
+            sx={{
+              flexDirection: "row",
+              alignItem: "center",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+            className="item"
+          >
+            <Link href="#">Admission</Link>
+            {isActive.key == 2 ? (
+              <i
+                className="zmdi zmdi-caret-up zmdi-hc-2x"
+                style={{ color: "#FFF", padding: "30px 0px" }}
+                onClick={() => handleToggle(2)}
+              ></i>
+            ) : (
+              <i
+                className="zmdi zmdi-caret-down zmdi-hc-2x"
+                style={{ color: "#FFF", padding: "30px 0px" }}
+                onClick={() => handleToggle(2)}
+              ></i>
+            )}
+          </Stack>
           <ul
             className="sub-menu"
             style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}
           >
             <li>
-              <Link href="/diploma-program">DIPLOMA PROGRAM</Link>
+              <Link href="/diploma-program">Diploma Program</Link>
             </li>
             <li>
-              <Link href="/degree-program">DEGREE PROGRAM</Link>
+              <Link href="/degree-program">Degree Program</Link>
             </li>
             <li>
-              <Link href="/eligibility-criteria">ELIGIBILITY CRITERIA</Link>
+              <Link href="/eligibility-criteria">Eligibility Criteria</Link>
             </li>
             <li>
-              <Link href="/admission-process">ADMISSION PROCESS</Link>
+              <Link href="/admission-process">Admission Process</Link>
             </li>
             <li>
-              <Link href="/fee-structure">FEE STRUCTURE</Link>
+              <Link href="/fee-structure">Fee Structure</Link>
             </li>
           </ul>
-          <div
-            className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"}
-            onClick={() => handleToggle(2)}
-          >
-            <span className="plus-line" />
-          </div>
         </li>
         <li className="menu-item-has-children">
-          <Link href="#">FACILITIES</Link>
+          <Stack
+            sx={{
+              flexDirection: "row",
+              alignItem: "center",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+            className="item"
+          >
+            <Link href="#">Facilities</Link>
+            {isActive.key == 3 ? (
+              <i
+                className="zmdi zmdi-caret-up zmdi-hc-2x"
+                style={{ color: "#FFF", padding: "30px 0px" }}
+                onClick={() => handleToggle(3)}
+              ></i>
+            ) : (
+              <i
+                className="zmdi zmdi-caret-down zmdi-hc-2x"
+                style={{ color: "#FFF", padding: "30px 0px" }}
+                onClick={() => handleToggle(3)}
+              ></i>
+            )}
+          </Stack>
           <ul
             className="sub-menu"
             style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}
           >
             <li>
-              <Link href="/scholarship">SCHOLARSHIP</Link>
+              <Link href="/scholarship">Scholarship</Link>
             </li>
             <li>
-              <Link href="/training-facilities">TRAINING FACILITIES</Link>
+              <Link href="/training-facilities">Training Facilities</Link>
             </li>
             <li>
-              <Link href="/sports-facilities">SPORTS FACILITIES</Link>
+              <Link href="/sports-facilities">Sports Facilities</Link>
             </li>
           </ul>
-          <div
-            className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"}
-            onClick={() => handleToggle(3)}
-          >
-            <span className="plus-line" />
-          </div>
         </li>
         <li>
-          <Link href="/news-and-events">NEWS & EVENTS</Link>
+          <Link href="/news-and-events">News & Events</Link>
         </li>
         <li>
-          <Link href="contact-us">CONTACT US</Link>
+          <Link href="contact-us">Contact Us</Link>
         </li>
       </ul>
     </>

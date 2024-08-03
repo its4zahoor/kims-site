@@ -1,8 +1,10 @@
+import BrochureBanner from "@/components/common/BrochureBanner";
 import Link from "next/link";
 
 export default function Footer1() {
   return (
     <>
+      <BrochureBanner />
       <footer className="footer-bg" data-bg-color="var(--tg-common-color-dark)">
         <div className="footer__top-wrap">
           <div className="container">

@@ -23,7 +23,7 @@ export default function Banner1() {
           <button className="py-2 px-4 border-2 font-semibold rounded-full shadow-md hover:bg-red-800 hover:ring-opacity-50 focus:outline-none">
             <Link href="#" className="text-white">
               <span className="mr-3">Discover More</span>
-              <i class="zmdi zmdi-arrow-right-top" />
+              <i className="zmdi zmdi-arrow-right-top" />
             </Link>
           </button>
         </div>
@@ -103,7 +103,7 @@ export default function Banner1() {
                 <button className="my-3 py-2 px-4 border-green-600 text-inherit border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
                   <Link href="#">
                     <span className="mr-3">Discover More</span>
-                    <i class="zmdi zmdi-arrow-right-top" />
+                    <i className="zmdi zmdi-arrow-right-top" />
                   </Link>
                 </button>
               </div>
@@ -193,7 +193,7 @@ export default function Banner1() {
               <button className="mt-4 py-2 px-4 border-2 font-semibold rounded-full shadow-md hover:bg-red-800 hover:ring-opacity-50 focus:outline-none">
                 <Link href="#" className="text-white">
                   <span className="mr-3">Discover More</span>
-                  <i class="zmdi zmdi-arrow-right-top" />
+                  <i className="zmdi zmdi-arrow-right-top" />
                 </Link>
               </button>
             </div>
@@ -261,38 +261,6 @@ export default function Banner1() {
               src="/assets/img/icons/red_arrow_down.svg"
               className="absolute bottom-5 right-10"
             />
-          </div>
-        </section>
-        <section className="-mt-[50px]">
-          <div className="container relative -bottom-40 rounded-3xl">
-            <Image
-              sizes="25vw"
-              src="/assets/img/home/brochure.png"
-              width={50}
-              height={50}
-              style={{
-                width: "100%",
-                height: "50vh",
-                objectFit: "cover",
-              }}
-              className="rounded-3xl"
-            />
-            <div className="absolute top-20 left-40 uppercase text-white">
-              <div className="w-2/5 flex flex-col relative">
-                <span>Download our brochure</span>
-                <span className="text-3xl font-extrabold mb-4">
-                  Ready to explore our full suite of academic & Guide solutions?
-                </span>
-                <span>
-                  <button className="mt-4 py-2 px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
-                    <Link href="#" className="text-white">
-                      <span className="mr-3">Download Our Brochure</span>
-                      <i class="zmdi zmdi-download" />
-                    </Link>
-                  </button>
-                </span>
-              </div>
-            </div>
           </div>
         </section>
       </div>
