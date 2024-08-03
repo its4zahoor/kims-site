@@ -1,10 +1,12 @@
 import BrochureBanner from "@/components/common/BrochureBanner";
+import { useInfo } from "@/util/constants";
 import Link from "next/link";
 
 export default function Footer1() {
+  const info = useInfo();
   return (
     <>
-      <BrochureBanner />
+      <BrochureBanner brochureLink={info?.brochureLink} />
       <footer className="footer-bg" data-bg-color="var(--tg-common-color-dark)">
         <div className="footer__top-wrap">
           <div className="container">
@@ -34,19 +36,48 @@ export default function Footer1() {
                   <ul className="list-wrap">
                     <li>
                       <Link href="/about-us">
-                        Main Shahrah-e-Resham, Bakka Mor, Haripur KPK, Pakistan
+                        {info?.address ||
+                          "Main Shahrah-e-Resham, Bakka Mor, Haripur KPK, Pakistan"}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/contact">+92-995-670780</Link>
+                      {info?.phoneNumbers?.split(",")?.map((number) => (
+                        <Link
+                          style={{ marginRight: "8px" }}
+                          href={`tel:${number}`}
+                        >
+                          {number}
+                        </Link>
+                      )) || (
+                        <Link href="tel:+92-995-670780">+92-995-670780</Link>
+                      )}
                     </li>
                     <li>
-                      <Link href="tel:+92-334-9991220">+92-334-9991220</Link>
-                      <Link href="tel:+92-331-6070009">+92-331-6070009</Link>
+                      {info?.mobileNumbers?.split(",")?.map((number) => (
+                        <Link
+                          style={{ marginRight: "8px" }}
+                          href={`tel:${number}`}
+                        >
+                          {number}
+                        </Link>
+                      )) || (
+                        <>
+                          <Link href="tel:+92-334-9991220">
+                            +92-334-9991220
+                          </Link>
+                          <Link href="tel:+92-331-6070009">
+                            +92-331-6070009
+                          </Link>
+                        </>
+                      )}
                     </li>
                     <li>
-                      <Link href="mailto:admissions@kims-kin.edu.pk">
-                        admissions@kims-kin.edu.pk
+                      <Link
+                        href={`mailto:${
+                          info?.email || "admissions@kims-kin.edu.pk"
+                        }`}
+                      >
+                        {info?.email || "admissions@kims-kin.edu.pk"}
                       </Link>
                     </li>
                     <li>

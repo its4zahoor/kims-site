@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 export const BASE_URL = "https://khubaib-backend.abdullahrazzaki.com";
 export const API_URL = `${BASE_URL}/api/public`;
 // process.env.NODE_ENV === "development"
@@ -18,4 +20,15 @@ export const getData = (data, passAll = false) => {
       );
   }
   return body;
+};
+export const useInfo = () => {
+  const [info, setInfo] = useState({});
+  useEffect(() => {
+    fetch(`${API_URL}/v1/info`)
+      .then((res) => res.json())
+      .then((res) => {
+        setInfo(res);
+      });
+  }, []);
+  return info;
 };

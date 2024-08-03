@@ -34,7 +34,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
   height: "100%",
 }));
 
-export default function ContactUsInfo({ sx, ...restProps }) {
+export default function ContactUsInfo({ sx, info, ...restProps }) {
   return (
     <Grid
       container
@@ -76,7 +76,8 @@ export default function ContactUsInfo({ sx, ...restProps }) {
               lineHeight: "24px",
             }}
           >
-            Main Shahrah-e-Resham, Bakka Mor,Haripur KPK, Pakistan
+            {info?.address ||
+              "Main Shahrah-e-Resham, Bakka Mor,Haripur KPK, Pakistan"}
           </Typography>
         </StyledCard>
       </StyledGridItem>
@@ -118,7 +119,7 @@ export default function ContactUsInfo({ sx, ...restProps }) {
               lineHeight: "24px",
             }}
           >
-            {"+92-995-670780  |  +92-995-670780"}
+            {info?.phoneNumbers?.split(",")?.join(" | ") || "+92-995-670780"}
           </Typography>
         </StyledCard>
       </StyledGridItem>
@@ -160,7 +161,7 @@ export default function ContactUsInfo({ sx, ...restProps }) {
               lineHeight: "24px",
             }}
           >
-            info@kims.edu.pk
+            {info?.email || "info@kims.edu.pk"}
           </Typography>
         </StyledCard>
       </StyledGridItem>

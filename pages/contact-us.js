@@ -13,13 +13,14 @@ import {
 import { useForm } from "react-hook-form";
 // TODO: common component textfield is not working with react hook form
 // import TextField from "@/components/common/TextField";
-import { API_URL } from "@/util/constants";
+import { API_URL, useInfo } from "@/util/constants";
 import ContactUsInfo from "@/components/sections/ContactUsInfo";
 
 export default function Contact() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
   const [error, setError] = useState(null);
+  const info = useInfo();
   const {
     register,
     handleSubmit,
@@ -113,9 +114,11 @@ export default function Contact() {
               with us
             </Typography>
 
-            {isSmallScreen && <ContactUsInfo />}
+            {isSmallScreen && <ContactUsInfo info={info} />}
           </Card>
-          {!isSmallScreen && <ContactUsInfo sx={{ marginTop: "-150px" }} />}
+          {!isSmallScreen && (
+            <ContactUsInfo info={info} sx={{ marginTop: "-150px" }} />
+          )}
         </Stack>
         <Box
           data-background="/assets/img/bg/Vector.png"

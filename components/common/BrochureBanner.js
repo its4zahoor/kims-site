@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { BASE_URL } from "@/util/constants";
 
-export default function BrochureBanner() {
+export default function BrochureBanner({ brochureLink }) {
   return (
     <>
       <section className="bg-offwhite-kims -mt-[50px]">
@@ -27,10 +28,15 @@ export default function BrochureBanner() {
               </span>
               <span>
                 <button className="mt-4 py-2 px-4 border-white border-2 font-semibold rounded-full shadow-md hover:bg-gray-200">
-                  <Link href="#" className="text-white">
+                  <a
+                    target="_blank"
+                    href={`${BASE_URL}/${brochureLink}`}
+                    download
+                    className="text-white"
+                  >
                     <span className="mr-3">Download Our Brochure</span>
                     <i className="zmdi zmdi-download" />
-                  </Link>
+                  </a>
                 </button>
               </span>
             </div>
