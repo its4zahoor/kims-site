@@ -57,6 +57,10 @@ export default function FeeStructure({ data }) {
               padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
               padding: 5,
               marginX: { xs: "32px", md: "auto" },
+              position: { md: "absolute" },
+              top: { md: "calc(100vh - 220px)" },
+              left: { md: "50%" },
+              transform: { md: "translateX(-50%)" },
             }}
           >
             {/* TODO: create theme file for mui and define theme */}
