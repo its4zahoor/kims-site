@@ -16,7 +16,7 @@ export default function AboutUs() {
               alignItems: "center",
               gap: 1.25,
               backgroundColor: "#BB3131",
-              borderRadius: "24px",
+              borderRadius: "50px",
               padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
             }}
           >

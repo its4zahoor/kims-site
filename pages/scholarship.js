@@ -21,7 +21,7 @@ export default function Scholarship() {
               alignItems: "center",
               gap: 1.25,
               backgroundColor: "#BB3131",
-              borderRadius: "24px",
+              borderRadius: "50px",
               padding: { xs: "70px 50px", md: "50px 20px 55px" },
             }}
           >
