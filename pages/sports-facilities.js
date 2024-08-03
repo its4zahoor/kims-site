@@ -22,7 +22,7 @@ export default function Contact() {
               flexDirection: "column",
               alignItems: "center",
               backgroundColor: "#BB3131",
-              borderRadius: "24px",
+              borderRadius: "50px",
               padding: { xs: "50px 20px", md: "64px" },
               marginX: "auto",
             }}

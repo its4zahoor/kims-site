@@ -19,7 +19,7 @@ export default function EventInsight({ data }) {
               alignItems: "center",
               gap: 1.25,
               backgroundColor: "#BB3131",
-              borderRadius: "24px",
+              borderRadius: "50px",
               padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
               padding: 5,
               marginX: { xs: "32px", md: "auto" },

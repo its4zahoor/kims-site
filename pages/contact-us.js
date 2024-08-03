@@ -15,6 +15,7 @@ import { useForm } from "react-hook-form";
 // import TextField from "@/components/common/TextField";
 import { API_URL } from "@/util/constants";
 import ContactUsInfo from "@/components/sections/ContactUsInfo";
+import HeaderBanner from "@/components/layout/header/HeaderBanner";
 
 export default function Contact() {
   const theme = useTheme();
@@ -54,23 +55,17 @@ export default function Contact() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
-        <Stack
-          className="banner-area banner-bg"
+        <HeaderBanner
           sx={{
             backgroundImage: {
               xs: "url('/assets/img/bg/contact-us-banner-mobile.png')",
               sm: "url('/assets/img/bg/contact-us-banner.png')",
             },
-            paddingTop: { xs: "400px", sm: "500px" },
-            backgroundSize: { xs: "contain", sm: "cover" },
-            backgroundRepeat: "no-repeat",
-            backgroundColor: "#274474",
-            height: "max-content",
-            alignItems: "center",
+            paddingTop: { xs: "300px", sm: "500px" },
+            backgroundSize: "cover",
           }}
         >
           <Card
-            className="banner-child"
             sx={{
               width: "90vw",
               display: "flex",
@@ -78,7 +73,7 @@ export default function Contact() {
               alignItems: "center",
               gap: 1.25,
               backgroundColor: "#BB3131",
-              borderRadius: "24px",
+              borderRadius: "50px",
               padding: { xs: "50px 20px", md: "50px 20px 150px" },
             }}
           >
@@ -116,7 +111,7 @@ export default function Contact() {
             {isSmallScreen && <ContactUsInfo />}
           </Card>
           {!isSmallScreen && <ContactUsInfo sx={{ marginTop: "-150px" }} />}
-        </Stack>
+        </HeaderBanner>
         <Box
           data-background="/assets/img/bg/Vector.png"
           sx={{
