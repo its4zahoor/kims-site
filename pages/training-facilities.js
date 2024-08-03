@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import { Card, Typography, Box, useTheme, useMediaQuery } from "@mui/material";
+import HeaderBanner from "@/components/layout/header/HeaderBanner";
 import ImageGalleryRow from "@/components/sections/ImageGalleryRow";
 import Health1 from "/public/assets/img/training-facilities/health-1.png";
 import Health2 from "/public/assets/img/training-facilities/health-2.png";
@@ -20,27 +21,23 @@ import SportsDesktop from "/public/assets/img/training-facilities/sports.png";
 import SportsMobile from "/public/assets/img/training-facilities/sports-mobile.png";
 import FacilitiesSection from "@/components/sections/FacilitiesSection";
 
-export default function Contact() {
+export default function TrainingFacilities() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
-        <section
-          className="banner-area banner-bg"
-          data-background="/assets/img/bg/training-facilities-banner.png"
-        >
+        <HeaderBanner bannerImage="/assets/img/bg/training-facilities-banner.png">
           <Card
             sx={{
-              width: "90vw",
+              width: { xs: "92vw", md: "80vw" },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               backgroundColor: "#BB3131",
-              borderRadius: "24px",
-              padding: { xs: "50px 20px", md: "64px" },
-              marginX: "auto",
+              borderRadius: "50px",
+              padding: { xs: "60px 20px", md: "64px" },
             }}
           >
             {/* TODO: create theme file for mui and define theme */}
@@ -59,11 +56,16 @@ export default function Contact() {
               Welcome to <br></br> Khubaib Institute Training Facilities
             </Typography>
           </Card>
-        </section>
+        </HeaderBanner>
         <Box
-          data-background="/assets/img/bg/Vector.png"
           sx={{
-            padding: "100px 20px 60px",
+            padding: {
+              xs: "70px 20px",
+              md: "80px",
+              lg: "80px 80px 70px",
+              xl: "35px 80px 70px",
+            },
+            background: 'url("/assets/img/bg/Vector.png")',
             backgroundColor: "#274474",
           }}
           container

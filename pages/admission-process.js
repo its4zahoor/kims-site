@@ -1,30 +1,27 @@
 import Layout from "@/components/layout/Layout";
 import { Card, Typography, Box, Grid } from "@mui/material";
 import ProgramOffered from "@/components/sections/ProgramsOffered";
+import HeaderBanner from "@/components/layout/header/HeaderBanner";
 
 export default function AdmissionProcess() {
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
         {/* Banner with a card */}
-        <Box
-          className="banner-area banner-bg"
-          sx={{
-            backgroundImage: "url('/assets/img/bg/scholarship-banner.png')",
-          }}
+        <HeaderBanner
+          bannerImage="/assets/img/bg/scholarship-banner.png"
+          sx={{ paddingTop: { xs: "300px", lg: "400px", xl: "600px" } }}
         >
           <Card
-            className="banner-child"
             sx={{
-              width: "90vw",
+              width: { xs: "92vw", md: "80vw" },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               gap: 1.25,
               backgroundColor: "#BB3131",
-              borderRadius: "24px",
-              padding: { xs: "61px 20px 52px", md: "55px 20px 74px" },
-              marginX: { xs: "32px", md: "auto" },
+              borderRadius: "50px",
+              padding: { xs: "50px 20px 45px", md: "70px 20px 64px" },
             }}
           >
             {/* TODO: create theme file for mui and define theme */}
@@ -67,20 +64,19 @@ export default function AdmissionProcess() {
               fields of paramedics and Nursing.
             </Typography>
           </Card>
-        </Box>
+        </HeaderBanner>
         {/* Program offered section */}
         <ProgramOffered />
         <Grid
           sx={{
             justifyContent: "center",
-            padding: { xs: "48px 32px", md: "120px 80px" },
-            gap: { xs: 2, md: 10 },
-            backgroundColor: "rgba(187, 49, 49, 0.9)",
-            minHeight: "500px",
+            padding: { xs: "80px 20px 120px", md: "80px 80px 120px" },
+            gap: { xs: 3, md: 10 },
             background:
               "linear-gradient(90deg, #BB3131 0%, rgba(187, 49, 49, 0.90) 100%), url('/assets/img/bg/library-bg.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
           container
         >
@@ -123,7 +119,7 @@ export default function AdmissionProcess() {
                 lineHeight: "32px",
                 color: "white",
                 paddingTop: 5,
-                paddingBottom: 4,
+                paddingBottom: 3,
               }}
             >
               If you have any questions about the application or encounter any
@@ -139,7 +135,7 @@ export default function AdmissionProcess() {
                 fontWeight: 400,
                 lineHeight: "24px",
                 color: "white",
-                paddingBottom: 1,
+                paddingBottom: 1.25,
                 display: "flex",
                 gap: "14px",
               }}
@@ -166,7 +162,7 @@ export default function AdmissionProcess() {
                 fontWeight: 400,
                 lineHeight: "24px",
                 color: "white",
-                paddingBottom: 1,
+                paddingBottom: 1.25,
                 display: "flex",
                 gap: "14px",
               }}
@@ -197,7 +193,6 @@ export default function AdmissionProcess() {
                 fontWeight: 400,
                 lineHeight: "24px",
                 color: "white",
-                paddingBottom: 1,
                 display: "flex",
                 gap: "14px",
               }}

@@ -9,7 +9,11 @@ export default function ProgramOffered() {
       <Stack
         data-background="/assets/img/bg/Vector.png"
         sx={{
-          padding: { xs: "80px 20px 20px", md: "100px 80px 20px" },
+          padding: {
+            xs: "80px 20px 20px",
+            md: "80px 80px 20px",
+            lg: "40px 80px 20px",
+          },
           backgroundColor: "#274474",
           alignItems: "center",
           justifyContent: "center",
@@ -61,7 +65,7 @@ export default function ProgramOffered() {
       >
         <Grid
           sx={{
-            width: { xs: "300px", sm: "350px" },
+            width: "350px",
             height: "400px",
             padding: "20px",
             textAlign: "center",
@@ -77,7 +81,7 @@ export default function ProgramOffered() {
         </Grid>
         <Grid
           sx={{
-            width: { xs: "300px", sm: "350px" },
+            width: "350px",
             height: "400px",
             padding: "20px",
             textAlign: "center",
@@ -94,7 +98,7 @@ export default function ProgramOffered() {
         </Grid>
         <Grid
           sx={{
-            width: { xs: "300px", sm: "350px" },
+            width: "350px",
             height: "400px",
             padding: "20px",
             textAlign: "center",
@@ -110,7 +114,7 @@ export default function ProgramOffered() {
         </Grid>
         <Grid
           sx={{
-            width: { xs: "300px", sm: "350px" },
+            width: "350px",
             height: "400px",
             padding: "20px",
             textAlign: "center",
