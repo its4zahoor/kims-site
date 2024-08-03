@@ -111,7 +111,9 @@ export default function Contact() {
 
             {isSmallScreen && <ContactUsInfo info={info} />}
           </Card>
-          {!isSmallScreen && <ContactUsInfo sx={{ marginTop: "-150px" }} />}
+          {!isSmallScreen && (
+            <ContactUsInfo info={info} sx={{ marginTop: "-150px" }} />
+          )}
         </HeaderBanner>
         <Box
           data-background="/assets/img/bg/Vector.png"
