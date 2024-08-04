@@ -9,16 +9,15 @@ const Carousel = ({ description, name, key, className }) => {
       sx={{
         alignItems: "center",
         justifyContent: "center",
-        height: 400,
-        minHeight: { xs: 400, md: 500, lg: 300, xl: 250 },
-        width: { xs: "92vw", md: 670 },
+        height: "inherit",
+        minHeight: { xs: 400, sm: 300, md: 350 },
       }}
       key={key}
       className={className}
     >
       <Card
         sx={{
-          padding: "50px 50px 80px",
+          padding: { xs: "50px 20px 60px", md: "50px 50px 80px" },
           borderRadius: "50px",
           color: "#FF0000",
           height: "100%",

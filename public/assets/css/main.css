@@ -11186,17 +11186,17 @@ body {
   display: none;
 }
 
+.slick-slide > div {
+  justify-content: center;
+}
+
 .slide {
   opacity: 0.5;
   transform: scale(0.8);
-  background: linear-gradient(
-    90deg,
-    #d9d9d9 -2.39%,
-    #fff -2.38%,
-    rgba(255, 255, 255, 0) 28.19%,
-    rgba(255, 255, 255, 0) 73.3%,
-    #fff 99.95%
-  );
+}
+
+.slide .carousel-card {
+  box-shadow: -25px 25px 50px 0px rgba(0, 0, 0, 0.5);
 }
 
 .slide-active {
@@ -11207,7 +11207,6 @@ body {
 .slide-active .carousel-card {
   border-radius: 50px;
   background: #04824b;
-  box-shadow: -25px 25px 50px 0px rgba(0, 0, 0, 0.5);
 }
 
 .slide-active .carousel-card .description {

@@ -16,20 +16,16 @@ const Carousel = () => {
     autoplaySpeed: 1000,
     arrows: false,
     centerMode: true,
+    adaptiveHeight: true,
     beforeChange: (current, next) => {
       console.log(next), setSlideIndex(next);
     },
     responsive: [
-      //   {
-      //     breakpoint: 768,
-      //     settings: {
-      //       slidesToShow: 1,
-      //     },
-      //   },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
