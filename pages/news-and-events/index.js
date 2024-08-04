@@ -1,15 +1,11 @@
 import { Card, Typography } from "@mui/material";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
-import { API_URL, BASE_URL } from "@/util/constants";
+import { API_URL } from "@/util/constants";
 import Link from "next/link";
 import dayjs from "dayjs";
 
 export default function NewsEvents({ data }) {
-  console.log("Zahoor: ~ data:", data);
-
-  console.log(data.rows.map((event) => event.description));
-
   const formatDate = (date) => dayjs(date).format("MMM DD, YYYY");
 
   return (
@@ -100,7 +96,7 @@ export default function NewsEvents({ data }) {
             </h2>
             <div className="flex flex-col items-stretch">
               {data.rows.map((event) => (
-                <Link href={`/events-insights/${event.id}`}>
+                <Link href={`news-and-events/${event.id}`}>
                   <div className="flex justify-between text-black w-full py-5">
                     <Image
                       sizes="25vw"
