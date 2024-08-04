@@ -4,8 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CarouselCard from "./CarouselCard";
 
-const Carousel = () => {
-  const [slideIndex, setSlideIndex] = useState(0);
+const Carousel = ({ selectedSlide }) => {
+  const [slideIndex, setSlideIndex] = useState(selectedSlide);
 
   const settings = {
     dots: true,
@@ -17,6 +17,7 @@ const Carousel = () => {
     arrows: false,
     centerMode: true,
     adaptiveHeight: true,
+
     beforeChange: (current, next) => {
       console.log(next), setSlideIndex(next);
     },
@@ -26,6 +27,7 @@ const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
         },
       },
     ],
@@ -46,11 +48,6 @@ const Carousel = () => {
       description:
         "At KIMS, the Category B Pharmacy program gives practical skills for different healthcare roles, setting us up for success.",
       name: "Asfand Yar Khan",
-    },
-    {
-      description:
-        "I'm studying Post-Registered Nursing (Post-RN) at KIN. This program teaches essential skills for a successful healthcare career. KIN prioritizes quality education, global partnerships, and experienced teachers. This prepares me for leadership in healthcare worldwide.",
-      name: "Muhammad Abdullah",
     },
   ];
 
