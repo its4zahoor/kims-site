@@ -1,9 +1,21 @@
-import { Card, Typography, Grid, Box, Stack } from "@mui/material";
+import {
+  Card,
+  Typography,
+  Grid,
+  Box,
+  Stack,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import Layout from "@/components/layout/Layout";
 import HeaderBanner from "@/components/layout/header/HeaderBanner";
 import Image from "next/image";
+import Carousel from "@/components/elements/Carousel";
 
 export default function AboutUs() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down(1024));
+
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
@@ -698,6 +710,25 @@ export default function AboutUs() {
             himself had lived a thousand years spent on the investigation”, gave
             a great boost for more people to study and practice medicine.
           </Typography>
+        </Box>
+        <Box sx={{ height: 600 }}>
+          <Typography
+            sx={{
+              color: "#1C3E68",
+              fontFamily: "Dax",
+              fontSize: "40px",
+              fontStyle: "normal",
+              fontWeight: 400,
+              lineHeight: "normal",
+              letterSpacing: "0.8px",
+              textTransform: "uppercase",
+              textAlign: "center",
+              paddingBottom: "35px",
+            }}
+          >
+            What our students say
+          </Typography>
+          <Carousel selectedSlide={isSmallScreen ? 0 : 1} />
         </Box>
       </Layout>
     </>

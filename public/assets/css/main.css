@@ -796,7 +796,7 @@ textarea {
 }
 
 .scroll__top:hover {
-  background-color: #03683C;
+  background-color: #03683c;
   color: var(--tg-common-color-white);
 }
 
@@ -11152,10 +11152,6 @@ blockquote p {
 }
 
 /*# sourceMappingURL=main.css.map */
-
-.slick-slide > div {
-  display: flex;
-}
 
 html,
 body {

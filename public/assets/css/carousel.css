@@ -1,0 +1,47 @@
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.slide .carousel-card {
+  box-shadow: -25px 25px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slide-active .carousel-card {
+  border-radius: 50px;
+  background: #04824b;
+}
+
+.slide-active .carousel-card .description {
+  color: #fff;
+}
+
+.slick-list {
+  padding-bottom: 40px !important;
+}
+
+.slick-dots li {
+  margin: 0px 12.5px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 15px !important;
+  color: #1c3e68 !important;
+  opacity: 0.5 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #bb3131 !important;
+  opacity: 1 !important;
+}
