@@ -17,10 +17,7 @@ const Carousel = ({ selectedSlide }) => {
     arrows: false,
     centerMode: true,
     adaptiveHeight: true,
-
-    beforeChange: (current, next) => {
-      console.log(next), setSlideIndex(next);
-    },
+    beforeChange: (current, next) => setSlideIndex(next),
     responsive: [
       {
         breakpoint: 1024,
