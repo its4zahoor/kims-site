@@ -1,13 +1,32 @@
-// Font URL
-$font-url: "https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700;800&display=swap";
+// Font Face
+@font-face {
+  font-family: "Dax";
+  src: url("../fonts/dax/dax.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dax";
+  src: url("../fonts/dax/dax-bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dax";
+  src: url("../fonts/dax/Dax Italic.otf");
+  font-weight: normal;
+  font-style: italic;
+}
 
 // Font Family
 $theme-fonts: (
   body: (
-    font-family: "'Hind', sans-serif",
+    font-family: "'Dax', sans-serif",
   ),
   heading: (
-    font-family: "'Lexend Deca', sans-serif",
+    font-family: "'Dax', sans-serif",
   ),
   icon: (
     font-family: '"Font Awesome 5 Free"',
