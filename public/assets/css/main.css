@@ -39,15 +39,35 @@
 /*============================================
 /*  01. Theme Default CSS
 ==============================================*/
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Dax";
+  src: url("../fonts/dax/dax.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dax";
+  src: url("../fonts/dax/dax-bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dax";
+  src: url("../fonts/dax/Dax Italic.otf");
+  font-weight: normal;
+  font-style: italic;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --tg-body-font-family: "Hind", sans-serif;
-  --tg-heading-font-family: "Lexend Deca", sans-serif;
+  --tg-body-font-family: "Dax", sans-serif;
+  --tg-heading-font-family: "Dax", sans-serif;
   --tg-icon-font-family: "Font Awesome 5 Free";
   --tg-body-font-size: 16px;
   --tg-body-line-height: 1.75;
