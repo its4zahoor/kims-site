@@ -1,9 +1,12 @@
 import { Card, Typography } from "@mui/material";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
-import { API_URL } from "@/util/constants";
+import { API_URL, BASE_URL } from "@/util/constants";
+import { sanitizedData, splitIntoTwo } from "@/util/helpers";
 
 export default function EventInsight({ data }) {
+  const [firstHalf, secondHalf] = splitIntoTwo(data.data.description, "<br>");
+
   return (
     <>
       <Layout headerStyle={1} footerStyle={1}>
@@ -41,8 +44,7 @@ export default function EventInsight({ data }) {
                 maxWidth: "1064px",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              scelerisque aliquam neque, in tristique mauris facilisis quis.
+              {data.data.title}
             </Typography>
             <Typography
               variant="body1"
@@ -57,43 +59,26 @@ export default function EventInsight({ data }) {
                 maxWidth: "1064px",
               }}
             >
-              Nullam sollicitudin lorem lorem, et fringilla quam commodo a. Sed
-              neque urna, tristique eu lectus vitae, rhoncus dignissim erat.
-              Nullam at sapien metus. Maecenas tristique nunc erat, in
-              consectetur sapien lacinia in.
+              <div
+                className="*:text-white"
+                dangerouslySetInnerHTML={sanitizedData(
+                  data.data.description.substring(0, 200)
+                )}
+              />
             </Typography>
           </Card>
         </section>
         <section className="bg-offwhite-kims h-[100px]" />
         <section className="bg-offwhite-kims">
           <div className="container">
-            <p className="py-4">
-              Integer eu augue ac quam sollicitudin consectetur vel eget velit.
-              Aenean congue turpis lorem, tincidunt dictum dui dapibus a.
-              Quisque eu tincidunt mi, vestibulum consequat felis. Maecenas nec
-              rhoncus orci. Integer a auctor risus. Sed ac semper sapien. Mauris
-              vel lobortis metus. Etiam luctus urna eget commodo vestibulum.
-              Aliquam blandit molestie ultrices. Mauris porttitor, leo at
-              volutpat rutrum, ligula turpis pulvinar lorem, ac tincidunt sem
-              enim non urna. Duis id leo ut sem laoreet rutrum. Fusce porttitor
-              elementum porta. Donec at sem neque. Vivamus eget scelerisque
-              libero. In vitae tellus a nulla commodo dapibus. Sed in tempor
-              arcu. Cras fringilla leo ut fermentum malesuada. Nullam lorem
-              tortor, sagittis at leo non, mattis efficitur mi. Phasellus vitae
-              ipsum nec urna tempor gravida. In non arcu tristique, posuere
-              turpis at, vestibulum nibh. Quisque vel lacus viverra, mollis leo
-              eu, condimentum nisl. Maecenas non varius nisl, non dignissim
-              libero. Duis rhoncus lectus efficitur, tincidunt ex at, lobortis
-              urna. Mauris quam ante, vulputate sit amet enim sit amet,
-              ultricies gravida leo. Mauris venenatis arcu eu arcu egestas
-              aliquet. Vestibulum varius arcu nisl, tincidunt vulputate odio
-              mattis a. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Cras ipsum dolor, fringilla sed fermentum vel, porttitor at
-              sapien. Vestibulum faucibus ante vitae mattis tempus.
-            </p>
+            <div
+              className="py-4"
+              dangerouslySetInnerHTML={sanitizedData(firstHalf.join("<br>"))}
+            />
             <Image
+              alt="news-image"
               sizes="25vw, 100vw"
-              src="/assets/img/events/event-main.png"
+              src={`${BASE_URL}/${data.data.image}`}
               width={100}
               height={100}
               className="rounded-3xl"
@@ -103,30 +88,10 @@ export default function EventInsight({ data }) {
                 objectFit: "cover",
               }}
             />
-            <p className="py-4">
-              Integer eu augue ac quam sollicitudin consectetur vel eget velit.
-              Aenean congue turpis lorem, tincidunt dictum dui dapibus a.
-              Quisque eu tincidunt mi, vestibulum consequat felis. Maecenas nec
-              rhoncus orci. Integer a auctor risus. Sed ac semper sapien. Mauris
-              vel lobortis metus. Etiam luctus urna eget commodo vestibulum.
-              Aliquam blandit molestie ultrices. Mauris porttitor, leo at
-              volutpat rutrum, ligula turpis pulvinar lorem, ac tincidunt sem
-              enim non urna. Duis id leo ut sem laoreet rutrum. Fusce porttitor
-              elementum porta. Donec at sem neque. Vivamus eget scelerisque
-              libero. In vitae tellus a nulla commodo dapibus. Sed in tempor
-              arcu. Cras fringilla leo ut fermentum malesuada. Nullam lorem
-              tortor, sagittis at leo non, mattis efficitur mi. Phasellus vitae
-              ipsum nec urna tempor gravida. In non arcu tristique, posuere
-              turpis at, vestibulum nibh. Quisque vel lacus viverra, mollis leo
-              eu, condimentum nisl. Maecenas non varius nisl, non dignissim
-              libero. Duis rhoncus lectus efficitur, tincidunt ex at, lobortis
-              urna. Mauris quam ante, vulputate sit amet enim sit amet,
-              ultricies gravida leo. Mauris venenatis arcu eu arcu egestas
-              aliquet. Vestibulum varius arcu nisl, tincidunt vulputate odio
-              mattis a. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Cras ipsum dolor, fringilla sed fermentum vel, porttitor at
-              sapien. Vestibulum faucibus ante vitae mattis tempus.
-            </p>
+            <div
+              className="py-4"
+              dangerouslySetInnerHTML={sanitizedData(secondHalf.join("<br>"))}
+            />
           </div>
         </section>
       </Layout>
@@ -135,7 +100,7 @@ export default function EventInsight({ data }) {
 }
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(`${API_URL}/v1/events?id=${context.query.id}`);
+  const res = await fetch(`${API_URL}/v1/event?id=${context.query.id}`);
   const data = await res.json();
   return { props: { data } };
 };
