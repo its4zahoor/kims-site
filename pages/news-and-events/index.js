@@ -2,15 +2,14 @@ import { Card, Typography } from "@mui/material";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import { API_URL, BASE_URL } from "@/util/constants";
+import { sanitizedData } from "@/util/helpers";
 import Link from "next/link";
 import dayjs from "dayjs";
 
 export default function NewsEvents({ data }) {
-  console.log("Zahoor: ~ data:", data);
-
-  console.log(data.rows.map((event) => event.description));
-
   const formatDate = (date) => dayjs(date).format("MMM DD, YYYY");
+
+  const mainContent = data?.rows?.[0] || {};
 
   return (
     <>
@@ -67,30 +66,35 @@ export default function NewsEvents({ data }) {
           </Card>
         </section>
         <div className="bg-blue-kims">
-          <div className="flex justify-between container relative top-24">
-            <Image
-              sizes="25vw, 100vw"
-              src="/assets/img/events/event-main.png"
-              width={50}
-              height={50}
-              className="rounded-3xl"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
-            <div className="p-3 mt-24">
-              <h4>
-                Phasellus imperdiet viverra ligula, sed volutpat enim congue
-                nec.
-              </h4>
-              <p className="text-white mt-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                scelerisque aliquam neque, in tristique mauris facilisis quis.
-              </p>
+          <Link href={`news-and-events/${mainContent.id}`}>
+            <div className="flex justify-between container relative top-20">
+              <Image
+                alt="event-main-image"
+                sizes="25vw, 100vw"
+                src={`${BASE_URL}/${mainContent.image}`}
+                width={50}
+                height={50}
+                className="rounded-3xl"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+              <div className="p-3 m-4">
+                <div className="text-green-600 font-semibold mb-3">
+                  {formatDate(mainContent.updatedAt)}
+                </div>
+                <h5>{mainContent.title.substring(0, 100)}</h5>
+                <div
+                  className="*:text-white *:text-sm *:mt-4"
+                  dangerouslySetInnerHTML={sanitizedData(
+                    mainContent.description.substring(0, 150)
+                  )}
+                />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <section className="bg-offwhite-kims py-5" />
         <section className="bg-offwhite-kims py-5">
@@ -100,11 +104,12 @@ export default function NewsEvents({ data }) {
             </h2>
             <div className="flex flex-col items-stretch">
               {data.rows.map((event) => (
-                <Link href={`/events-insights/${event.id}`}>
+                <Link href={`news-and-events/${event.id}`}>
                   <div className="flex justify-between text-black w-full py-5">
                     <Image
+                      alt={`${event.type}-image`}
                       sizes="25vw"
-                      src="/assets/img/events/event-main.png"
+                      src={`${BASE_URL}/${event.image}`}
                       width={100}
                       height={100}
                       style={{
