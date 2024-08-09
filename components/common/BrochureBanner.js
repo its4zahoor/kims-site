@@ -3,10 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { BASE_URL } from "@/util/constants";
 
-export default function BrochureBanner({ brochureLink }) {
+export default function BrochureBanner({ brochureLink, backgroundColor }) {
   return (
     <>
-      <section className="bg-offwhite-kims -mt-[50px]">
+      <section
+        className={`${backgroundColor || "bg-offwhite-kims"} -mt-[50px]`}
+      >
         <div className="container relative -bottom-40 rounded-3xl">
           <Image
             sizes="25vw"

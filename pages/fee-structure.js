@@ -40,7 +40,7 @@ export default function FeeStructure({ data }) {
   }, [data]);
   return (
     <>
-      <Layout headerStyle={1} footerStyle={1}>
+      <Layout headerStyle={1} footerStyle={1} brochureBg={"bg-white"}>
         <section
           className="banner-area banner-bg"
           data-background="/assets/img/bg/scholarship-banner.png"

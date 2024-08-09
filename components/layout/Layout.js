@@ -14,6 +14,7 @@ export default function Layout({
   headTitle,
   breadcrumbTitle,
   children,
+  brochureBg,
 }) {
   const [scroll, setScroll] = useState(0);
   // Moblile Menu
@@ -73,8 +74,10 @@ export default function Layout({
         {children}
       </main>
 
-      {!footerStyle && <Footer1 />}
-      {footerStyle == 1 ? <Footer1 /> : null}
+      {!footerStyle && <Footer1 brochureBackgroundColor={brochureBg} />}
+      {footerStyle == 1 ? (
+        <Footer1 brochureBackgroundColor={brochureBg} />
+      ) : null}
 
       <BackToTop />
       <DataBg />
